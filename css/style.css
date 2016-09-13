@@ -41,6 +41,16 @@ h2 {
     height: auto;
 }
 
+.videofarma{
+
+    width: 800px;
+    height: 400px; 
+    display: block;
+    margin-left: 180px;
+    margin-right: 100px;
+    margin-top: 0;
+    border:none;
+}
 /*header area*/
 
 .top-header {
@@ -86,7 +96,7 @@ ul.nav {
     padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
-    font-size: 24px;
+    font-size: 23px;
     color: #737373;
     text-transform: uppercase;
     transition: all .7s ease 0s;
@@ -94,7 +104,7 @@ ul.nav {
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
-    padding: 14px 15px;
+    padding: 5px 5px;
     font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover {
@@ -401,7 +411,7 @@ li a.active {
 }
 .team h2 {
     font-size: 90px;
-    color: #42b3e5;
+    color: #00f;
     margin-top: 50px;
     margin-bottom: 0;
 }
