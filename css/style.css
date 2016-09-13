@@ -41,6 +41,13 @@ h2 {
     height: auto;
 }
 
+.detalle{
+
+    display: block;
+    max-height: 75%;
+
+}
+
 .videofarma{
 
     width: 800px;
