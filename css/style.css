@@ -31,6 +31,13 @@ h2 {
     font-weight: bold;
 }
 
+.enfoque {
+
+    display: block;
+    max-width: 85%;
+    height: auto;
+}
+
 /*header area*/
 
 .top-header {
@@ -268,7 +275,8 @@ li a.active {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding: 0 25px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    min-height: 15rem; 
 }
 .single-about-detail:hover .about-details {
     background: #3a9dca;
@@ -300,7 +308,7 @@ li a.active {
 .single-service-img {
     width: 205px;
     height: 125px;
-    background: #fff;
+    background: #ff1616;
     position: relative;
     left: 50%;
     margin-left: -100px;
@@ -314,7 +322,7 @@ li a.active {
     height: 0;
     border-left: 102px solid transparent;
     border-right: 104px solid transparent;
-    border-bottom: 42px solid #fff;
+    border-bottom: 42px solid #ff1616;
 }
 .single-service-img:after {
     content: "";
@@ -325,13 +333,13 @@ li a.active {
     height: 0;
     border-left: 102px solid transparent;
     border-right: 102px solid transparent;
-    border-top: 42px solid #fff;
+    border-top: 42px solid #ff1616;
     z-index: 10;
 }
 .service-img {
     width: 200px;
     height: 123px;
-    background: #3a9ecb;
+    background: #ff1616;
     position: relative;
     top: 1px;
     left: 2px;
@@ -345,7 +353,7 @@ li a.active {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 40px solid #3a9ecb;
+    border-bottom: 40px solid #ff1616;
 }
 .service-img:after {
     content: "";
@@ -356,7 +364,7 @@ li a.active {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-top: 40px solid #3a9ecb;
+    border-top: 40px solid #ff1616;
     z-index: 999;
 }
 .single-service h3 {
@@ -369,8 +377,8 @@ li a.active {
     top: 18%;
 }
 .service-img img.brain {
-    left: 26%;
-    top: 11%;
+    left: 0%;
+    top: 0%;
 }
 .service-img img.knee {
     left: 38%;
@@ -475,10 +483,10 @@ li a.active {
 /*contact section*/
 
 .contact-caption {
-    background: #00f;
+    background: rgba(255,255,255,.6);
 }
 .contact-heading h2 {
-    color: #fff;
+    color: #00f;
     font-size: 90px;
 }
 .contact-info {
@@ -487,20 +495,20 @@ li a.active {
 .contact-info h3 {
     padding-left: 0;
     font-size: 30px;
-    color: #fff;
+    color: #00f;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
+    border-bottom: 1px solid #ff1616;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
 .contact-form h3 {
     padding-left: 0;
     font-size: 30px;
-    color: #fff;
+    color: #00f;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
+    border-bottom: 1px solid #ff1616;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
@@ -511,7 +519,7 @@ li a.active {
 .contact-info ul li {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #fff;
+    color: #00f;
 }
 .contact-info i.fa {
     font-size: 16px;
@@ -527,7 +535,7 @@ li a.active {
     height: 40px;
     background: #fff;
     font-size: 13px;
-    color: #084a5c;
+    font-color: #737373;
     font-family: 'Open Sans', sans-serif;
     padding: 12px;
     border: 0;
@@ -540,13 +548,14 @@ li a.active {
     height: 140px;
     border: 0;
     margin-bottom: 12px;
+
 }
 .info-detail {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #ff1616;
     padding-top: 15px;
 }
 .form {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #ff1616;
     padding-top: 15px;
     text-align: right;
 }
@@ -613,6 +622,11 @@ li a.active {
 .carousel-inner {
     position: relative;
 }
+
+
+/****/
+
+
 
 /*======================css for carousel=========================*/
 
