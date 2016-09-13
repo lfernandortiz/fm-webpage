@@ -311,7 +311,7 @@ li a.active {
 .service h2 {
     font-size: 70px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 30px; /*aca ajusta el otro margin top*/
     margin-bottom: 0;
 }
 .service h4 {
@@ -415,7 +415,7 @@ li a.active {
 .team h2 {
     font-size: 90px;
     color: #00f;
-    margin-top: 50px;
+    margin-top: 50px; /*aca ajusta el otro margin top*/
     margin-bottom: 0;
 }
 .team h4 {
