@@ -88,13 +88,13 @@ ul.nav {
     font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: #42b3e5;
+    color: #00f;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000;
 }
 li a.active {
-    color: #42b3e5 !important;
+    color: #00f !important;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -191,7 +191,7 @@ li a.active {
 
 .about h2 {
     font-size: 90px;
-    color: #42b3e5;
+    color: #00f;
     margin-top: 50px;
 }
 .about h4 {
@@ -285,7 +285,7 @@ li a.active {
     margin-top: 40px;
 }
 .service h2 {
-    font-size: 90px;
+    font-size: 70px;
     color: #fff;
     margin-top: 30px;
     margin-bottom: 0;
@@ -475,7 +475,7 @@ li a.active {
 /*contact section*/
 
 .contact-caption {
-    background: #3a9dca;
+    background: #00f;
 }
 .contact-heading h2 {
     color: #fff;
