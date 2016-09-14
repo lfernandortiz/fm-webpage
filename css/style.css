@@ -1,3 +1,4 @@
+
 /*****
 *
 *
@@ -50,11 +51,11 @@ h2 {
 
 .videofarma{
 
-    width: 800px;
-    height: 400px; 
+    width: 1000px;
+    height: 500px; 
     display: block;
-    margin-left: 180px;
-    margin-right: 100px;
+    margin-left: 100px;
+    margin-right: 150px;
     margin-top: 0;
     border:none;
 }
@@ -103,8 +104,9 @@ ul.nav {
     padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
-    font-size: 23px;
+    font-size: 20px;
     color: #737373;
+    margin-left: 1.5rem;
     text-transform: uppercase;
     transition: all .7s ease 0s;
     -webkit-transition: all .7s ease 0s;
@@ -216,10 +218,13 @@ li a.active {
 
 /*about area*/
 
+
 .about h2 {
     font-size: 70px;
     color: #00f;
-    margin-top: 70px;
+
+    margin-top: 100px;  /*debe buscar esta linea en los demas div´s*/
+
 }
 .about h4 {
     font-size: 24px;
@@ -313,9 +318,9 @@ li a.active {
     margin-top: 40px;
 }
 .service h2 {
-    font-size: 70px;
+    font-size: 80px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 100px; /*aca ajusta el otro margin top*/
     margin-bottom: 0;
 }
 .service h4 {
@@ -419,7 +424,7 @@ li a.active {
 .team h2 {
     font-size: 90px;
     color: #00f;
-    margin-top: 50px;
+    margin-top: 100px; /*aca ajusta el otro margin top*/
     margin-bottom: 0;
 }
 .team h4 {
