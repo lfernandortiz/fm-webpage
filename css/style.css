@@ -69,7 +69,7 @@ h2 {
 .logo{
 
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .cont {
@@ -118,6 +118,7 @@ h2 {
 .nav-bar {
     margin-top: 29px;
     padding-right: 0;
+    padding-left: 0;
 }
 
 
@@ -808,7 +809,7 @@ responsive area
 }
 
 
-/* sm */
+/* sm ipad */
 
 @media (min-width: 768px) and (max-width: 1025px) {
     .navbar-default .navbar-nav>li>a {
@@ -829,6 +830,11 @@ responsive area
         font-size: 22px;
     }
 
+    .nav-bar {
+        margin-top: 29px;
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     .videofarma{
 
@@ -842,6 +848,7 @@ responsive area
 }
     h2 {
         font-size: 70px !important;
+       
     }
     h4 {
         font-size: 18px !important;
@@ -863,6 +870,11 @@ responsive area
 @media (min-width: 480px) and (max-width: 768px) {
     .header-logo img {
         margin-top: 20px;
+    }
+    .nav-bar {
+        margin-top: 29px;
+        padding-right: 0;
+        padding-left: 0;
     }
     .navbar-default .navbar-nav>li>a {
         font-size: 20px;
@@ -902,6 +914,8 @@ responsive area
  
     h2 {
         font-size: 70px !important;
+        
+
     }
     h4 {
         font-size: 21px !important;
