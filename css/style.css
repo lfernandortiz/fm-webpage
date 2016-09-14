@@ -57,13 +57,13 @@ h2 {
 
 .videofarma{
 
-    width: 1000px;
-    height: 500px; 
-    display: block;
-    margin-left: 100px;
-    margin-right: 150px;
-    margin-top: 0;
-    border:none;
+    width: 900px;
+    height: 430px;
+    display: flex;
+    margin-left: 116px;
+    margin-right: 20px;
+    margin-top: 17px;
+    border: none;
 }
 
 .logo{
@@ -741,9 +741,17 @@ responsive area
 ********************************/
 
 
-/* md */
+/* md 992 1199*/
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 799px) {
+    .cont {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+   
     .navbar-default .navbar-nav>li>a {
         font-size: 20px;
         padding: 14px 12px;
@@ -759,6 +767,32 @@ responsive area
         height: 55px;
         font-size: 26px;
     }
+
+   
+    .videofarma{
+
+    width: 600px;
+    height: 402px;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 0;
+    border: none;
+    }
+
+    .about h2{
+       margin-top: 130px; 
+       color: #00f; 
+    }
+
+    .service h2 {
+        margin-top: 130px; 
+    }
+
+    .team h2{
+        margin-top: 130px;    
+    }
+
     h2 {
         font-size: 75px !important;
     }
@@ -773,9 +807,10 @@ responsive area
     }
 }
 
+
 /* sm */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     .navbar-default .navbar-nav>li>a {
         font-size: 16px;
         padding: 10px 8px;
@@ -793,6 +828,18 @@ responsive area
         color: #fff;
         font-size: 22px;
     }
+
+
+    .videofarma{
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin-left: 165px;
+    margin-right: 20px;
+    margin-top: 0;
+    border: none;
+}
     h2 {
         font-size: 70px !important;
     }
@@ -813,7 +860,7 @@ responsive area
 
 /* xs */
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .header-logo img {
         margin-top: 20px;
     }
@@ -841,6 +888,18 @@ responsive area
         height: 1120px;
         margin-top: -1120px;
     }
+
+ .videofarma{
+
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 0;
+    border: none;
+}
+ 
     h2 {
         font-size: 70px !important;
     }
@@ -908,11 +967,11 @@ responsive area
     }
     .service h2 {
         font-size: 50px;
-        margin-top: 40px;
+        margin-top: 100px;
     }
     .team h2 {
         font-size: 50px;
-        margin-top: 40px;
+        margin-top: 100px;
     }
     h4 {
         font-size: 18px !important;
