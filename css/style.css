@@ -42,6 +42,13 @@ h2 {
     height: auto;
 }
 
+.detalle{
+
+    display: block;
+    max-height: 23rem;
+
+}
+
 .videofarma{
 
     width: 800px;
@@ -213,7 +220,7 @@ li a.active {
 
 
 .about h2 {
-    font-size: 90px;
+    font-size: 70px;
     color: #00f;
     margin-top: 100px;  /*debe buscar esta linea en los demas div´s*/
 }
