@@ -649,6 +649,13 @@ li a.active {
     margin-top: 120px;
 }
 
+.tdetalle{
+    font-size: large;
+    max-width: 47%;
+    margin-left: 357px;
+
+}
+
 /*footer*/
 
 .footer-para {
@@ -726,6 +733,37 @@ li a.active {
         transform: translate3d(0, 0, 0);
     }
 }
+
+/* sucursales.html */
+
+.suc h3{
+    font-size: 70px;
+    color: #00f;
+    margin-top: 0px; 
+
+}
+
+.mapa{
+    width: 100%;
+    margin-left: 295px;
+    margin-right: 166px;
+   
+
+}
+
+.dir h2{
+    font-size: 20px;
+    color: #00f; 
+}
+
+.dir p{
+    font-size: 18px;
+}
+
+.contact-cap{
+    background: rgba(255,22,22,.3)
+}
+
 
 /* just for demo purpose */
 
