@@ -656,6 +656,22 @@ li a.active {
 
 }
 
+/*dommicilios*/
+
+.subtitulo h4{
+   font-size: 50px;
+    color: #ff1616;
+    margin-top: 0px; 
+}
+
+.farma {
+    width: 32%;
+    margin-top: 6%;
+}
+
+.domicilio{
+    width: 32%;
+}
 /*footer*/
 
 .footer-para {
@@ -745,7 +761,7 @@ li a.active {
 
 .mapa{
     width: 100%;
-    margin-left: 295px;
+    margin-left: 23px;
     margin-right: 166px;
    
 
@@ -762,6 +778,13 @@ li a.active {
 
 .contact-cap{
     background: rgba(255,22,22,.3)
+}
+
+/* domicilios */
+
+.domicilio{
+    width: 80%;
+    margin-left: 5%;
 }
 
 
