@@ -436,8 +436,8 @@ li a.active {
     top: 0%;
 }
 .service-img img.bone {
-    left: 15%;
-    top: 14%;
+    left: 8%;
+    top: 2%;
 }
 .service-img img {
     position: absolute;
@@ -678,7 +678,11 @@ li a.active {
 
 .farma {
     width: 32%;
-    margin-top: 6%;
+    margin-top: 12%;
+}
+
+.panel-body p{
+
 }
 
 .domicilio{
@@ -803,18 +807,15 @@ li a.active {
     background-color: white;
 }
 
-.panel-body a{
-    font-size: 
-    background-color: #ff1616;
-    color: white;
-}
+
 
 .panel-body p{
     font-size: 16px;
-    color: white;
+    color: #00f;
 }
 
 .panel-heading h4{
+    font-size: 19px;
     color: #00f;
 }
 
