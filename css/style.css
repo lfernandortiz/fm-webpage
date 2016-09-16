@@ -664,6 +664,18 @@ li a.active {
     margin-top: 0px; 
 }
 
+.subtitulo1 h4{
+   font-size: 50px;
+    color: #00f;
+    margin-top: 0px; 
+}
+
+.subtitulo2 p{
+   font-size: 30px;
+    color: #00f;
+    margin-top: 0px; 
+}
+
 .farma {
     width: 32%;
     margin-top: 6%;
@@ -783,10 +795,28 @@ li a.active {
 /* domicilios */
 
 .domicilio{
-    width: 80%;
-    margin-left: 5%;
+    width: 32%;
+    margin-left: 0%;
 }
 
+.panel-body{
+    background-color: white;
+}
+
+.panel-body a{
+    font-size: 
+    background-color: #ff1616;
+    color: white;
+}
+
+.panel-body p{
+    font-size: 16px;
+    color: white;
+}
+
+.panel-heading h4{
+    color: #00f;
+}
 
 /* just for demo purpose */
 
