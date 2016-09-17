@@ -532,6 +532,14 @@ li a.active {
     background: #2a2a2a;
 }
 
+/* inyectologia */
+
+.inyectologia h4{
+    font-size: 50px;
+    color: #00f;
+    margin-top: 0px;
+}
+
 /*contact section*/
 
 .contact-caption {
