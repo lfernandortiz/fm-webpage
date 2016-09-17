@@ -436,8 +436,8 @@ li a.active {
     top: 0%;
 }
 .service-img img.bone {
-    left: 15%;
-    top: 14%;
+    left: 8%;
+    top: 2%;
 }
 .service-img img {
     position: absolute;
@@ -532,6 +532,27 @@ li a.active {
     background: #2a2a2a;
 }
 
+/* inyectologia */
+
+.inyectologia h4{
+    font-size: 50px;
+    color: #ff1616;
+    margin-top: 0px;
+}
+
+.vacuna{
+    width: 57%;
+}
+
+.texto {
+    width: 40.33%;
+}
+
+.subtitulo3 p{
+   font-size: 30px;
+    color: #737373;
+    margin-top: 0px; 
+}
 /*contact section*/
 
 .contact-caption {
@@ -652,10 +673,42 @@ li a.active {
 .tdetalle{
     font-size: large;
     max-width: 47%;
-    margin-left: 357px;
+    margin-left: 29%;
 
 }
 
+/*dommicilios*/
+
+.subtitulo h4{
+   font-size: 50px;
+    color: #ff1616;
+    margin-top: 0px; 
+}
+
+.subtitulo1 h4{
+   font-size: 50px;
+    color: #00f;
+    margin-top: 0px; 
+}
+
+.subtitulo2 p{
+   font-size: 30px;
+    color: #00f;
+    margin-top: 0px; 
+}
+
+.farma {
+    width: 32%;
+    margin-top: 12%;
+}
+
+.panel-body p{
+
+}
+
+.domicilio{
+    width: 32%;
+}
 /*footer*/
 
 .footer-para {
@@ -745,10 +798,12 @@ li a.active {
 
 .mapa{
     width: 100%;
-    margin-left: 295px;
+    margin-left: 2%;
     margin-right: 166px;
-   
+}
 
+.tabla {
+    max-width: 97%;
 }
 
 .dir h2{
@@ -764,6 +819,28 @@ li a.active {
     background: rgba(255,22,22,.3)
 }
 
+/* domicilios */
+
+.domicilio{
+    width: 32%;
+    margin-left: 0%;
+}
+
+.panel-body{
+    background-color: white;
+}
+
+
+
+.panel-body p{
+    font-size: 16px;
+    color: #00f;
+}
+
+.panel-heading h4{
+    font-size: 19px;
+    color: #00f;
+}
 
 /* just for demo purpose */
 
