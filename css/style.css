@@ -536,10 +536,23 @@ li a.active {
 
 .inyectologia h4{
     font-size: 50px;
-    color: #00f;
+    color: #ff1616;
     margin-top: 0px;
 }
 
+.vacuna{
+    width: 57%;
+}
+
+.texto {
+    width: 40.33%;
+}
+
+.subtitulo3 p{
+   font-size: 30px;
+    color: #737373;
+    margin-top: 0px; 
+}
 /*contact section*/
 
 .contact-caption {
@@ -660,7 +673,7 @@ li a.active {
 .tdetalle{
     font-size: large;
     max-width: 47%;
-    margin-left: 357px;
+    margin-left: 29%;
 
 }
 
@@ -785,10 +798,12 @@ li a.active {
 
 .mapa{
     width: 100%;
-    margin-left: 23px;
+    margin-left: 2%;
     margin-right: 166px;
-   
+}
 
+.tabla {
+    max-width: 97%;
 }
 
 .dir h2{
