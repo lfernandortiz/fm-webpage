@@ -842,6 +842,19 @@ li a.active {
     color: #00f;
 }
 
+
+/* Farmapuntos */
+.puntos h4{
+    font-size: 50px;
+    color: #a9a9a9;
+    margin-top: 0px;
+}
+
+.descarga{
+    width: 50%;
+    margin-left: 35%;
+}
+
 /* just for demo purpose */
 
 html,
