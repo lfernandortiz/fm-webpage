@@ -433,7 +433,7 @@ li a.active {
 }
 .service-img img.knee {
     left: 10%;
-    top: 0%;
+    top: -10%;
 }
 .service-img img.bone {
     left: 8%;
