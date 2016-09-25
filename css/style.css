@@ -244,6 +244,9 @@ li a.active {
 
 /*about area*/
 
+.vision {
+    max-rem: 33px;
+}
 
 .about h2 {
     font-size: 70px;
