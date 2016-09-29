@@ -427,8 +427,9 @@ li a.active {
     padding-bottom: 90px;
 }
 .service-img img.heart {
-    left: 2%;
-    top: -6%;
+    left: 9%;
+    top: -5%;
+    width: 85%;
 }
 .service-img img.brain {
     left: 8%;
