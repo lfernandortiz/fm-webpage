@@ -9,11 +9,21 @@ figure{
 	padding: 0;
 }
 
-#stickyMenu{
+.barMenu{
 	background: #000A7B;
 	color: white;
-	font-family: font-family: 'Lato', sans-serif;
-	padding: 8px 5px 8px 5px;
+	font-family: 'Lato', sans-serif;
+	padding: 10px 5px 8px 5px;
+	font-size: 1em;
+}
+
+.barMenuSticky{
+	background: #000A7B;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	padding: 5px 5px 5px 5px;
+	font-size: .85em;
+	transition: all 0.4s ease;
 }
 
 #logotipo{
@@ -28,10 +38,21 @@ figure{
 
 .navbar li a{
 	color: #FFFFFF!important;
-	font-size: .9em;
+	
 }
 
-
-#slidersection{
+#iniciosection{
 	background: #E6E6E6;
 }
+
+.orbit-bullets button{width: 14px!important; height: 14px!important; }
+.orbit-bullets button:hover {
+      background-color: #000A7B!important; }
+    .orbit-bullets button.is-active {
+      background-color: #000A7B!important; }
+
+
+ #sucursales{
+ 	padding: 180px;
+
+ }
