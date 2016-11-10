@@ -68,7 +68,7 @@ figure{
 
 
  #sucursales{
- 	padding: 30px 0px 30px 0px;
+ 	padding: 50px 0px 30px 0px;
  }
 
  .imgsuc{
@@ -77,14 +77,14 @@ figure{
  }
 
  #serviciosSection{
- 	 padding: 30px 0px 60px 0px;
+ 	 padding: 20px 0px 60px 0px;
  	 background-color: #000A7B;
  }
 
  .sectiontitle{
 	color: #FFFFFF;
 	font-family: 'Lato', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
  }
 
  .servicioscontent{
