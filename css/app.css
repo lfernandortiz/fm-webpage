@@ -9,12 +9,24 @@ figure{
 	padding: 0;
 }
 
+.scrollSticky{
+	/*z-index: 99;*/
+}
+
+.menuSection{
+	width: 100%;
+	background: #000A7B;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
 .barMenu{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	padding: 10px 5px 8px 5px;
 	font-size: 1em;
+	width: 100%;
 }
 
 .barMenuSticky{
@@ -53,6 +65,5 @@ figure{
 
 
  #sucursales{
- 	padding: 180px;
-
+ 	padding: 10px 0px 10px 0px;
  }
