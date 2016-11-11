@@ -359,7 +359,7 @@ figure{
 .row.redes { margin: 0 0 0 0 ;} 
 
 .iconoredes{
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 .iconoredes:hover{
 	color: #00BAFF;
@@ -368,4 +368,9 @@ figure{
 .copyright p{
 	font-size: .6rem;
 	line-height: .7rem;
+}
+
+.column.logodromed { padding: 0 0 0 0 ;} 
+#logoDromed{
+	width: 170px;
 }
