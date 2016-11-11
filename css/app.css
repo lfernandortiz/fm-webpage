@@ -3,6 +3,7 @@
 
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200; }*/
+
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -46,6 +47,10 @@ figure{
 	width: 100%;
 }
 
+.burgermenu{
+	color: #FFFFFF;
+	font-size: 1.9rem;
+}
 
 .menu .active > a {
     color: #FFCA0D!important;
