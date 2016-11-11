@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
 
-/*.row{ border: 2px solid #0FBCF5; }
-.column{ border: 2px solid #F3C200; }*/
+.row{ border: 2px solid #0FBCF5; }
+.column{ border: 2px solid #F3C200; }
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -139,4 +139,33 @@ figure{
  	margin: 0 10px 10px 10px; 
  }
 
+
+#contactosection{
+	background: #efefef;
+}
+
+#contactosection h2{
+	color: #000a7b;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	margin: 10px 0px 15px 0px;
+}
+
+#contactosection h3{
+	color: #000a7b;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.infosection{
+	color: #000a7b;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+.infosection i{
+	font-size: 2rem;
+}
 
