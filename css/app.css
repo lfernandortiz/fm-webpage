@@ -316,3 +316,56 @@ figure{
 	background-color: transparent;
 	border-color: #000a7b;
 }
+/****/
+
+#footerSection{
+	background-color: #636363;
+	color: #d5d5d5;
+	padding: 1.7rem 0 .85rem 0;
+}
+
+#footerSection ul{
+	font-size: .8rem;
+}
+
+#footerSection li{
+	list-style: none;
+	color: #d5d5d5;
+	font-family: 'Lato', sans-serif;
+	margin-left: 10px;
+	font-size: .8rem;
+	line-height: 1.1rem;
+
+}
+
+#footerSection li a{
+	text-decoration: none;
+	color: #d5d5d5;
+}
+
+#footerSection li a:hover{
+	text-decoration: none;
+	color: #00BAFF;
+	text-decoration: underline;
+}
+
+.redes{
+	color: #d5d5d5;
+	font-family: 'Lato', sans-serif;
+	font-size: .8rem;
+}
+
+.column.redes { padding: 0 0 0 0 ;} 
+.row.redes { margin: 0 0 0 0 ;} 
+
+.iconoredes{
+	font-size: 1.8rem;
+}
+.iconoredes:hover{
+	color: #00BAFF;
+}
+
+.copyright p{
+	font-size: .6rem;
+	line-height: .7rem;
+}
