@@ -61,6 +61,7 @@ figure{
 	background: #E6E6E6;
 }
 
+/*Editando estilos del slider orbit*/
 .orbit-bullets button{width: 14px!important; height: 14px!important; }
 .orbit-bullets button:hover {
       background-color: #000A7B!important; }
@@ -68,9 +69,18 @@ figure{
       background-color: #000A7B!important; }
 
 .nabullets{
-	margin:0.6rem!important;
+	margin:0.3rem!important;
 }
 
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 0;
+  color: #fefefe;
+  background-color: rgba(10, 10, 10, 0.5); }
+/*-----------*/
 
  #sucursales{
  	padding: 40px 0px 30px 0px;
