@@ -121,9 +121,9 @@
     </div>
   </section>
   <!-- contactosection -->
-  <section id="contactosection">
+  <section id="contactosection" >
     <div class="row text-center">
-      <div class="column sectiontitle">
+      <div class="column sectiontitle ">
         <h2>Contactenos</h2>
       </div>      
     </div>
@@ -134,7 +134,7 @@
             <h3>Contactos</h3>
           </div>
           <div class="column small-12">
-            <div class="row align-spaced align-middle inforow">
+            <div class="row align-spaced align-right inforow">
               <div class="column small-1"><i class="fi fi-calendar"></i></div>
               <div class="column small-11">De Lunes a Domingo de 8 am. a 8 pm. Para mas informaci&oacute;n de horarios consulte la secci&oacute;n de <a href="#sucursales">Sucursales.</a></div>
             </div>
@@ -151,7 +151,7 @@
       </div>
       <!-- form contacto -->
       <div class="column small-12 medium-6">
-        <div class="column small-12">
+        <div class="column small-12 text-center">
             <h3>Escribenos</h3>
         </div>
         <div class="row align-spaced">
@@ -197,8 +197,6 @@
     <!-- referencias js -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/classie.js"></script>
     <script>
       (function() {
@@ -213,7 +211,7 @@
           })();
         }
 
-        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        [].slice.call( document.querySelectorAll( 'input.input__field') ).forEach( function( inputEl ) {
           // in case the input is already filled..
           if( inputEl.value.trim() !== '' ) {
             classie.add( inputEl.parentNode, 'input--filled' );
@@ -224,6 +222,16 @@
           inputEl.addEventListener( 'blur', onInputBlur );
         } );
 
+        [].slice.call( document.querySelectorAll( 'textarea.input__field') ).forEach( function( inputEl ) {
+          // in case the input is already filled..
+          if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+          }
+
+          // events:
+          inputEl.addEventListener( 'focus', onInputFocus );
+          inputEl.addEventListener( 'blur', onInputBlur );
+        } );
         function onInputFocus( ev ) {
           classie.add( ev.target.parentNode, 'input--filled' );
         }
@@ -235,5 +243,7 @@
         }
       })();
     </script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

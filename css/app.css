@@ -12,8 +12,8 @@ figure{
 	padding: 0;
 }
 
-.scrollSticky{
-	/*z-index: 99;*/
+#scrollSticky{
+	z-index: 99 ;
 }
 
 .menuSection{
@@ -21,6 +21,7 @@ figure{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
+
 }
 
 .barMenu{
@@ -88,7 +89,7 @@ figure{
  .sectiontitle{
 	color: #FFFFFF;
 	font-family: 'Lato', sans-serif;
-	margin-bottom: 35px;	
+	margin-bottom: 25px;	
  }
 
  .servicioscontent{
@@ -182,7 +183,7 @@ figure{
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin-bottom: .8em;
+	margin-bottom: .6em;
 	max-width: 350px;
 	width: calc(100% - 2em);
 	vertical-align: top;
