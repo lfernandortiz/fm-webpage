@@ -57,7 +57,7 @@
         </div>
         </section>
         <!-- Slider seccion -->
-        <section id="iniciosection">
+        <section id="iniciosection" data-magellan-target="iniciosection">
         <div class="row small-collapse">
           <div class="column small-12">
             <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
@@ -74,7 +74,7 @@
                 </li>
               </ul>
               <!--botones balas-->
-              <nav class="orbit-bullets nabullets">
+              <nav class="orbit-bullets nabullets show-for-medium">
                 <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
                 <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
                 <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
@@ -85,7 +85,7 @@
         </div>
         </section>
         <!--Sucursales -->
-        <section id="sucursales">
+        <section id="sucursales" data-magellan-target="sucursales">
         <div class="row small-collapse medium-uncollapse">
           <div class="column small-12 medium-6">
             <a href="mapsfarmanorte.html">
@@ -100,7 +100,7 @@
         </div>
         </section>
         <!-- servicios seccion -->
-        <section id="serviciosSection">
+        <section id="serviciosSection" data-magellan-target="serviciosSection">
         <div class="row  align-center">
         <div class="column text-center">
         <h2 class="sectiontitle">Nuestros Servicios</h2>
@@ -216,7 +216,7 @@
         <!-- footer -->
         <footer id="footerSection">
         <div class="row align-justify">
-        <div class="column medium-3">
+        <div class="column medium-3 ">
         <ul class="mapa">Acceso Rapido
           <li class="mapadetalle"><a href="#">Inicio</a></li>
           <li class="mapadetalle"><a href="#sucursales">Sucursales</a></li>
@@ -224,7 +224,7 @@
           <li class="mapadetalle"><a href="">Puntos Farmanorte</a></li>
         </ul>
         </div>
-        <div class="column medium-3 redes">
+        <div class="column medium-3 show-for-medium redes">
         <div class="row column">Siguenos en nuestras redes sociales</div>
         <div class="row align-left redes collapse">
           <div class="column"><i class="fi-social-facebook iconoredes"></i></div>
@@ -255,10 +255,8 @@
     <script src="js/classie.js"></script>
     <script>
       (function() {
-        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-        if (!String.prototype.trim) {
+       if (!String.prototype.trim) {
           (function() {
-            // Make sure we trim BOM and NBSP
             var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
             String.prototype.trim = function() {
               return this.replace(rtrim, '');
@@ -267,23 +265,20 @@
         }
 
         [].slice.call( document.querySelectorAll( 'input.input__field') ).forEach( function( inputEl ) {
-          // in case the input is already filled..
           if( inputEl.value.trim() !== '' ) {
             classie.add( inputEl.parentNode, 'input--filled' );
           }
 
-          // events:
+          // eventos
           inputEl.addEventListener( 'focus', onInputFocus );
           inputEl.addEventListener( 'blur', onInputBlur );
         } );
 
         [].slice.call( document.querySelectorAll( 'textarea.input__field') ).forEach( function( inputEl ) {
-          // in case the input is already filled..
           if( inputEl.value.trim() !== '' ) {
             classie.add( inputEl.parentNode, 'input--filled' );
           }
 
-          // events:
           inputEl.addEventListener( 'focus', onInputFocus );
           inputEl.addEventListener( 'blur', onInputBlur );
         } );

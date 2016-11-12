@@ -29,7 +29,8 @@ figure{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
-	padding: 10px 5px 8px 5px;
+	padding: 10px 5px 10px 5px;
+	/*padding: .9rem .4rem .9rem .4rem ;*/
 	font-size: 1em;
 	width: 100%;
 }
@@ -336,7 +337,7 @@ figure{
 #footerSection{
 	background-color: #636363;
 	color: #d5d5d5;
-	padding: 1.7rem 0 .85rem 0;
+	padding: 1rem 0 .3rem 0;
 }
 
 #footerSection ul{
