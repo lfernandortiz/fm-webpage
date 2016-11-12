@@ -16,10 +16,15 @@
   <body>
   
   <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>       
-        <div class="off-canvas position-left" data-off-canvas id="offCanvas" >
-      
-          <nav data-magellan>
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Menu -->
+        <nav data-magellan>
             <ul class="vertical menu" data-drilldown>
               <li><a href="#iniciosection">Inicio</a></li>
               <li><a href="#sucursales">Sucursales</a></li>
@@ -34,19 +39,21 @@
         <!-- menu Sticky-->
         <section id="scrollSticky" class="menuSection" data-sticky-container>
           <div class="barMenu" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+            <!-- columna logo -->
             <div class="row small-collapse align-justify">
               <div class="column small-9 mediumn-6">
                 <a href="#">
                 <figure id="logotipo"><img src="image/logoFarmanort1x.png" srcset="image/logoFarmanort1x.png 1x, image/logoFarmanort1x.png 2x" alt="LogoFarmanorte"></figure>
               </a>
             </div>
+            <!-- columna menu -->
             <div class="column small-2 mediumn-6 align-middle">
               <nav id="menu-container" data-magellan data-animation-duration="1000">
-                <!-- menu offcanvas -->
+                <!-- Boton llamada menu offcanvas -->
                 <ul class="menu show-for-small-only align-right">
                   <li><a href="#" data-toggle="offCanvas"><i class="fi-list burgermenu"></i></a></li>
                 </ul>
-                <!-- menu normal -->
+                <!-- Menu normal -->
                 <ul class="menu data-dropdown-menu navbar align-spaced show-for-medium" data-dropdown-menu>
                   <li class="active"><a href="#iniciosection">Inicio</a></li>
                   <li><a href="#sucursales">Sucursales</a></li>
