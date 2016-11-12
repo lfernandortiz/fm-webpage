@@ -25,12 +25,29 @@ figure{
 
 }
 
+.close-button{
+	color:#FFFF;
+}
+
+.vertical.menu{
+	background-color: #000a7b;	
+}
+
+.vertical.menu li a{
+	color: #fff;	
+}
+
+/*edita el background del menu offcanvas*/
+.off-canvas-wrapper{
+	background-color: #000a7b;	
+}
+
 .barMenu{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
-	padding: 10px 5px 10px 5px;
-	/*padding: .9rem .4rem .9rem .4rem ;*/
+	/*padding: 10px 5px 10px 5px;*/
+	padding: .9rem .4rem .9rem .4rem ;
 	font-size: 1em;
 	width: 100%;
 }

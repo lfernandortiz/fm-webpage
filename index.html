@@ -16,18 +16,20 @@
   <body>
   
   <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-        <nav data-magellan>
-          <ul class="vertical menu" data-drilldown>
-            <li class="active"><a href="#iniciosection">Inicio</a></li>
-            <li><a href="#sucursales">Sucursales</a></li>
-            <li><a href="#serviciosSection">Servicio</a></li>
-            <li><a href="#">Contactenos</a></li>
-        </ul>
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>       
+        <div class="off-canvas position-left" data-off-canvas id="offCanvas" >
+      
+          <nav data-magellan>
+            <ul class="vertical menu" data-drilldown>
+              <li><a href="#iniciosection">Inicio</a></li>
+              <li><a href="#sucursales">Sucursales</a></li>
+              <li><a href="#serviciosSection">Servicio</a></li>
+              <li><a href="#contactosection">Contactenos</a></li>
+          </ul>
         </nav>
+
       </div>
-      <!-- off-canvas-content es todo el contenido del web site-->
+      <!-- .off-canvas-content  es todo el contenido del web site-->
       <div class="off-canvas-content" data-off-canvas-content>
         <!-- menu Sticky-->
         <section id="scrollSticky" class="menuSection" data-sticky-container>
@@ -113,7 +115,7 @@
         </div>
         </section>
         <!-- Institucional Domicilios -->
-        <section id="institucional">
+        <section id="institucional" data-magellan-target="institucional">
         <div class="row small-collapse medium-uncollapse text-center align-spaced" data-equalizer data-equalize-on="medium">
         <div class="column small-12 medium-6">
         <div class="row column divinstitu">
@@ -141,7 +143,7 @@
         </div>
         </section>
         <!-- contactosection -->
-        <section id="contactosection" >
+        <section id="contactosection" data-magellan-target="contactosection">
         <div class="row text-center">
         <div class="column sectiontitle ">
         <h2>Contactenos</h2>
