@@ -47,6 +47,9 @@ figure{
     box-shadow: 0px 1px 1px 0px #295FA2;
 }
 
+.redesMenu{
+	padding-top: 3rem;
+}
 /*edita el background del menu offcanvas*/
 .off-canvas-wrapper{
 	background-color: #09137E;	
@@ -106,7 +109,7 @@ figure{
 	margin:0.3rem!important;
 }
 
-.orbit-caption {
+.orbit-caption {	
   position: absolute;
   bottom: 0;
   width: 100%;
