@@ -17,37 +17,23 @@
   
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <!-- contenido del menu offcanvas -->
       <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-    
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
-
-        <!-- Menu -->
-        <nav data-magellan>
-            <ul class="vertical menu" data-drilldown>
-              <li><a href="#iniciosection">Inicio</a></li>
-              <li><a href="#sucursales">Sucursales</a></li>
-              <li><a href="#serviciosSection">Servicio</a></li>
-              <li><a href="#contactosection">Contactenos</a></li>
-          </ul>
-        </nav>
-
+        
       </div>
-      <!-- .off-canvas-content  es todo el contenido del web site-->
+      <!-- contenido de la pagina -->
       <div class="off-canvas-content" data-off-canvas-content>
-        <!-- menu Sticky-->
         <section id="scrollSticky" class="menuSection" data-sticky-container>
           <div class="barMenu" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
             <!-- columna logo -->
             <div class="row small-collapse align-justify">
-              <div class="column small-9 mediumn-6">
+              <div class="column small-9 medium-6">
                 <a href="#">
                 <figure id="logotipo"><img src="image/logoFarmanort1x.png" srcset="image/logoFarmanort1x.png 1x, image/logoFarmanort1x.png 2x" alt="LogoFarmanorte"></figure>
               </a>
             </div>
             <!-- columna menu -->
-            <div class="column small-2 mediumn-6 align-middle">
+            <div class="column small-2 medium-6 align-middle">
               <nav id="menu-container" data-magellan data-animation-duration="1000">
                 <!-- Boton llamada menu offcanvas -->
                 <ul class="menu show-for-small-only align-right">
@@ -101,7 +87,6 @@
             <figure id="mapasucursales"><img src="image/mapaSucursales.png" class="imgsuc" srcset="image/mapaSucursales.png 1x, image/mapaSucursales2x.png 2x" alt="Mapa Sucursales"></figure>
           </a>
         </div>
-
         <div class="column small-12 medium-6 divSucursales">
           <a href="mapasucursales.html">
           <figure id="suc24h"><img src="image/24Horas.png" class="imgsuc" srcset="image/24Horas.png 1x, image/24Horas2x.png 2x" alt="Sucursales 24 Horas"></figure>
@@ -255,9 +240,9 @@
         </div>
         </div>
         </footer>
-      </div><!-- fin off-canvas-content--> 
+      </div> <!-- fin off-canvas-content-->  
     </div>
-  </div>  
+  </div>
 
     <!-- referencias js -->
     <script src="js/vendor/jquery.js"></script>
