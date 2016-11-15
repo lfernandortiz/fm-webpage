@@ -4,30 +4,20 @@
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200; }*/
 
-body{
-	font-family: 'Lato', sans-serif;
-}
-
-figure{
-	margin: 0;
-	padding: 0;
-}
-
-
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?q3qubj');
-  src:  url('../fonts/icomoon.eot?q3qubj#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?q3qubj') format('truetype'),
-    url('../fonts/icomoon.woff?q3qubj') format('woff'),
-    url('../fonts/icomoon.svg?q3qubj#icomoon') format('svg');
+  font-family: 'icomoonpage';
+  src:  url('../fonts/fontspage/icomoonpage.eot?uyuiv4');
+  src:  url('../fonts/fontspage/icomoonpage.eot?uyuiv4#iefix') format('embedded-opentype'),
+    url('../fonts/fontspage/icomoonpage.ttf?uyuiv4') format('truetype'),
+    url('../fonts/fontspage/icomoonpage.woff?uyuiv4') format('woff'),
+    url('../fonts/fontspage/icomoonpage.svg?uyuiv4#icomoonpage') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'icomoonpage' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -40,48 +30,37 @@ figure{
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-phone:before {
-  content: "\e902";
-}
-.icon-mobile:before {
-  content: "\e903";
-}
-.icon-home:before {
-  content: "\e904";
-}
-.icon-menu3:before {
-  content: "\e905";
-}
-.icon-flask:before {
-  content: "\e908";
-}
-.icon-bus:before {
-  content: "\e909";
-}
-.icon-automobile:before {
-  content: "\e90a";
-}
-.icon-directions_walk:before {
-  content: "\e90b";
-}
 .icon-menu:before {
-  content: "\e900";
-}
-.icon-menu2:before {
   content: "\e901";
 }
+.icon-menu2:before {
+  content: "\e902";
+}
 .icon-bike:before {
-  content: "\e907";
+  content: "\e903";
 }
 .icon-injection:before {
-  content: "\e906";
+  content: "\e904";
 }
-.icon-medicine:before {
-  content: "\e906";
+.icon-call-center-worker:before {
+  content: "\e900";
 }
 
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+figure{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
 #scrollSticky{
-	z-index: 99 ;
+	z-index: 99 ;	
 }
 
 .menuSection{
@@ -224,7 +203,7 @@ figure{
  }
 
 .servicioscontent{
-	padding: 30px;
+	padding: 2rem 0;	
 }
 
  .servicioscontent a{ 	
@@ -251,6 +230,7 @@ figure{
  	font-family: 'Lato', sans-serif;
  	font-size: 1.4rem;
  	margin: 30px 5px 0px 5px;
+ 	width: 100%;
  		 
 }
 
