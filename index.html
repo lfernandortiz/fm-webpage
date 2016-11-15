@@ -19,7 +19,22 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <!-- contenido del menu offcanvas -->
       <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-        
+        <nav data-magellan>
+            <ul class="vertical menu" data-drilldown>
+              <li"><a href="#iniciosection">Inicio</a></li>
+              <li><a href="#sucursalancla">Sucursales</a></li>
+              <li><a href="#serviciosSection">Servicio</a></li>
+              <li><a href="#institucionalancla">Nosotros</a></li>
+              <li><a href="#anclacontactosection">Contactenos</a></li>
+              <!-- <li><a href="#lineup-container">Lineup</a>
+                <ul class="vertical menu" id="submenu-container">
+                  <li><a data-toggle-dia="#panelViernes" href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="#panelSabado" href="#lineup-container">Sabado</a></li>
+                  <li><a data-toggle-dia="#panelDomingo" href="#lineup-container">Domingo</a></li>
+                </ul> 
+              </li> -->
+            </ul>
+          </nav>
       </div>
       <!-- contenido de la pagina -->
       <div class="off-canvas-content" data-off-canvas-content>
@@ -34,7 +49,7 @@
             </div>
             <!-- columna menu -->
             <div class="column small-2 medium-6 align-middle">
-              <nav id="menu-container" data-magellan data-animation-duration="1000">
+              <nav id="menu-container" data-magellan data-animation-duration="700">
                 <!-- Boton llamada menu offcanvas -->
                 <ul class="menu show-for-small-only align-right">
                   <li><a href="#" data-toggle="offCanvas"><i class="fi-list burgermenu"></i></a></li>
@@ -42,9 +57,10 @@
                 <!-- Menu normal -->
                 <ul class="menu data-dropdown-menu navbar align-spaced show-for-medium" data-dropdown-menu>
                   <li class="active"><a href="#iniciosection">Inicio</a></li>
-                  <li><a href="#sucursales">Sucursales</a></li>
+                  <li><a href="#sucursalancla">Sucursales</a></li>
                   <li><a href="#serviciosSection">Servicio</a></li>
-                  <li><a href="#">Contactenos</a></li>
+                  <li><a href="#institucionalancla">Nosotros</a></li>
+                  <li><a href="#anclacontactosection">Contactenos</a></li>
                 </ul>
               </nav>
             </div>
@@ -80,7 +96,8 @@
         </div>
         </section>
         <!--Sucursales -->
-        <section id="sucursales" data-magellan-target="sucursales">
+        <div id="sucursalancla" class="row" data-magellan-target="sucursalancla"></div>
+        <section id="sucursales" >
         <div class="row small-collapse medium-uncollapse">
           <div class="column small-12 medium-6 divSucursales">
             <a href="mapsfarmanorte.html">
@@ -108,7 +125,8 @@
         </div>
         </section>
         <!-- Institucional Domicilios -->
-        <section id="institucional" data-magellan-target="institucional">
+        <div id="institucionalancla" class="row" data-magellan-target="institucionalancla"></div>
+        <section id="institucional" >
         <div class="row small-collapse medium-uncollapse text-center align-spaced" data-equalizer data-equalize-on="medium">
         <div class="column small-12 medium-6">
         <div class="row column divinstitu">
@@ -136,7 +154,8 @@
         </div>
         </section>
         <!-- contactosection -->
-        <section id="contactosection" data-magellan-target="contactosection">
+        <div id="anclacontactosection" class="row" data-magellan-target="anclacontactosection"></div>
+        <section id="contactosection" >
         <div class="row text-center">
         <div class="column sectiontitle ">
         <h2>Contactenos</h2>

@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
 
-.row{ border: 2px solid #0FBCF5; }
-.column{ border: 2px solid #F3C200; }q
+/*.row{ border: 2px solid #0FBCF5; }
+.column{ border: 2px solid #F3C200; }*/
 
 body{
 	font-family: 'Lato', sans-serif;
@@ -49,8 +49,8 @@ figure{
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
-	padding: .9rem .4rem .9rem .4rem ;
-	font-size: 1em;
+	padding: .7rem .4rem .3rem .4rem ;
+	font-size: .85em;
 	width: 100%;
 }
 
@@ -107,8 +107,10 @@ figure{
   background-color: rgba(10, 10, 10, 0.5); }
 /*-----------*/
 
- #sucursales{
- 	padding: 20px 0px 30px 0px;
+#sucursalancla{ padding-top: 20px; }
+
+#sucursales{
+ 	padding: 5px 0px 30px 0px;
  }
 
  .divSucursales{
@@ -147,8 +149,10 @@ figure{
  }
 
 #institucional{
-	padding: 50px 0px 60px 0px;
+	padding: 0px 0px 0px 0px;
 }
+
+#institucionalancla{padding-top:50px;}
 
 #institucional h2{
 	color: #000a7b;
@@ -176,11 +180,12 @@ figure{
  	font-size: .7rem;
  	font-family: Arial, sans-serif;
  	text-align: justify;
- 	margin: 0 10px 10px 10px; 
+ 	margin: 0px 10px 10px 10px; 
  }
 
-
+#anclacontactosection{padding-bottom: 45px;}
 #contactosection{
+	margin-top: 5px;
 	background: #efefef;
 }
 
