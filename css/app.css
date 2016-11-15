@@ -3,6 +3,7 @@
 
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200; }*/
+
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -24,11 +25,31 @@ figure{
 
 }
 
+.close-button{
+	color: #FFFFFF!important;
+	z-index: 10;
+	/*padding: .9rem;*/
+}
+
+.vertical.menu{
+	background-color: #2F335A;	
+}
+
+.vertical.menu li a{
+	color: #fff;	
+}
+
+/*edita el background del menu offcanvas*/
+.off-canvas-wrapper{
+	background-color: #2F335A;	
+}
+
 .barMenu{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
-	padding: 10px 5px 8px 5px;
+	/*padding: 10px 5px 10px 5px;*/
+	padding: .9rem .4rem .9rem .4rem ;
 	font-size: 1em;
 	width: 100%;
 }
@@ -46,6 +67,10 @@ figure{
 	width: 100%;
 }
 
+.burgermenu{
+	color: #FFFFFF;
+	font-size: 1.9rem;
+}
 
 .menu .active > a {
     color: #FFCA0D!important;
@@ -61,19 +86,33 @@ figure{
 	background: #E6E6E6;
 }
 
+/*Editando estilos del slider orbit*/
 .orbit-bullets button{width: 14px!important; height: 14px!important; }
 .orbit-bullets button:hover {
       background-color: #000A7B!important; }
-    .orbit-bullets button.is-active {
-      background-color: #000A7B!important; }
+.orbit-bullets button.is-active {
+  background-color: #000A7B!important; }
 
 .nabullets{
-	margin:0.6rem!important;
+	margin:0.3rem!important;
 }
 
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 0;
+  color: #fefefe;
+  background-color: rgba(10, 10, 10, 0.5); }
+/*-----------*/
 
  #sucursales{
- 	padding: 40px 0px 30px 0px;
+ 	padding: 20px 0px 30px 0px;
+ }
+
+ .divSucursales{
+ 	margin-top: 20px;
  }
 
  .imgsuc{
@@ -321,7 +360,7 @@ figure{
 #footerSection{
 	background-color: #636363;
 	color: #d5d5d5;
-	padding: 1.7rem 0 .85rem 0;
+	padding: 1rem 0 .3rem 0;
 }
 
 #footerSection ul{
