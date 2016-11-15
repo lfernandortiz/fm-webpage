@@ -1,10 +1,12 @@
 $(document).foundation();
+
+//close off-canvas
 $('.off-canvas a').on('click', function() {
   $('.off-canvas').foundation('close');
 });
 
-
-  $('.menu li a').click(function(){
+//activa menu
+ $('.menu li a').click(function(){
     $('li a').removeClass("activation");
     $(this).addClass("activation");
 });
