@@ -147,7 +147,7 @@ figure{
 .activation{
 	color: #FFFFFF!important ;
     /*font-weight: bold;    */
-    background: #ec1d23; 
+    background: #2B71DA; 
     border-radius: 3px;
     box-shadow: 0px 0px 1px #A6A6A6;
 }
@@ -341,7 +341,7 @@ figure{
 	margin-bottom: .6em;
 	max-width: 350px;
 	width: calc(100% - 2em);
-	vertical-align: top;
+	vertical-align: top;	
 }
 
 .input__field {
@@ -353,7 +353,7 @@ figure{
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #6C6C6C;
+	color: #101010;
 	font-weight: 400;
 	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
