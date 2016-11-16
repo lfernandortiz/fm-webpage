@@ -515,3 +515,14 @@ figure{
 #logoDromed{
 	width: 170px;
 }
+
+.copyright a{
+	font-size: .45rem;
+	text-align: left;
+	color: #D5D5D5;
+}
+
+.copyright a:hover{
+	color:  #00BAFF;
+	box-shadow: 0px 1px 1px #525252;
+}
