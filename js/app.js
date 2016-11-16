@@ -11,8 +11,7 @@ $('.off-canvas a').on('click', function() {
     $(this).addClass("activation");
 });
 
-
-//activa menu
+//activa menu off-canvas
  $('.vertical .menu li a').click(function(){
     $('li a').removeClass("activation");
     $(this).addClass("activation");
