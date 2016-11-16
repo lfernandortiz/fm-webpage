@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
 
-.row{ border: 2px solid #0FBCF5; }
-.column{ border: 2px solid #F3C200;}
+/*.row{ border: 2px solid #0FBCF5; }
+.column{ border: 2px solid #F3C200;}*/
 
 @font-face {
   font-family: 'icomoonpage';
@@ -83,10 +83,11 @@ figure{
 	
 }
 
+
 .vertical.menu li {
 	padding: .4rem 0;
 	border-bottom: 1px solid #01052A;
-    box-shadow: 0px 1px 1px 0px #295FA2;
+    /*box-shadow: 0px 1px 1px 0px #295FA2;*/
 }
 
 .redesMenu{
@@ -145,7 +146,7 @@ figure{
 
 
 .activation{
-	color: #1200FF!important ;
+	color: #FFFFFF!important ;
     /*font-weight: bold;    */
     background: #ec1d23; 
     border-radius: 3px;
@@ -298,6 +299,7 @@ figure{
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	line-height: 20px;
+	margin-top: 5px;
 }
 
 .infosection i{
@@ -313,13 +315,12 @@ figure{
 }
 
 .inforow .small-1{
-	padding: 0;
+	padding: 0px;
+	padding-left: 5px;
 }
 
+
 /******** Yoshiko ********/
-.formularioContent{
-	
-}
 
 .input {
 	position: relative;

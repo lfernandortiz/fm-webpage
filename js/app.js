@@ -10,3 +10,10 @@ $('.off-canvas a').on('click', function() {
     $('li a').removeClass("activation");
     $(this).addClass("activation");
 });
+
+
+//activa menu
+ $('.vertical .menu li a').click(function(){
+    $('li a').removeClass("activation");
+    $(this).addClass("activation");
+});
