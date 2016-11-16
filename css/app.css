@@ -99,6 +99,7 @@ figure{
 
 .barMenu{
 	background: #000A7B;
+	background: #389B48;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
@@ -191,13 +192,17 @@ figure{
  	border: 2px solid #C1C1C1
  }
 
+#serviciosAncla{
+	padding: 10px 0;
+}
  #serviciosSection{
  	 padding: 10px 0px 40px 0px;
  	 /*background-color: #000A7B;*/
  	 /*background-color: #8cc11e;*/
  	 /*background-color: #37A64C;*/
+ 	 background-color: #389B48;
  	 background-color: #FF0000;
- 	 background-color: #FFCA0D;
+ 	 background-color: #fed859;
  }
 
  .sectiontitle{
