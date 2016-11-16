@@ -366,12 +366,12 @@ figure{
 .input__label {
 	display: inline-block;
 	float: right;
-	padding: 0 1em;
+	padding: 0 .9em;
 	width: 40%;
 	color: #696969;
 	font-weight: bold;
 	/*font-size: 80%;*/
-	font-size: 70.25%;
+	font-size: .8rem;
 
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -432,9 +432,9 @@ figure{
 
 .input__label-content--yoshiko {
 	color: #373737;
-	padding: 0.25em 0;
+	padding: 0.35em 0;
 	-webkit-transition: -webkit-transform 0.25s;
-	transition: transform 0.25s;
+	transition: transform 0.01s;
 	-webkit-transition-timing-function: ease-in-out;
 	transition-timing-function: ease-in-out;
 }
@@ -462,8 +462,8 @@ figure{
 
 .input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
 .input--filled .input__label-content--yoshiko {
-	-webkit-transform: translate3d(0, 100%, 0);
-	transform: translate3d(0, 100%, 0);
+	-webkit-transform: translate3d(0, 120%, 0);
+	transform: translate3d(0, 120%, 0);
 }
 
 .input__field--yoshiko:focus + .input__field--yoshiko,
