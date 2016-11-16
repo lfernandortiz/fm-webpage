@@ -98,8 +98,8 @@ figure{
 
 
 .barMenu{
-	background: #000A7B;
 	background: #389B48;
+	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
@@ -151,6 +151,10 @@ figure{
     border-radius: 3px;
     box-shadow: 0px 0px 1px #A6A6A6;
 }
+.activationredes{
+	background: none;
+    box-shadow: 0px 0px 1px #A6A6A6;
+}
 
 #iniciosection{
 	background: #E6E6E6;
@@ -177,7 +181,7 @@ figure{
   background-color: rgba(10, 10, 10, 0.5); }
 /*-----------*/
 
-#sucursalancla{ padding-top: 10px; }
+#sucursalancla{ padding-top: 15px; }
 
 #sucursales{
  	padding: 5px 0px 30px 0px;
@@ -193,7 +197,7 @@ figure{
  }
 
 #serviciosAncla{
-	padding: 10px 0;
+	padding: 15px 0;
 }
  #serviciosSection{
  	 padding: 10px 0px 40px 0px;
@@ -208,6 +212,7 @@ figure{
  .sectiontitle{
 	color: #FFFFFF;
 	color: #000a7b;
+	font-weight: bold;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 25px;	
  }
@@ -517,7 +522,7 @@ figure{
 .row.redes { margin: 0 0 0 0 ;} 
 
 .iconoredes{
-	font-size: 2rem;
+	font-size: 2.35rem;
 }
 .iconoredes:hover{
 	color: #00BAFF;
@@ -545,6 +550,10 @@ figure{
 	box-shadow: 0px 1px 1px #525252;
 }
 
+.condiciones{
+	text-align: justify;
+}
+
 
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
@@ -555,11 +564,14 @@ figure{
 	#footerSection li{
 		margin: 0;
 		line-height: 1.8rem;
+		font-size: .79rem;
 		text-align: center;
 	}
 	.redes{
 		margin-bottom: 5px;
 	}
 
-
+	.titleRedes{
+		font-size: 1rem;
+	}
 }
