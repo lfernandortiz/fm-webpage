@@ -153,8 +153,6 @@ figure{
     box-shadow: 0px 0px 1px #A6A6A6;
 }
 
-
-
 #iniciosection{
 	background: #E6E6E6;
 }
@@ -197,7 +195,9 @@ figure{
 
  #serviciosSection{
  	 padding: 10px 0px 40px 0px;
- 	 background-color: #000A7B;
+ 	 /*background-color: #000A7B;*/
+ 	 /*background-color: #8cc11e;*/
+ 	 background-color: #37A64C;
  }
 
  .sectiontitle{
@@ -492,6 +492,7 @@ figure{
 	text-decoration: underline;
 }
 
+
 .redes{
 	color: #D5D5D5;
 	font-family: 'Lato', sans-serif;
@@ -521,6 +522,7 @@ figure{
 }
 
 .column.logodromed { padding: 0 0 0 0 ;} 
+
 #logoDromed{
 	width: 170px;
 }
@@ -534,4 +536,23 @@ figure{
 .copyright a:hover{
 	color:  #00BAFF;
 	box-shadow: 0px 1px 1px #525252;
+}
+
+
+/*Footer solo para small breakpoint*/
+@media screen and (max-width: 39.9375em) {
+	#footerSection ul{
+		font-size: .95rem;
+		text-align: center;
+	}
+	#footerSection li{
+		margin: 0;
+		line-height: 1.8rem;
+		text-align: center;
+	}
+	.redes{
+		margin-bottom: 5px;
+	}
+
+
 }
