@@ -261,8 +261,7 @@ function createMarkers(){
 			//crea el marcador para la oficina ppal
 		 	addMarkerWithTimeoutPpal(coordenadas, i * 100, 
 										sucursales[i][0], i, sucursales[i][3], sucursales[i][4], sucursales[i][5] );			
-		} else {
-						
+		} else {						
 			//creando los marcadores del mapa
 			addMarkerWithTimeout(coordenadas,	  //coordenadas del marker
 								 i * 50,		  //temporizador para la caida
@@ -290,7 +289,7 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 		var contents = 
 			'<div id="iw-container">' +
                 '<div class="iw-title">'+
-					'<img src="image/iconoFarmanorte.png" alt="logoFarmanorte">'+
+					'<img src="../images/iconoFarmanorte.png" alt="logoFarmanorte">'+
 					'<h3>Droguería '+ suc +'</h3>'+
 				'</div>'+
 				'<div class="iw-content">'+
@@ -332,7 +331,7 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
         	//registro del manejo de evento click para desplegar el objeto InfoWindow
 			window.setTimeout(function(){
 					//añadir un marker con GMap
-					urlMarker = "image/markFarmaAbierto.png";
+					urlMarker = "../images/markFarmaAbierto.png";
 					var mark = map.createMarker ({	
 					    position: position,
 					    icon: urlMarker,
@@ -360,10 +359,10 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 			if (diaDeLaSemana >= 1 && diaDeLaSemana <= 6) {
 				var est;
 				if( abierto(fechaActual, aLS, cLS) ){
-					urlMarker2 = "image/markFarmaAbierto.png";
+					urlMarker2 = "../images/markFarmaAbierto.png";
 					est = 'abierto';								
 				}else{
-					urlMarker2 = "image/markFarmaCerrado.png";
+					urlMarker2 = "../images/markFarmaCerrado.png";
 					est = 'cerrado';								
 				}//fin del else 
 				var hOrdinario ='<div class="layoutcontentbutton" id="infoHoradetalle">'+
@@ -405,10 +404,10 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 			if (diaDeLaSemana == 0 ) {
 				var est;
 				if( abierto(fechaActual, aDF, cDF) ){
-					urlMarker2 = "image/markFarmaAbierto.png";
+					urlMarker2 = "../images/markFarmaAbierto.png";
 					est = 'abierto';					
 				}else{
-					urlMarker2 = "image/markFarmaCerrado.png";
+					urlMarker2 = "../images/markFarmaCerrado.png";
 					est = 'cerrado';
 				}//fin del else 
 				var hOrdinario ='<div class="layoutcontentbutton">'+
@@ -503,7 +502,7 @@ function addMarkerWithTimeoutPpal(position, timeout, suc, i, dir, telefono, celu
 		var contentsp = 
 			'<div id="iw-container">' +
                 '<div class="iw-titleppal">'+
-					'<img src="image/iconoDromedicas.png" alt="logoDromedicas">'+
+					'<img src="../images/iconoDromedicas.png" alt="logoDromedicas">'+
 					'<h3>'+ suc +'</h3>'+
 				'</div>'+
 				'<div class="iw-contentppal">'+
@@ -516,7 +515,7 @@ function addMarkerWithTimeoutPpal(position, timeout, suc, i, dir, telefono, celu
 					//añadir un marker con GMap
 					var mark = map.createMarker ({	
 					    position: position,
-					    icon: "image/markDromedicas.png",
+					    icon: "../images/markDromedicas.png",
 						title: 'Dromedicas del Oriente',
 						infoWindow: {content:contentsp},
 						animation: google.maps.Animation.DROP,
@@ -584,8 +583,7 @@ function findMe(){
 	map.hideInfoWindows();//cierra el anterior infowindow
 	map.cleanRoute();//limpia toda la ruta
 	map.setZoom(16);
-	var coordsMarker = buscarMarcador( currentLat, currentLng);
-	
+	var coordsMarker = buscarMarcador( currentLat, currentLng);	
 	map.drawRoute({
 				origin: [currentLat, currentLng],
 				destination: coordsMarker,
@@ -600,8 +598,7 @@ function findMe(){
 }
 
 //Edicion del CSS para el objeto InfoWindows
-function editCssInfoWindowNormal(){
-			
+function editCssInfoWindowNormal(){			
 	//Desde aca se comienza la manipulacion del DOM del objeto Info Window
 	//nos apoyamos de jQuery
 	google.maps.event.addListener(infoWindowCustom, 'domready', function() {
@@ -811,7 +808,7 @@ function crearSucursal(lat, lng, suc,  dir, i, marker){
 				divmarkerElement.setAttribute("class", "divmarker");				
 					//creo el elemento img con el marker
 					var markerElement  = document.createElement("img")
-					markerElement.setAttribute("src", "image/markFarmaAbierto.png");
+					markerElement.setAttribute("src", "../images/markFarmaAbierto.png");
 				//creo el div clase detallesuc
 				var detallesucElement  = document.createElement("div");				
 				detallesucElement.setAttribute("class", "detallesuc");
