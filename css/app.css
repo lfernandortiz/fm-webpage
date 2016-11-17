@@ -205,6 +205,8 @@ figure{
  	 background-color: #0BC3D7;
  	 background-color: #CBD300;
  	 background-color: #fed859;
+ 	 /*background-color: #D4D4D4;*/
+ 
 
  }
 
@@ -236,7 +238,7 @@ figure{
  	height: 90px!important;
  	background-color: rgba(255, 255, 255, .85);
  	color: #000a7b;
- 	margin: 30px;
+ 	margin: 30px 15px 30px 15px;
  	vertical-align: middle;
 }
 
@@ -556,6 +558,9 @@ figure{
 
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
+	.servicioscontent{
+		margin-left: 10px;
+	}
 	#footerSection ul{
 		font-size: .95rem;
 		text-align: center;
