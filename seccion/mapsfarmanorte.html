@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sucursales Farmanorte</title>
+	<script 
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3lhlUmXlLXYgbTTeGMp89zM6Ym49p5YU" async defer>
+	</script> 	
+	<!-- <script 
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3lhlUmXlLXYgbTTeGMp89zM6Ym49p5YU&callback=initMap" async defer>
+	</script> -->	
+	<link rel="stylesheet" href="../css/maps-min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta name="HandheldFriendly" content="True">
+  	<meta name="MobileOptimized" content="320">
+	<!--Favicon touch-->	
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../images/manifest.json">
+	<link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff"> 
+	<!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Sucursales Farmanorte">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<!-- api_key_googlemaps_dromedicas  AIzaSyA3lhlUmXlLXYgbTTeGMp89zM6Ym49p5YU-->
+<body>
+<header id="headerMain">
+	<div class="header">
+		<a href="../index.html" title="Pagina Farmanorte"><img src="../images/iconoFarmanorte.png" alt="Icono Droguerias Farmanorte"></a>
+		<div class="title">
+			<h1 id="resetmapa" title="Resetear Mapa">Sucursales Farmanorte</h1>
+		</div>
+		<div class="buttonmenu" id="buttonmenu">			
+			<span class="zmdi zmdi-menu zmdi-hc-2x burgermenu" id="burgermenu"></span>			
+		</div>				
+	</div>
+	<nav class="menu" id="menu"> <!-- menu -->
+      <ul>
+      	<li id="closemenu" class="closemenu" title="Listado de Sucursales">
+          <span class="zmdi zmdi-close" id="closemenubutton">
+        </li>
+        <li id="sucursales" title="Listado de Sucursales">
+          <i class="zmdi zmdi-pin"></i>Sucursales
+        </li>
+        <li id="mascercana" title="Ubica la sucursal mas cercana">
+         	<i class="zmdi zmdi-gps-dot"></i>Ubicar la mas cercana
+        </li>
+      </ul>
+	</nav>
+</header>
+<section class="errorglocate" id="errorglocate">
+	<b><i class="zmdi zmdi-globe-lock"></i> Geolocalizaci&oacute;n Deshabilitada - </b>Active este servicio en su dispositivo.
+</section>
+<section id="mainc" >
+	<div class="encuentranos" id="encuentranos">
+		<input type="hidden" id="sucursalesControl" value="false">
+		<div class="close"><span class="zmdi zmdi-close" id="close"></spa></div>
+		<div class="headenc">
+			<h2>Encuentranos</h2>			
+		</div>
+		<div class="contentsuc scrollbar" id="contenedorSucursales">			
+			<!-- <a href="#" class="linkdiv">
+				<div class="divsucursal">
+					<div class="infosuc">
+						<div class="divmarker"><img src="image/marker.png" alt=""></div>
+						<div class="detallesuc">
+							<h3 id="sucursalNombre">Farmanorte 01</h3>
+							<p id="dirSucursal">Avenida centro juanto .</p>
+						</div>
+					</div>
+					<div class="distancediv">
+						<p id="distanciaSuc">500mtrs</p>
+					</div>
+				</div>	
+			</a> -->	
+		</div> <!-- fin del div contentsuc -->
+		<div class="divcerca">
+			<button class="cercabutton" id="cercabutton">
+				<img src="images/marker.png" alt="Cerca de mi">
+				Cerca de mi
+			</button>
+		</div>
+	</div>	
+	<div id="map"></div>		
+	<div class="reset"><button class="buttonreset" id="resetButton" title="Resetear Mapa">Reestablecer</button></div>
+</section>	
+
+<!-- <footer class="footer">
+	<div class="social">
+		<a href="" id="facebook"><i class="zmdi zmdi-facebook"></i></a>
+		<a href="" id="twitter"><i class="zmdi zmdi-twitter"></i></a>
+		<a href="" id="instagram"><i class="zmdi zmdi-instagram"></i></a>
+	</div>
+</footer> -->
+
+
+</body>
+<script src="../js/gmaps.js"></script>  
+<script src="../js/jquery.js"></script>  
+<script src="../js/jquery-ui.js"></script>  
+<script src="../js/lucid.js"></script>  
+<script src="../js/jquery.fancy-scroll.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>    
+<script src="../js/softdromedicas.js"></script>  
+</html>
