@@ -920,6 +920,11 @@ border-top: 1px solid white;
 		font-size: .75rem;
 		margin-left: 1px;		
 	}
+
+	.contentestado:nth-child(2) {
+    	border-right: none;
+	}
+	
 	.gm-style-iw:nth-child(1){
 		display: block;
 	}
@@ -1111,11 +1116,12 @@ border-top: 1px solid white;
 
 	.infoestado{
 		font-size: .55rem;
-		font-weight: bold;		
+		font-weight: bold;	
 	}
 	.layoutcontentbutton{
 		justify-content: center;
 	}
+
 	.titleestado h4{
 		font-size: .5rem;
 	}
