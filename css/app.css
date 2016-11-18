@@ -65,39 +65,31 @@ figure{
 	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
-
 }
 
 .close-button{
 	color: #FFFFFF!important;
 	z-index: 10;	
 }
-
 .callout{
 	padding: .9rem;
 	color: #004C1B;
 }
-
 .callout h5{
 	font-size: .85rem;
 	margin-bottom: .4rem;
 	color: #003C04;
-	
-
 }
-
 .callout p{
 	font-size: .78rem;
 	margin-bottom: 0;
 }
-
 .error-container p,
 .error-container i{	
 	margin: 0;
 	font-size: .95rem!important;
 	color: #FA4747
 }
-
 .success .close-button{
 	color: #4A4A4A!important;
 	font-size: 1.5rem;
