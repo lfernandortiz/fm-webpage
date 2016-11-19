@@ -67,23 +67,44 @@ figure{
 	font-family: 'Lato', sans-serif;
 }
 
-.close-button{
+.success.callout.close-button,
+.alert.callout.close-button{
 	color: #FFFFFF!important;
 	z-index: 10;	
 }
 .callout{
+	margin-bottom: 22px!important;
+}
+.success .callout{
 	padding: .9rem;
 	color: #004C1B;
+	
 }
-.callout h5{
+.success.callout h5{
 	font-size: .85rem;
 	margin-bottom: .4rem;
 	color: #003C04;
 }
-.callout p{
-	font-size: .78rem;
+.success.callout p{
+	font-size: .83rem;
 	margin-bottom: 0;
 }
+
+.alert .callout{
+	padding: .9rem;
+	color: #4C0005;	
+}
+
+.alert.callout h5{
+	font-size: .85rem;
+	margin-bottom: .4rem;
+	color: #3C0004;
+}
+.alert.callout p{
+	font-size: .83rem;
+	margin-bottom: 0;
+}
+
 .error-container p,
 .error-container i{	
 	margin: 0;
