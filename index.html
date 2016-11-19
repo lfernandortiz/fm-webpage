@@ -226,7 +226,7 @@
                 <div class="column small-12">
                   <h3>Escribenos</h3>
                 </div> 
-                <div class="success callout" style="display: none;" data-closable>
+                <div class="success callout" style="display: none;" id="calloutForm" data-closable>
                   <h5>Su mensaje ha sido enviado satisfactoriamente.</h5>
                   <p>Gracias por colocarse en contacto con nosotros. En breve nos contactaremos.</p>
                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
@@ -236,7 +236,7 @@
                 <div class="row align-spaced">
                   <div class="column small-12 collapse text-center">
                     <span class="input input--yoshiko">
-                      <input class="input__field input__field--yoshiko" type="text" id="input-10" />
+                      <input class="input__field input__field--yoshiko" type="text" id="nombreCliente" />
                       <label class="input__label input__label--yoshiko" for="input-10">
                         <span class="input__label-content input__label-content--yoshiko" data-content="Nombre">Nombre</span>
                       </label>
@@ -247,7 +247,7 @@
                   </div>
                   <div class="column small-12 collapse text-center">                    
                     <span class="input input--yoshiko">
-                      <input class="input__field input__field--yoshiko" type="email" required id="input-10" />
+                      <input class="input__field input__field--yoshiko" type="email" required id="emailCliente" />
                       <label class="input__label input__label--yoshiko" for="input-10">
                         <span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
                       </label>
@@ -255,7 +255,7 @@
                   </div>
                   <div class="column small-12 collapse text-center">
                     <span class="input input--yoshiko">
-                      <input class="input__field input__field--yoshiko" type="text" id="input-10" />
+                      <input class="input__field input__field--yoshiko" type="text" id="telefonoCliente" />
                       <label class="input__label input__label--yoshiko" for="input-10">
                         <span class="input__label-content input__label-content--yoshiko" data-content="Tel&eacute;fono">Tel&eacute;fono</span>
                       </label>
@@ -264,15 +264,15 @@
                 </div>
                 <div class="column small-12 comentarios text-center">
                   <span class="input input--yoshiko">
-                    <textarea class="input__field input__field--yoshiko" name="comentario" id="" cols="30" rows="5" id="comentario"></textarea>
+                    <textarea class="input__field input__field--yoshiko" name="comentario" id="comentarioCliente" cols="30" rows="5" id="comentario"></textarea>
                     <label class="input__label input__label--yoshiko" for="input-10">
                       <span class="input__label-content input__label-content--yoshiko" data-content="Comentarios">Comentarios</span>
                     </label>
                   </span>
                 </div>
                 <div class="column small-12">
-                  <button type="button" class=" button expanded show-for-small-only">Enviar</button>
-                  <button type="button" class="button show-for-medium float-right">Enviar</button>
+                  <button type="button" id="enviarFormSmall" class=" button expanded show-for-small-only">Enviar</button>
+                  <button type="button" id="enviarForm" class="button show-for-medium float-right">Enviar</button>
                 </div>
               </form>
               </div>
