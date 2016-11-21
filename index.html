@@ -233,7 +233,7 @@
                   <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="alert callout" style="display: block;" id="calloutFormAlert" data-closable>                  
+                <div class="alert callout" style="display: none;" id="calloutFormAlert" data-closable>                  
                   <h5>Tenemos problemas para recibir su informaci&oacute;n.</h5>
                   <p>Si el problema persiste intentelo mas tardes.</p>                 
                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
@@ -241,6 +241,9 @@
                   </button>
                 </div>
                 <div class="row align-spaced">
+                 <div data-abide-error class="row columns small-12 text-center error-container" style="display: block;" >
+                      <p><i class="fi-alert"></i> Debe ingresar su nombre</p>
+                  </div>
                   <div class="column small-12 collapse text-center">
                     <span class="input input--yoshiko" id="span0">
                       <input class="input__field input__field--yoshiko" type="text" id="nombreCliente" />

@@ -35,11 +35,10 @@ function iniciar() {
 	botonForm.addEventListener("click",  enviarFormulario, false);
 	botonFormSmall.addEventListener("click",  enviarFormulario, false);
 
-	document.getElementById("nombreCliente").addEventListener( "blur" , validarNombre, false),
 }
 
 function enviarFormulario(){	
-	validarFormulario();
+	
 	var url = "modules/processform.php?";
 	var nombre = document.getElementById("nombreCliente").value;
 	var email = document.getElementById("emailCliente").value;
@@ -75,14 +74,7 @@ function stateChange() {
 	} 
 }
 
-function validarFormulario(){
-	var nombre  = document.getElementById("nombreCliente").value;
-	if(nombre == " " || nombre == ""){
-		
-		return false
 
-	}
-}
 
 function validateEmail(email){        
    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
