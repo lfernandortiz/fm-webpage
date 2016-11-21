@@ -78,6 +78,8 @@ function stateChange() {
 function validarFormulario(){
 	var nombre  = document.getElementById("nombreCliente").value;
 	if(nombre == " " || nombre == ""){
+		
+		return false
 
 	}
 }
