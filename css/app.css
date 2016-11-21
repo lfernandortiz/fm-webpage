@@ -75,19 +75,20 @@ figure{
 .callout{
 	margin-bottom: 22px!important;
 }
-.success .callout{
-	padding: .9rem;
-	color: #004C1B;
-	
+.success.callout{
+	padding: .9rem;		
 }
+
 .success.callout h5{
 	font-size: .85rem;
-	margin-bottom: .4rem;
-	color: #003C04;
+	margin-bottom: .4rem;	
+	color: #001C0A;
+	
 }
 .success.callout p{
-	font-size: .83rem;
+	font-size: .85rem;
 	margin-bottom: 0;
+	color: #005E21;
 }
 
 .alert .callout{

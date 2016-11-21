@@ -20,18 +20,26 @@ $('.off-canvas a').on('click', function() {
 
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
+var mensajes = [ "Ingrese su nombre completo",
+				 "Ingrese una direccion de correo valida" , 
+				 "Es necesario una direccion de correo eletrónico",
+				 "Debe colocar un número de telefono de contacto",
+				 "Ingrese su comentario"];
+
 function iniciar() {
 	var sonido = document.getElementById("jigle");
 	sonido.play();
-	console.log("soy del app.js");
 	//registro de eventos de envio del formulario
 	var botonForm = document.getElementById("enviarForm");
 	var botonFormSmall = document.getElementById("enviarFormSmall");
 	botonForm.addEventListener("click",  enviarFormulario, false);
 	botonFormSmall.addEventListener("click",  enviarFormulario, false);
+
+	document.getElementById("nombreCliente").addEventListener( "blur" , validarNombre, false),
 }
 
 function enviarFormulario(){	
+	validarFormulario();
 	var url = "modules/processform.php?";
 	var nombre = document.getElementById("nombreCliente").value;
 	var email = document.getElementById("emailCliente").value;
@@ -52,7 +60,8 @@ function stateChange() {
 	if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {		
 		var response = asyncRequest.responseText;
 		console.log(">"+response);
-		if(response === "true"){			
+		if(response === "true"){	
+			// reestablece el formulario		
 			document.getElementById("nombreCliente").value = "";
 			document.getElementById("emailCliente").value = "";
 			document.getElementById("telefonoCliente").value = "";
@@ -62,10 +71,20 @@ function stateChange() {
 			document.getElementById("span1").setAttribute("class","input input--yoshiko") ;
 			document.getElementById("span2").setAttribute("class","input input--yoshiko") ;
 			document.getElementById("span3").setAttribute("class","input input--yoshiko") ;
-
-
 		}			 
 	} 
 }
+
+function validarFormulario(){
+	var nombre  = document.getElementById("nombreCliente").value;
+	if(nombre == " " || nombre == ""){
+
+	}
+}
+
+function validateEmail(email){        
+   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+   return emailPattern.test(email);   
+ }  
 
 window.addEventListener("load", iniciar, false);
