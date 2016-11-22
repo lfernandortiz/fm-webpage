@@ -463,6 +463,11 @@ figure{
 	padding: 0;
 }
 
+.is-invalid-input:not(:focus) {
+    background-color: rgba(198,15,19,.1);
+    border-color: #c60f13;
+}
+
 .input__label--yoshiko {
 	width: 100%;
 	text-align: left;
@@ -522,11 +527,11 @@ figure{
 }
 
 .button.resetButton{
-	background: #F87952;
+	background: #F96F65;
 }
 
 .button.resetButton:hover{
-	background: #D14A21;
+	background: #E24034;
 }
 
 
