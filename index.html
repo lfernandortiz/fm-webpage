@@ -198,6 +198,7 @@
             </div>
           </div>
           <div class="row">
+            <!-- Info contacto  column-->
             <div class="column small-12 medium-6 infosection">
               <div class="row">
                 <div class="column small-12">
@@ -219,51 +220,43 @@
                 </div>
               </div>
             </div>
-            <!-- form contacto -->
+            <!-- form contacto column-->
             <div class="column small-12 medium-6 infosection">
-              <div class="row">
-              <form action="enviarcorreo.php" method="post">
+              <form action="enviarcorreo.php" method="post" data-abide novalidate>
                 <div class="column small-12">
                   <h3>Escribenos</h3>
-                </div> 
+                </div>
                 <div class="success callout" style="display: none;" id="calloutForm" data-closable>
                   <h5>Su mensaje ha sido enviado satisfactoriamente.</h5>
-                   <p>Gracias por colocarse en contacto con nosotros.</p>
+                  <p>Gracias por colocarse en contacto con nosotros.</p>
                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                   <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="alert callout" style="display: none;" id="calloutFormAlert" data-closable>                  
+                <div data-abide-error class="alert callout" style="display: none;" id="calloutFormAlert" data-closable>
                   <h5>Tenemos problemas para recibir su informaci&oacute;n.</h5>
-                  <p>Si el problema persiste intentelo mas tardes.</p>                 
+                  <p>Si el problema persiste intentelo mas tardes.</p>
                   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                   <span aria-hidden="true">&times;</span>
                   </button>
-                </div>
-                <div class="row align-spaced">
-                 <div data-abide-error class="row columns small-12 text-center error-container" style="display: block;" >
-                      <p><i class="fi-alert"></i> Debe ingresar su nombre</p>
-                  </div>
-                  <div class="column small-12 collapse text-center">
+                </div>                
+                <div class="column small-12 collapse text-center formin">
                     <span class="input input--yoshiko" id="span0">
-                      <input class="input__field input__field--yoshiko" type="text" id="nombreCliente" />
+                      <input class="input__field input__field--yoshiko" pattern="[a-zA-Z]+" type="text" id="nombreCliente" required/>
                       <label class="input__label input__label--yoshiko" for="input-10">
                         <span class="input__label-content input__label-content--yoshiko" data-content="Nombre">Nombre</span>
                       </label>
                     </span>
                   </div>
-                  <div data-abide-error class="row columns small-12 text-center error-container" style="display: none;" >
-                      <p><i class="fi-alert"></i> Direccion de correo no valido</p>
-                  </div>
-                  <div class="column small-12 collapse text-center">                    
+                  <div class="column small-12 collapse text-center formin">                    
                     <span class="input input--yoshiko" id="span1">
-                      <input class="input__field input__field--yoshiko" type="email" id="emailCliente" />
+                      <input class="input__field input__field--yoshiko" type="email" id="emailCliente" required/>
                       <label class="input__label input__label--yoshiko" for="input-10">
                         <span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
                       </label>
                     </span>
                   </div>
-                  <div class="column small-12 collapse text-center">
+                  <div class="column small-12 collapse text-center formin">
                     <span class="input input--yoshiko" id="span2">
                       <input class="input__field input__field--yoshiko" type="text" id="telefonoCliente" />
                       <label class="input__label input__label--yoshiko" for="input-10">
@@ -271,23 +264,24 @@
                       </label>
                     </span>
                   </div>
-                </div>
+                
                 <div class="column small-12 comentarios text-center">
                   <span class="input input--yoshiko" id="span3">
-                    <textarea class="input__field input__field--yoshiko" name="comentario" id="comentarioCliente" cols="30" rows="5" id="comentario"></textarea>
+                    <textarea class="input__field input__field--yoshiko" name="comentario" id="comentarioCliente" pattern="[a-zA-Z]+" cols="30" rows="5" id="comentario" required></textarea>
                     <label class="input__label input__label--yoshiko" for="input-10">
                       <span class="input__label-content input__label-content--yoshiko" data-content="Comentarios">Comentarios</span>
                     </label>
                   </span>
                 </div>
                 <div class="column small-12">
-                  <button type="button" id="enviarFormSmall" class=" button expanded show-for-small-only">Enviar</button>
-                  <button type="button" id="enviarForm" class="button show-for-medium float-right">Enviar</button>
-                </div>
+                  <button  id="enviarFormSmall" type="submit" value="Submit" class=" button expanded show-for-small-only">Enviar</button>
+                  <button  id="enviarForm" type="submit" value="Submit" class="button show-for-medium float-right">Enviar</button>
+                  <button class="button expanded float-right resetButton show-for-small-only" type="reset" value="Reset">Reset</button>
+                  <button class="button float-right resetButton show-for-medium" type="reset" value="Reset">Reset</button>
+                </div> 
               </form>
-              </div>
             </div>
-          </div>
+          </div> <!-- End row contactosection -->         
         </section>
         <!-- footer -->
         <footer id="footerSection">

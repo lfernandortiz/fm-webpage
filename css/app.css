@@ -458,6 +458,11 @@ figure{
 	padding: 0;
 }
 
+
+.formin{
+	padding: 0;
+}
+
 .input__label--yoshiko {
 	width: 100%;
 	text-align: left;
@@ -515,6 +520,20 @@ figure{
 	background-color: transparent;
 	border-color: #000a7b;
 }
+
+.button.resetButton{
+	background: #F87952;
+}
+
+.button.resetButton:hover{
+	background: #D14A21;
+}
+
+
+.resetButton{
+	margin-right: 1rem;
+}
+
 /****/
 
 #footerSection{

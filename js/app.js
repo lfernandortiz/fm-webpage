@@ -17,6 +17,9 @@ $('.off-canvas a').on('click', function() {
     $(this).addClass("activation");                                            
 });
 
+$("#nombreCliente").on("invalid.zf.abide", function(ev,el) {
+  // alert(ev.value);
+});
 
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
