@@ -70,6 +70,7 @@ function stateChange() {
 		if(response === "true"){	
 			// reestablece el formulario		
 			reestrablecerFormulario();
+			document.getElementById("calloutForm").style.display = 'block';
 		}			 
 	} 
 }
