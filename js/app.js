@@ -59,7 +59,7 @@ function enviarFormulario(){
 			asyncRequest.send(null);
 		} catch (excepcion) {}
 	}else{
-
+		document.getElementById("calloutFormAlert").style.display = 'block';
 	}
 }
 
@@ -71,6 +71,7 @@ function stateChange() {
 			// reestablece el formulario		
 			reestrablecerFormulario();
 			document.getElementById("calloutForm").style.display = 'block';
+			document.getElementById("calloutFormAlert").style.display = 'none';
 		}			 
 	} 
 }
@@ -79,7 +80,19 @@ function validarFormulario(){
 	var valido = true;
 	document.getElementById("nombreCliente").addEventListener("invalid.zf.abide",function(ev,el) {
   		valido = false;
+  		document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
+		document.getElementById("nombreCliente").value = "";
+		document.getElementById("nombreCliente").blur();
+		document.getElementById("nombreCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
 	});
+
+	if(document.getElementById("nombreCliente").value == "" || document.getElementById("nombreCliente").value == ""){
+		valido = false;
+  		document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
+		document.getElementById("nombreCliente").value = "";
+		document.getElementById("nombreCliente").blur();
+		document.getElementById("nombreCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
+	}
 
 	document.getElementById("emailCliente").addEventListener("invalid.zf.abide",function(ev,el) {
   		valido = false;
@@ -90,12 +103,20 @@ function validarFormulario(){
 		document.getElementById("span1").setAttribute("class","input input--yoshiko") ;
 		document.getElementById("emailCliente").value = "";
 		document.getElementById("emailCliente").blur();
-		document.getElementById("emailCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input")
+		document.getElementById("emailCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
 	}
 
 	document.getElementById("comentarioCliente").addEventListener("invalid.zf.abide",function(ev,el) {
   		valido = false;
 	});
+
+	if(document.getElementById("comentarioCliente").value == "" || document.getElementById("comentarioCliente").value == ""){
+		valido = false;
+  		document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
+		document.getElementById("comentarioCliente").value = "";
+		document.getElementById("comentarioCliente").blur();
+		document.getElementById("comentarioCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
+	}
 
 	return valido;
 }
@@ -109,6 +130,8 @@ function reestrablecerFormulario(){
 	document.getElementById("span1").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span2").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;
+
+	document.getElementById("calloutForm").style.display = 'none';
 }
 
 function validateEmail(email){        
