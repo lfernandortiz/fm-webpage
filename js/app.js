@@ -50,8 +50,7 @@ function enviarFormulario(){
 		var email = document.getElementById("emailCliente").value;
 		var telefono = document.getElementById("telefonoCliente").value;
 		var comentario = document.getElementById("comentarioCliente").value;
-		url += "name=" + nombre + "&email=" + email + "&telefono=" + telefono + "&comentario=" + comentario;
-		console.log(url)
+		url += "nombrecliente=" + nombre + "&email=" + email + "&telefono=" + telefono + "&comentario=" + comentario;
 		try {
 			asyncRequest = new XMLHttpRequest();
 			asyncRequest.addEventListener(
@@ -67,7 +66,6 @@ function enviarFormulario(){
 function stateChange() {
 	if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {		
 		var response = asyncRequest.responseText;
-		console.log(">"+response);
 		if(response === "true"){	
 			// reestablece el formulario		
 			reestrablecerFormulario();
