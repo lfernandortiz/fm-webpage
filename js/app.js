@@ -46,7 +46,7 @@ function iniciar() {
 
 
 function enviarFormulario(){	
-	console.log(validarFormulario());
+	
 	if(validarFormulario()){
 		var url = "modules/processform.php?";
 		var nombre = document.getElementById("nombreCliente").value;
@@ -133,22 +133,30 @@ function reestrablecerFormulario(){
 	document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span1").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span2").setAttribute("class","input input--yoshiko") ;
-	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;
+	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;	
 
-	document.getElementById("calloutForm").style.display = 'none';
+	
+	if(isHidden(document.getElementById("calloutFormAlert"))){
+		document.getElementById("calloutFormAlert").style.display = 'none';	
+	}
+	if(isHidden(document.getElementById("calloutForm"))){
+		document.getElementById("calloutForm").style.display = 'none';	
+	}
+
+
 }
 
-//oculta el callout allert luego de perder el foco el email
+
+//oculta el callout allert luego de perder el foco el email input
 function resetCalloutAlert(){
 	if(validateEmail(document.getElementById("emailCliente").value)){
 		if( isHidden(document.getElementById("calloutFormAlert"))){
-			console.log("ocultando callout, email valido...");
 			document.getElementById("calloutFormAlert").style.display = 'none';	
 		}
 	}
 }
 
-
+//valida si contiene el valor block para la propiedad display en un objeto object
 function isHidden(el) {
     var style = window.getComputedStyle(el);
     return (style.display === 'block');
