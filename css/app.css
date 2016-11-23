@@ -3,6 +3,7 @@
 
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200;}*/
+/*a{ border: 2px solid #F3C200;}*/
 
 @font-face {
   font-family: 'icomoonpage';
@@ -58,13 +59,6 @@ figure{
 
 #scrollSticky{
 	z-index: 99 ;	
-}
-
-.menuSection{
-	width: 100%;
-	background: #000A7B;
-	color: white;
-	font-family: 'Lato', sans-serif;
 }
 
 .success.callout.close-button,

@@ -4,7 +4,7 @@
 	$telefono = $_GET['telefono'];
 	$comentario = $_GET['comentario'];
 
-
+echo $nombre." ".$email." ".$telefono." ".$comentario;
 
 // try{
 // 	require 'lib/PHPMailer/PHPMailerAutoload.php';

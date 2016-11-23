@@ -17,9 +17,6 @@ $('.off-canvas a').on('click', function() {
     $(this).addClass("activation");                                            
 });		
 
-
-
-
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
 var mensajes = [ "Ingrese su nombre completo",
