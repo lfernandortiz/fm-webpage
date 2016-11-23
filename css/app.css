@@ -3,7 +3,7 @@
 
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200;}*/
-/*a{ border: 2px solid #F3C200;}*/
+
 
 @font-face {
   font-family: 'icomoonpage';
@@ -59,56 +59,6 @@ figure{
 
 #scrollSticky{
 	z-index: 99 ;	
-}
-
-.success.callout.close-button,
-.alert.callout.close-button{
-	color: #FFFFFF!important;
-	z-index: 10;	
-}
-.callout{
-	margin-bottom: 22px!important;
-}
-.success.callout{
-	padding: .9rem;		
-}
-
-.success.callout h5{
-	font-size: .85rem;
-	margin-bottom: .4rem;	
-	color: #001C0A;
-	
-}
-.success.callout p{
-	font-size: .85rem;
-	margin-bottom: 0;
-	color: #005E21;
-}
-
-.alert .callout{
-	padding: .9rem;
-	color: #4C0005;	
-}
-
-.alert.callout h5{
-	font-size: .85rem;
-	margin-bottom: .4rem;
-	color: #3C0004;
-}
-.alert.callout p{
-	font-size: .83rem;
-	margin-bottom: 0;
-}
-
-.error-container p,
-.error-container i{	
-	margin: 0;
-	font-size: .95rem!important;
-	color: #FA4747
-}
-.success .close-button{
-	color: #4A4A4A!important;
-	font-size: 1.5rem;
 }
 
 .vertical.menu{
@@ -364,6 +314,56 @@ figure{
 .inforow .small-1{
 	padding: 0px;
 	padding-left: 5px;
+}
+
+.success.callout.close-button,
+.alert.callout.close-button{
+	color: #FFFFFF!important;
+	z-index: 10;	
+}
+.callout{
+	margin-bottom: 22px!important;
+}
+.success.callout{
+	padding: .9rem;		
+}
+
+.success.callout h5{
+	font-size: .85rem;
+	margin-bottom: .4rem;	
+	color: #001C0A;
+	
+}
+.success.callout p{
+	font-size: .85rem;
+	margin-bottom: 0;
+	color: #005E21;
+}
+
+.alert .callout{
+	padding: .9rem;
+	color: #4C0005;	
+}
+
+.alert.callout h5{
+	font-size: .85rem;
+	margin-bottom: .4rem;
+	color: #3C0004;
+}
+.alert.callout p{
+	font-size: .83rem;
+	margin-bottom: 0;
+}
+
+.error-container p,
+.error-container i{	
+	margin: 0;
+	font-size: .95rem!important;
+	color: #FA4747
+}
+.success .close-button{
+	color: #4A4A4A!important;
+	font-size: 1.5rem;
 }
 
 
