@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation();
 
 //close off-canvas
 $('.off-canvas a').on('click', function() {
@@ -15,7 +15,9 @@ $('.off-canvas a').on('click', function() {
  $('.vertical .menu li a').click(function(){
     $('li a').removeClass("activation");
     $(this).addClass("activation");                                            
-});
+});		
+
+
 
 
 //eventos para la multimedia y procesamiento del formulario
@@ -34,12 +36,14 @@ function iniciar() {
 	var botonFormSmall = document.getElementById("enviarFormSmall");
 	var resetBotonFormSmall = document.getElementById("resetFormSmall");
 	var resetBoton = document.getElementById("reset");
+	var emalField = document.getElementById("emailCliente");
 	botonForm.addEventListener("click",  enviarFormulario, false);
 	botonFormSmall.addEventListener("click",  enviarFormulario, false);
 	resetBoton.addEventListener("click",  reestrablecerFormulario, false);
 	resetBotonFormSmall.addEventListener("click",  reestrablecerFormulario, false);
-
+	emalField.addEvetListener("blur", resetCalloutAlert, false);
 }
+
 
 function enviarFormulario(){	
 	console.log(validarFormulario());
@@ -132,6 +136,22 @@ function reestrablecerFormulario(){
 	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;
 
 	document.getElementById("calloutForm").style.display = 'none';
+}
+
+//oculta el callout allert luego de perder el foco el email
+function resetCalloutAlert(){
+	if(validateEmail(document.getElementById("emailCliente").value)){
+		if( isHidden(document.getElementById("calloutFormAlert"))){
+			console.log("ocultando callout, email valido...");
+			document.getElementById("calloutFormAlert").style.display = 'none';	
+		}
+	}
+}
+
+
+function isHidden(el) {
+    var style = window.getComputedStyle(el);
+    return (style.display === 'block');
 }
 
 function validateEmail(email){        
