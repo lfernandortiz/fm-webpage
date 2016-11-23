@@ -1,4 +1,11 @@
 <?php
+	$nombre = $_GET['nombre'];
+	$email = $_GET['email'];
+	$telefono = $_GET['telefono'];
+	$comentario = $_GET['comentario'];
+
+
+
 // try{
 // 	require 'lib/PHPMailer/PHPMailerAutoload.php';
 //      $mail = new PHPMailer;

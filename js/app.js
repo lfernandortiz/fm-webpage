@@ -135,11 +135,11 @@ function reestrablecerFormulario(){
 	document.getElementById("span2").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;	
 
-	
-	if(isHidden(document.getElementById("calloutFormAlert"))){
+	//con la ayuda de la funcion predicada 
+	if(isShowing(document.getElementById("calloutFormAlert"))){
 		document.getElementById("calloutFormAlert").style.display = 'none';	
 	}
-	if(isHidden(document.getElementById("calloutForm"))){
+	if(isShowing(document.getElementById("calloutForm"))){
 		document.getElementById("calloutForm").style.display = 'none';	
 	}
 
@@ -150,14 +150,14 @@ function reestrablecerFormulario(){
 //oculta el callout allert luego de perder el foco el email input
 function resetCalloutAlert(){
 	if(validateEmail(document.getElementById("emailCliente").value)){
-		if( isHidden(document.getElementById("calloutFormAlert"))){
+		if( isShowing(document.getElementById("calloutFormAlert"))){
 			document.getElementById("calloutFormAlert").style.display = 'none';	
 		}
 	}
 }
 
 //valida si contiene el valor block para la propiedad display en un objeto object
-function isHidden(el) {
+function isShowing(el) {
     var style = window.getComputedStyle(el);
     return (style.display === 'block');
 }
