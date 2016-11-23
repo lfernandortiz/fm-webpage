@@ -41,7 +41,7 @@ function iniciar() {
 	botonFormSmall.addEventListener("click",  enviarFormulario, false);
 	resetBoton.addEventListener("click",  reestrablecerFormulario, false);
 	resetBotonFormSmall.addEventListener("click",  reestrablecerFormulario, false);
-	emalField.addEvetListener("blur", resetCalloutAlert, false);
+	emalField.addEventListener("blur", resetCalloutAlert, false);
 }
 
 
