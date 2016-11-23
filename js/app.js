@@ -118,7 +118,6 @@ function validarFormulario(){
 		document.getElementById("comentarioCliente").blur();
 		document.getElementById("comentarioCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
 	}
-
 	return valido;
 }
 
@@ -139,8 +138,6 @@ function reestrablecerFormulario(){
 	if(isShowing(document.getElementById("calloutForm"))){
 		document.getElementById("calloutForm").style.display = 'none';	
 	}
-
-
 }
 
 
