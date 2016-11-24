@@ -3,8 +3,8 @@
 try{
      include('../lib/PHPMailer/PHPMailerAutoload.php');
 
-     $nombre = $_GET['nombrecliente'];
-     $email = $_GET['email'];
+     $nombre = strToUpper(trim($_GET['nombrecliente']));
+     $email = strToLower(trim($_GET['email']));
      $telefono = $_GET['telefono'];
      $comentario = $_GET['comentario'];
 

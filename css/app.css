@@ -89,7 +89,7 @@ figure{
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
-	padding: .3rem .4rem .3rem .4rem ;
+	padding: .3rem .4rem .1rem .4rem ;
 	font-size: .85em;
 	width: 100%;
 }
@@ -617,12 +617,13 @@ figure{
 /**********spinner****************/
 .contentload{
 	z-index: 10;
-	background-color: rgba(0, 10, 123, .55);	
+	background-color: rgba(0, 10, 123, .45);	
 	position: absolute;
 	top: 0;	
 	height: 100%;
 	width: 94%;
 	padding-top: 5em;
+	border-radius: 5px;
 }
 
 .loader {
@@ -671,7 +672,11 @@ figure{
 	.servicioscontent{
 		margin-left: 10px;
 	}
-	
+
+	.contentload{
+		width: 90%;
+		
+	}
 
 	#footerSection ul{
 		font-size: .95rem;

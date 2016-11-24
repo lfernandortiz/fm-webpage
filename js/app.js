@@ -53,8 +53,7 @@ function enviarFormulario(){
 		url += "nombrecliente=" + nombre + "&email=" + email + "&telefono=" + telefono + "&comentario=" + comentario;
 		try {
 			asyncRequest = new XMLHttpRequest();
-			asyncRequest.addEventListener(
-				"readystatechange", stateChange, false);
+			asyncRequest.addEventListener("readystatechange", stateChange, false);
 			asyncRequest.open("GET", url, true);
 			asyncRequest.send(null);
 		} catch (excepcion) {}
@@ -64,10 +63,15 @@ function enviarFormulario(){
 }
 
 function stateChange() {
+	if(asyncRequest.readyState == 1 || asyncRequest.readyState == 2 ||
+			asyncRequest.readyState == 3 ){
+		document.getElementById("spinner").style.display = 'block';
+	}
 	if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {		
 		var response = asyncRequest.responseText;
 		console.log(response);
 		if(response === "true"){	
+			document.getElementById("spinner").style.display = 'none';
 			// reestablece el formulario		
 			reestrablecerFormulario();
 			document.getElementById("calloutForm").style.display = 'block';
