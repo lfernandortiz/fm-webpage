@@ -617,8 +617,7 @@ figure{
 
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
-	.barMenu{
-		
+	.barMenu{		
 		padding: .1rem .2rem .3rem .1rem ;
 		
 	}
