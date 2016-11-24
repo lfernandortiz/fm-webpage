@@ -43,7 +43,7 @@ function enviarEmailCliente($nombre, $email){
           $mail->Username = "servicioalcliente@dromedicas.com.co";
           $mail->Password = "Dromedicas2013.";
           $mail->setFrom('servicioalcliente@dromedicas.com.co', 'Droguerias Farmanorte');//direccion origen
-          $mail->addReplyTo('elianaaredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
+          $mail->addReplyTo('elianaarredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
           $mail->addAddress($email, "Direccion Cliente");//direccion de destio
         
           $mail->Subject = 'Droguerias Faramanorte - Servicio al Cliente';//asunto
@@ -79,8 +79,8 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
      $mail->Username = "servicioalcliente@dromedicas.com.co";
      $mail->Password = "Dromedicas2013.";
      $mail->setFrom('servicioalcliente@dromedicas.com.co', 'Droguerias Farmanorte');//direccion origen
-     $mail->addReplyTo('elianaaredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
-     $mail->addAddress('elianaaredondo@dromedicas.com.co', "Direccion Cliente");//direccion de destio
+     $mail->addReplyTo('elianaarredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
+     $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");//direccion de destio
      $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
      $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
    
