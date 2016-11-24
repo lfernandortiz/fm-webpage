@@ -617,9 +617,16 @@ figure{
 
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
+	.barMenu{
+		
+		padding: .1rem .2rem .3rem .1rem ;
+		
+	}
 	.servicioscontent{
 		margin-left: 10px;
 	}
+	
+
 	#footerSection ul{
 		font-size: .95rem;
 		text-align: center;

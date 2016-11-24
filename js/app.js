@@ -66,6 +66,7 @@ function enviarFormulario(){
 function stateChange() {
 	if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {		
 		var response = asyncRequest.responseText;
+		console.log(response);
 		if(response === "true"){	
 			// reestablece el formulario		
 			reestrablecerFormulario();
