@@ -34,19 +34,19 @@ function enviarEmailCliente($nombre, $email){
           $mail->isSMTP();
           $mail->SMTPDebug = 0;     
           $mail->Debugoutput = 'html';
-          $mail->Host = 'stve.wnkserver5.com';
+          $mail->Host = 'mail.farmanorte.com.co';
           $mail->Port = 25;
           $mail->SMTPSecure = 'tls';
           $mail->SMTPAuth = true;
           $mail->Timeout=20;
           $mail->CharSet = "text/html; charset=UTF-8;";
-          $mail->Username = "servicioalcliente@dromedicas.com.co";
+          $mail->Username = "contacto@farmanorte.com.co";
           $mail->Password = "Dromedicas2013.";
-          $mail->setFrom('servicioalcliente@dromedicas.com.co', 'Droguerias Farmanorte');//direccion origen
-          $mail->addReplyTo('elianaarredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
+          $mail->setFrom('contacto@farmanorte.com.co', 'Droguerias Farmanorte');//direccion origen
+          $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
           $mail->addAddress($email, "Direccion Cliente");//direccion de destio
         
-          $mail->Subject = 'Droguerias Faramanorte - Servicio al Cliente';//asunto
+          $mail->Subject = 'Servicio al Cliente - Droguerias Faramanorte';//asunto
           
           $mail->isHTML(true);       
           $mail->Body = $plantilla;
@@ -70,22 +70,24 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
      $mail->isSMTP();
      $mail->SMTPDebug = 0;     
      $mail->Debugoutput = 'html';
-     $mail->Host = 'stve.wnkserver5.com';
+     $mail->Host = 'mail.farmanorte.com.co';
      $mail->Port = 25;
      $mail->SMTPSecure = 'tls';
      $mail->SMTPAuth = true;
      $mail->Timeout=20;
      $mail->CharSet = "text/html; charset=UTF-8;";
-     $mail->Username = "servicioalcliente@dromedicas.com.co";
+     $mail->Username = "contacto@farmanorte.com.co";
      $mail->Password = "Dromedicas2013.";
-     $mail->setFrom('servicioalcliente@dromedicas.com.co', 'Droguerias Farmanorte');//direccion origen
-     $mail->addReplyTo('elianaarredondo@dromedicas.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
-     $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");//direccion de destio
-     $mail->addAddress('servicioalcliente@dromedicas.com.co', "Direccion Cliente");//direccion de destio
+     $mail->setFrom('contacto@farmanorte.com.co', 'Droguerias Farmanorte');//direccion origen
+     $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
+     //enviado a:
+     $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
+     $mail->addAddress('servicioalcliente@dromedicas.com.co', "Direccion Cliente");
+     $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
      $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
      $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
    
-     $mail->Subject = 'Farmanorte.com - Contacto de Cliente';//asunto
+     $mail->Subject = 'www.farmanorte.com - Contacto de Cliente';//asunto
      
      $mail->isHTML(true);       
      $mail->Body = $plantilla;
