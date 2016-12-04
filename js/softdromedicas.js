@@ -106,6 +106,7 @@ function crearMapa(){
 		// streetViewControl: true,
 		mapTypeControl: false,
 		overviewMapControl: false,
+		gestureHandling: "greedy",
 		// clickable: false
 	});	
 	//si el gps esta activo añade un marker con la ubicacion actual

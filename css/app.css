@@ -62,7 +62,7 @@ figure{
 }
 
 .vertical.menu{
-	background-color: #000A7B;	
+	background-color: #000A7B;
 }
 
 .vertical.menu li a{
@@ -89,7 +89,7 @@ figure{
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
-	padding: .3rem .4rem .1	rem .4rem ;
+	padding: .15rem .4rem .2rem .4rem ;
 	font-size: .85em;
 	width: 100%;
 }
