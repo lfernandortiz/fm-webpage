@@ -659,14 +659,16 @@ border-top: 1px solid white;
 	cursor: pointer;
 	font-family: : Roboto,sans-serif;
 	font-size: .8rem;
-	height: 36px;
+	height: 20px;
 	margin: 0;
-	min-width: 36px;
+	min-width: 3.8rem;
 	outline: 0;
 	overflow: hidden;
 	padding: 6px;
 	text-align: center;
 	text-decoration: none;
+	border: 1px solid #979797;
+	border-radius: 5px;
 	/*text-overflow: ellipsis;*/
 	/*text-transform: uppercase;*/
 	transition: background-color .2s,box-shadow .2s;
@@ -674,6 +676,10 @@ border-top: 1px solid white;
 	white-space: nowrap;
 }
 
+
+.buttonreset:visited{
+	color: #FFFFFF!important;
+}
 /*==============================================
   Estilos que editan contenedor de sucursales
   ==============================================*/
