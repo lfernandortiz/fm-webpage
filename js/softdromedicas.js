@@ -338,10 +338,11 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
         	//registro del manejo de evento click para desplegar el objeto InfoWindow
 			window.setTimeout(function(){
 					//añadir un marker con GMap
+					var myIcon = new google.maps.MarkerImage("../images/markFarmaAbierto.png", null, null, null, new google.maps.Size(30,48));
 					urlMarker = "../images/markFarmaAbierto.png";
 					var mark = map.createMarker ({	
 					    position: position,
-					    icon: urlMarker,
+					    icon: myIcon,
 					    details:{estado:est},
 						title: suc,
 						infoWindow: {content:contents, maxWidth:345,},
@@ -361,14 +362,17 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
         	var horaActual = fechaActual.getHours();
         	var diaDeLaSemana = fechaActual.getDay();
         	var urlMarker2;
+        	var myIcon2;
          	//valida si el dia actual esta entre lunes y Sabado
 
 			if (diaDeLaSemana >= 1 && diaDeLaSemana <= 6) {
 				var est;
 				if( abierto(fechaActual, aLS, cLS) ){
+					myIcon2  = new google.maps.MarkerImage("../images/markFarmaAbierto.png", null, null, null, new google.maps.Size(30,48));
 					urlMarker2 = "../images/markFarmaAbierto.png";
 					est = 'abierto';								
 				}else{
+					myIcon2  = new google.maps.MarkerImage("../images/markFarmaCerrado.png", null, null, null, new google.maps.Size(30,48));
 					urlMarker2 = "../images/markFarmaCerrado.png";
 					est = 'cerrado';								
 				}//fin del else 
@@ -387,7 +391,7 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 				window.setTimeout(function() {
 					var markd = map.createMarker({
 						position: position,
-						icon: urlMarker2,
+						icon: myIcon2,
 						details:{estado:est},
 						title: suc,
 						infoWindow: {
@@ -411,9 +415,11 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 			if (diaDeLaSemana == 0 ) {
 				var est;
 				if( abierto(fechaActual, aDF, cDF) ){
+					myIcon2  = new google.maps.MarkerImage("../images/markFarmaAbierto.png", null, null, null, new google.maps.Size(30,48));
 					urlMarker2 = "../images/markFarmaAbierto.png";
 					est = 'abierto';					
 				}else{
+					myIcon2  = new google.maps.MarkerImage("../images/markFarmaCerrado.png", null, null, null, new google.maps.Size(30,48));
 					urlMarker2 = "../images/markFarmaCerrado.png";
 					est = 'cerrado';
 				}//fin del else 
@@ -433,7 +439,7 @@ function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular,
 					//añadir un marker con GMap					
 					var markd = map.createMarker({
 						position: position,
-						icon: urlMarker2,
+						icon: myIcon2,
 						details:{estado:est},
 						title: suc,
 						infoWindow: {
