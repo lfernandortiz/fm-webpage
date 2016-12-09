@@ -17,10 +17,10 @@
     <link rel="manifest" href="images/manifest.json">
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">      
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />  
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
   <audio id="jigle" preload="auto">
@@ -92,17 +92,12 @@
                   <button class="orbit-next"><span class="show-for-sr">Siguiente Slide</span> &#9654;&#xFE0E;</button>
                   <li class="orbit-slide is-active">
                     <img class="orbit-image" src="images/Lienzo3.jpg" alt="Droguerias Farmanorte Responsabilidad Social">
-                    <figcaption class="orbit-caption">Más cerca de las familias Cucuteñas</figcaption>
+                    <figcaption class="orbit-caption show-for-medium">Más cerca de las familias Cucuteñas</figcaption>
                   </li>
                   <li class="orbit-slide is-active">
-                    <img class="orbit-image" src="images/TarjetaWebNavidadRoja.jpg" alt="Saludo Navidad Farmanorte">
-                  <!--   <figcaption class="orbit-caption">Pronto nuestro programa de Fidelizaci&oacute;n</figcaption> -->
-                  </li>
-                  <!--  <li class="orbit-slide is-active">
-                    <img class="orbit-image" src="images/LienzoSlide.png" alt="Puntos Farmanorte">
-                    <figcaption class="orbit-caption">Pronto nuestro programa de Fidelizaci&oacute;n</figcaption>
-                  </li> -->
-
+                    <img class="orbit-image" src="images/TarjetaWebNavidadRoja.jpg" alt="Saludo Navidad Farmanorte"> 
+                    <!-- <figcaption class="orbit-caption show-for-medium">Mensaje Navidad</figcaption> -->  
+                  </li>              
                 </ul>
                 <!--botones balas-->
                 <nav class="orbit-bullets nabullets show-for-medium">
@@ -367,7 +362,15 @@
         }
       })();
     </script>
-    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-88757058-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

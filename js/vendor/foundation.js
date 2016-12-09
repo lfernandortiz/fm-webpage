@@ -165,6 +165,7 @@
 
       // Iterate through each plugin
       $.each(plugins, function (i, name) {
+        console.log(name);
         // Get the current plugin
         var plugin = _this._plugins[name];
 
@@ -673,7 +674,7 @@
         winRect = document.body.getBoundingClientRect(),
         winY = window.pageYOffset,
         winX = window.pageXOffset;
-
+        console.log("X " + winX + "Y: " +winY );
     return {
       width: rect.width,
       height: rect.height,

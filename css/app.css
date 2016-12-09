@@ -165,6 +165,13 @@ figure{
   margin-bottom: 0;
   color: #fefefe;
   background-color: rgba(10, 10, 10, 0.5); }
+
+/* li .orbit-slide img{
+ 	background-size: cover!important;
+ }
+ .orbit-container{
+ 	background-size: cover;
+ }*/
 /*-----------*/
 
 #sucursalancla{ padding-top: 15px; }
