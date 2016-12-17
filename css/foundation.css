@@ -2921,7 +2921,8 @@ table.hover tbody tr:nth-of-type(even):hover {
   position: relative;
   margin: 0;
   overflow: hidden;
-  list-style: none; }
+  list-style: none; 
+ height: auto! important}
 
 .orbit-slide {
   width: 100%;

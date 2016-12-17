@@ -90,7 +90,7 @@ figure{
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
 	padding: .15rem .4rem .2rem .4rem ;
-	font-size: .85em;
+	font-size: .9em;
 	width: 100%;
 }
 
@@ -166,13 +166,6 @@ figure{
   color: #fefefe;
   background-color: rgba(10, 10, 10, 0.5); }
 
-/* li .orbit-slide img{
- 	background-size: cover!important;
- }
- .orbit-container{
- 	background-size: cover;
- }*/
-/*-----------*/
 
 #sucursalancla{ padding-top: 15px; }
 
