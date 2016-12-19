@@ -93,10 +93,10 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->setFrom('contacto@farmanorte.com.co', 'Droguerias Farmanorte');//direccion origen
                $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
                //enviado a:
-               // $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
+               $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
                $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
                $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-               // $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
+               $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
                          
                $mail->Subject = 'www.farmanorte.com - Contacto de Cliente';//asunto
                
