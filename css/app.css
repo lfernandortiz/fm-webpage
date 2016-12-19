@@ -4,7 +4,6 @@
 /*.row{ border: 2px solid #0FBCF5; }
 .column{ border: 2px solid #F3C200;}*/
 
-
 @font-face {
   font-family: 'icomoonpage';
   src:  url('../fonts/fontspage/icomoonpage.eot?uyuiv4');
@@ -47,9 +46,9 @@
   content: "\e900";
 }
 
-
 body{
 	font-family: 'Lato', sans-serif;
+	background-color: #FFFFFF;
 }
 
 figure{
@@ -75,12 +74,15 @@ figure{
     /*box-shadow: 0px 1px 1px 0px #295FA2;*/
 }
 
+.off-canvas-wrapper {
+    background-color: #09137E!important;
+}
 .redesMenu{
 	padding-top: 3rem;
 }
 /*edita el background del menu offcanvas*/
-.off-canvas-wrapper{
-	background-color: #09137E;	
+.off-canvas{
+	background-color: #09137E!important;	
 }
 
 .barMenu{
@@ -129,7 +131,6 @@ figure{
 	
 }
 
-
 .activation{
 	color: #FFFFFF!important ;
     /*font-weight: bold;    */
@@ -141,6 +142,10 @@ figure{
 	background: none;
     box-shadow: 0px 0px 1px #A6A6A6;
 }
+
+ .off-canvas-content{
+ 	background-color: #FFFFFF!important;
+ }
 
 #iniciosection{
 	background: #E6E6E6;
@@ -165,7 +170,6 @@ figure{
   margin-bottom: 0;
   color: #fefefe;
   background-color: rgba(10, 10, 10, 0.5); }
-
 
 #sucursalancla{ padding-top: 15px; }
 
@@ -192,11 +196,10 @@ figure{
  	 background-color: #CBD300;
  	 background-color: #fed859;
  	 /*background-color: #D4D4D4;*/
- 
 
  }
 
- .sectiontitle{
+.sectiontitle{
 	color: #FFFFFF;
 	color: #000a7b;
 	font-weight: bold;
@@ -251,8 +254,16 @@ figure{
 
  .divinstitu{
  	border-radius: 4px;
- 	border: 2px solid #000a7b;
+ 	border: 2px solid #000a7b; 	
  }
+
+.content-video{
+	width: 100%;	
+}
+
+.videoins{
+	margin-bottom: 0!important;
+}
 
  .divdomicilio{
 	border-radius: 4px;
@@ -271,7 +282,7 @@ figure{
  	margin: 0px 10px 10px 10px; 
  }
 
-#anclacontactosection{padding-bottom: 45px;}
+ #anclacontactosection{padding-bottom: 45px;}
 #contactosection{
 	margin-top: 5px;
 	background: #efefef;

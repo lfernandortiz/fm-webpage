@@ -19,11 +19,7 @@ $('.off-canvas a').on('click', function() {
 
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
-var mensajes = [ "Ingrese su nombre completo",
-				 "Ingrese una direccion de correo valida" , 
-				 "Es necesario una direccion de correo eletrónico",
-				 "Debe colocar un número de telefono de contacto",
-				 "Ingrese su comentario"];
+
 
 function iniciar() {
 	var sonido = document.getElementById("jigle");
@@ -76,6 +72,9 @@ function stateChange() {
 			reestrablecerFormulario();
 			document.getElementById("calloutForm").style.display = 'block';
 			document.getElementById("calloutFormAlert").style.display = 'none';
+		}else{
+			document.getElementById("spinner").style.display = 'none';
+			document.getElementById("calloutFormAlert").style.display = 'block';
 		}			 
 	} 
 }
