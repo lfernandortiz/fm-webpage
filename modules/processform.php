@@ -39,7 +39,7 @@ function enviarEmailCliente($nombre, $email){
                $mail->isSMTP();
                $mail->SMTPDebug = 0;     
                $mail->Debugoutput = 'html';
-               $mail->Host = 'farmanorte.com.co';
+               $mail->Host = 'smtpout.secureserver.net';
                $mail->Port = 465;
                $mail->SMTPSecure = 'ssl';
                $mail->SMTPAuth = true;
@@ -82,7 +82,7 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->isSMTP();
                $mail->SMTPDebug = 0;     
                $mail->Debugoutput = 'html';
-               $mail->Host = 'farmanorte.com.co';
+               $mail->Host = 'smtpout.secureserver.net';
                $mail->Port = 465;
                $mail->SMTPSecure = 'ssl';
                $mail->SMTPAuth = true;
@@ -97,7 +97,7 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
                $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
                $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-               // $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
+               $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
                          
                $mail->Subject = 'www.farmanorte.com - Contacto de Cliente';//asunto
                

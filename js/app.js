@@ -74,7 +74,7 @@ function stateChange() {
 			document.getElementById("calloutFormAlert").style.display = 'none';
 		}else{
 			document.getElementById("spinner").style.display = 'none';
-			document.getElementById("calloutFormAlert").style.display = 'block';
+			document.getElementById("calloutFormWarning").style.display = 'block';
 		}			 
 	} 
 }
@@ -133,7 +133,7 @@ function reestrablecerFormulario(){
 	document.getElementById("span2").setAttribute("class","input input--yoshiko") ;
 	document.getElementById("span3").setAttribute("class","input input--yoshiko") ;	
 
-	//con la ayuda de la funcion predicada 
+	//con la ayuda de la funcion predicada oculto los callout
 	if(isShowing(document.getElementById("calloutFormAlert"))){
 		document.getElementById("calloutFormAlert").style.display = 'none';	
 	}
