@@ -40,8 +40,8 @@ function enviarEmailCliente($nombre, $email){
                $mail->SMTPDebug = 0;     
                $mail->Debugoutput = 'html';
                $mail->Host = 'smtpout.secureserver.net';
-               $mail->Port = 465;
-               $mail->SMTPSecure = 'ssl';
+               $mail->Port = 80;
+               // $mail->SMTPSecure = 'ssl';
                $mail->SMTPAuth = true;
                $mail->Timeout=20;
                $mail->CharSet = "text/html; charset=UTF-8;";
@@ -87,8 +87,8 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->SMTPDebug = 0;     
                $mail->Debugoutput = 'html';
                $mail->Host = 'smtpout.secureserver.net';
-               $mail->Port = 465;
-               $mail->SMTPSecure = 'ssl';
+               $mail->Port = 80;
+               // $mail->SMTPSecure = 'ssl';
                $mail->SMTPAuth = true;
                $mail->Timeout=20;
                $mail->CharSet = "text/html; charset=UTF-8;";
@@ -97,9 +97,9 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->setFrom('contacto@farmanorte.com.co', 'Droguerias Farmanorte');//direccion origen
                $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
                //enviado a:
-               // $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
-               // $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-               // $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
+               $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
+               $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
+               $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
                
                $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
                $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
