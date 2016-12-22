@@ -15,7 +15,7 @@ try{
      if($oficina == true && $cliente == true ){
           echo "true";
      }else{
-          echo "false";
+          echo $cliente."-".$oficina;
      }
 }catch(Exception $e){
       echo 'Caught exception: ',  $e->getMessage(), "\n";
@@ -55,7 +55,11 @@ function enviarEmailCliente($nombre, $email){
                $mail->isHTML(true);       
                $mail->Body = $plantilla;               
                
-               return $mail->send();
+               if ($mail->send()) {
+                   return "true";
+               } else {
+                   return "Mailer Error: " . $mail->ErrorInfo;
+               }
           }catch(Exception $e){
                return $e->getMessage();
           }
@@ -93,18 +97,23 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
                $mail->setFrom('contacto@farmanorte.com.co', 'Droguerias Farmanorte');//direccion origen
                $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
                //enviado a:
-               $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
+               // $mail->addAddress('elianaarredondo@dromedicas.com.co', "Direccion Cliente");
+               // $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
+               // $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
+               
                $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
                $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-               $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-               $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
                          
                $mail->Subject = 'www.farmanorte.com - Contacto de Cliente';//asunto
                
                $mail->isHTML(true);       
                $mail->Body = $plantilla;               
                
-               return $mail->send();
+                if ($mail->send()) {
+                   return "true";
+               } else {
+                   return "Mailer Error: " . $mail->ErrorInfo;
+               }
           }catch(Exception $e){
                return $e->getMessage();
           }
