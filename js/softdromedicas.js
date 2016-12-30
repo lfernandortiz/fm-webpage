@@ -1,9 +1,17 @@
 console.log("SoftDromedicas");
 
+// $(document).on('load', function() {
+// 	var options = {
+// 		imagePath: '../images/m'
+// 	};
+// 	console.log("Longitud de marcadores: " + markerst.length);
+// 	var markerCluster = new MarkerClusterer(map.map, markerst, options);
+// });
+
 //objeto Mapa usado en toda la aplicacion
 var map;
 //coleccion de objetos Marker con todo los marcadores unicamente de las sucursales
-var markerst = [];
+var markerst = new Array();
 //varible para objeto de informacion del infowindow del  marcador 
 var infoWindowCustom;
 
@@ -73,7 +81,7 @@ function setCurrentCoords(){
 			currentLat = position.coords.latitude;
 			currentLng = position.coords.longitude;	
 			geoLocateActive = true;				
-			crearMapa();//manda a crear el mapa y registrar eventos
+			crearMapa();//manda a crear el mapa y registrar evento
 		},
 		error: function(error) {//si el gps esta desactivado
 			//muestra el div rojo
@@ -117,8 +125,7 @@ function crearMapa(){
 				});
 	}	
 	//creando los marcadores
-	createMarkers();
-
+	
 	//registrando manejo de evento de cierre de infowindow clic en el mapa	
 	google.maps.event.addListener(map.map, "click", function() {
 		map.hideInfoWindows();
@@ -252,6 +259,7 @@ function cargarSucursales(){
 
 
 function createMarkers(){
+	
 	//iteramos la coleccion de sucursales
 	for (var i = 0; i < sucursales.length; i++) {
 		//se crea un objeto coordenadas para crear nuestro marcador
