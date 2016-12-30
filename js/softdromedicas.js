@@ -1,4 +1,4 @@
-console.log("test GMaps***");
+console.log("SoftDromedicas");
 
 //objeto Mapa usado en toda la aplicacion
 var map;
@@ -22,14 +22,12 @@ var distanciaActual;
 //variable predicada que establece si el gps esta activo o no
 var geoLocateActive;
 
-console.log("test GMaps***");
-
 //informacion y coordenada de sucursales
 //--esto se debe reemplazar por un servicio...
 var sucursales = [
 	['Dromedicas del Oriente SAS', 7.908388743984923, -72.491574883461, 'Avenida 11 Be # 8Bn - 10  Guaimaral', '5740075','5777762', 'CUCUTA','','', '', '', '', 1],
 	['Farmanorte 01', 7.840764903473619, -72.5028133392334, 'Calle 33 Con Avenida 4 Esquina Brr La Sabana', '5808800','3167409253', 'LOS PATIOS','','7:30am', '22:30', '7:30am', '22:30', 2],
-	['Farmanorte 02', 7.923595410892432, -72.52201795578003, 'Avenida 5 Con Calle 2N Pescadero', '5780727','3166909962', 'CUCUTA','','8am', '23:30', '8am', '2pm', 3],
+	['Farmanorte 02', 7.90035823,-72.50418631, 'Avenida 5 Con Calle 2N Pescadero', '5780727','3166909962', 'CUCUTA','','8am', '23:30', '8am', '2pm', 3],
 	['Farmanorte 03', 7.917091999388589, -72.49572694301605, 'Avenida 4 Con Calle 20An Esquina Brr Prados Del Norte', '5796888','3166909583', 'CUCUTA','true', '', '', '', '', 4],
 	['Farmanorte 04', 7.9049350202970805, -72.51519441604614, 'Avenida Kennedy Con 2Da Esquina Brr La Victoria', '5787878','3183353570', 'CUCUTA','','7:30am', '21', '7:30am', '9pm', 5],
 	['Farmanorte 05', 7.898048740341691, -72.52727508544922, 'Calle 2 Con Avenida 6 Esquina Brr Ceci', '5870555','3168309523', 'CUCUTA','true', '', '', '', '', 6],
@@ -126,27 +124,32 @@ function crearMapa(){
 		map.hideInfoWindows();
 	});
 	
-	//registro de manejo de evento del boton de menu
+	//registro de manejo de evento del boton de menu 
 	var menuboton = document.getElementById('buttonmenu');	
-	var closemenul = document.getElementById('closemenu');	
+	var closemenuboton = document.getElementById('closemenu');	
+	var menu = document.getElementById('menu');
+	//consulta de medio
+	var consulta = window.matchMedia('(max-width: 768px)');    
 
-	var consulta = window.matchMedia('(max-width: 768px)');
-    // consulta.addListener(mediaQuery);}
-
-   //si es un dispositivo movil registra eventos touch como tap y press
+    //si es un dispositivo movil registra eventos touch como tap y press
     if(consulta.matches){
-    	var mc = new Hammer(menuboton);
-    	var mcp = new Hammer(closemenul);
-		mc.on("tap press", function(ev) {
-			console.log(ev.type +" gesto detectado.");
-    		ocultarMostrar();
+    	var menuH = new Hammer(menuboton);
+		menuH.on('tap press', function(ev) {
+			console.log(ev.type);
+			menu.classList.toggle('active');
 		});
-		mcp.on("tap press", function(ev) {
+    	var closemenuH = new Hammer(closemenuboton);
+		  	closemenuH.on("tap press", function(ev) {
 			console.log(ev.type +" gesto detectado.");
-    		ocultarMostrar();
+    		menu.classList.remove('active');
 		});
     }else{
-    	menuboton.addEventListener('click', function(){ ocultarMostrar(event);} , false );
+    	menuboton.addEventListener('click', function(ev){
+    		menu.classList.toggle('active');
+    	}, false );
+    	closemenuboton.addEventListener('click', function(ev){
+    		menu.classList.remove('active');
+    	}, false );
     }
 	
 	
@@ -175,15 +178,6 @@ function crearMapa(){
 	});
 	
 }//fin del metodo iniciar
-
-
-//Resize Function
-// google.maps.event.addDomListener(window, "resize", function() {
-// 	var center = map.map.getCenter();
-// 	google.maps.event.trigger(map.map, "resize");
-// 	map.map.setCenter(center);
-// });
-
 
 //los suguientes dos metdos de jquery implementan el scrroll para infosucursales
 $('.contentsuc').impulse();
@@ -215,13 +209,14 @@ function ocultarMostrar(ev) {
 
 // cierra el menu cuando el usuario hace click por dentro y fuera de el area
 //del menu 
-window.onclick = function(event) {	
-  if (!event.target.matches('.burgermenu') ) {  	
-    	var dropdowns = document.getElementById("menu");    	
-    	dropdowns.classList.remove('active'); 
-    	
-    }  
-}//fin del manejador de evento
+function ocultarMenuTodosPartes(){
+	window.onclick = function(event) {	
+	  if (!event.target.matches('.burgermenu') ) {  	
+	    	var dropdowns = document.getElementById("menu");    	
+	    	dropdowns.classList.remove('active');     	
+	    }  
+	}//fin del manejador de evento	
+}
 
 
 function cerrarSucursales(){	
@@ -231,6 +226,8 @@ function cerrarSucursales(){
 
 function mostrarSucursales(){
 	var control = document.getElementById('sucursalesControl').value;	
+	var menu = document.getElementById('menu');
+	menu.classList.remove('active');
 	if(control === 'false'){
 		cargarSucursales();
 	}	
@@ -596,6 +593,9 @@ function findMe(){
 	map.hideInfoWindows();//cierra el anterior infowindow
 	map.cleanRoute();//limpia toda la ruta
 	map.setZoom(16);
+	//cierro el menu
+	var menu = document.getElementById('menu');
+	menu.classList.remove('active');
 	var coordsMarker = buscarMarcador( currentLat, currentLng);
 	console.log("coordenadas de la mas cercana: " + coordsMarker);
 	map.drawRoute({
