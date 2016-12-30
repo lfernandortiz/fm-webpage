@@ -528,7 +528,7 @@ h1 {
 .buttonmenu{
 	border-radius: 2px;
     margin-right: 20px;
-    padding: 3px;
+    padding: 6px 8px 8px 8px;
     color: #FFFFFF;
     cursor: pointer;
    /* position: absolute;   
@@ -914,7 +914,7 @@ li .zmdi-gps-dot{
 @media screen and (max-width: 320px) and (orientation : portrait){
 
 	.closemenu #closemenubutton{
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	}
 
 	.iw-title{
