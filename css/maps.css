@@ -527,11 +527,12 @@ h1 {
 
 .buttonmenu{
 	border-radius: 2px;
-    margin-right: 20px;
-    padding: 9px;
+    margin-right: 10px;
+    padding: 10px 20px 10px 10px; 
     color: #FFFFFF;
     cursor: pointer;
     z-index: 4; 
+    /*border:1px dotted yellow;*/
 }
 
 
@@ -1001,7 +1002,7 @@ li .zmdi-gps-dot{
 		font-size: 1.6rem;
 	}
 	.buttonmenu{
-		padding: 5px;
+		padding: 10px;
 		margin-right: 10px;
 	}
 

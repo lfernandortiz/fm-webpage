@@ -1,6 +1,5 @@
 console.log("SoftDromedicas");
 
-
 //objeto Mapa usado en toda la aplicacion
 var map;
 //coleccion de objetos Marker con todo los marcadores unicamente de las sucursales
@@ -119,6 +118,9 @@ function crearMapa(){
 	}	
 	//creando los marcadores
 	createMarkers();
+
+	
+
 	
 	//registrando manejo de evento de cierre de infowindow clic en el mapa	
 	google.maps.event.addListener(map.map, "click", function() {

@@ -1,5 +1,7 @@
 $(document).foundation();
 
+var currentElement = null;
+
 //close off-canvas
 $('.off-canvas a').on('click', function() {
   $('.off-canvas').foundation('close');
@@ -8,7 +10,9 @@ $('.off-canvas a').on('click', function() {
 //activa menu
  $('.menu li a').click(function(){
     $('li a').removeClass("activation");
-    $(this).addClass("activation");
+    // $(this).addClass("activation");
+    currentElement = $(this);
+    currentElement.addClass("activation");
 });
 
 //activa menu off-canvas
@@ -16,6 +20,56 @@ $('.off-canvas a').on('click', function() {
     $('li a').removeClass("activation");
     $(this).addClass("activation");                                            
 });		
+//Activa opcion del menu cuando la navegacion es por scroll
+var lastId,
+    topMenu = $("#menuppal"),
+    topMenuHeight = topMenu.outerHeight()+15;
+    // All list items
+    menuItems = topMenu.find("a");    
+
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+	// Bind click handler to menu items
+	// so we can get a fancy scroll animation
+	menuItems.click(function(e){
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	  $('html, body').stop().animate({ scrollTop: offsetTop }, 300);
+	  e.preventDefault();
+	});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position  
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+    
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+
+       return this;
+   });
+   // Get the id of the current element     	
+   // Get id of current scroll item
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;       
+       if(currentElement != null){       
+       	 if(currentElement.attr("href").replace("#","") !== id);       		
+       	 	currentElement.removeClass("activation");
+       }
+       // Set/remove active class
+       menuItems.parent().removeClass("activation").end().filter("[href='#"+id+"']").parent().addClass("activation");
+   }                   
+});
+
+
+
 
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
