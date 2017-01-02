@@ -1,12 +1,5 @@
 console.log("SoftDromedicas");
 
-// $(document).on('load', function() {
-// 	var options = {
-// 		imagePath: '../images/m'
-// 	};
-// 	console.log("Longitud de marcadores: " + markerst.length);
-// 	var markerCluster = new MarkerClusterer(map.map, markerst, options);
-// });
 
 //objeto Mapa usado en toda la aplicacion
 var map;
@@ -125,6 +118,7 @@ function crearMapa(){
 				});
 	}	
 	//creando los marcadores
+	createMarkers();
 	
 	//registrando manejo de evento de cierre de infowindow clic en el mapa	
 	google.maps.event.addListener(map.map, "click", function() {
@@ -291,12 +285,15 @@ function createMarkers(){
 								);			
 		}
 	} //fin del for
+
 }//fin del metodo createMarkers
 
 
 //anade el marcardor "Marker" al mapa y registra el evento click sobre el marcador
 //para mostrar la informacion de la sucursal en un objeto InfoWindow
-function addMarkerWithTimeout(position, timeout, suc, i, dir, telefono, celular, ciudad, _24H, aLS, cLS, aDF,cDF) {
+function addMarkerWithTimeout(position, timeout, 
+							  suc, i, dir, telefono, 
+							  celular, ciudad, _24H, aLS, cLS, aDF,cDF) {
 		
 		var contents = 
 			'<div id="iw-container">' +

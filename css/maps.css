@@ -528,7 +528,7 @@ h1 {
 .buttonmenu{
 	border-radius: 2px;
     margin-right: 20px;
-    padding: 6px 8px 8px 8px;
+    padding: 9px;
     color: #FFFFFF;
     cursor: pointer;
     z-index: 4; 
@@ -1002,6 +1002,7 @@ li .zmdi-gps-dot{
 	}
 	.buttonmenu{
 		padding: 5px;
+		margin-right: 10px;
 	}
 
 	.burgermenu{
