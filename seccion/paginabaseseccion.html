@@ -1,8 +1,8 @@
-<!doctype html>
+  <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Droguer&iacute;as Farmanorte Droguerías en toda Cúcuta</title>
+    <title>Droguer&iacute;as Farmanorte: Droguerías en toda Cúcuta</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta name="description" content="Droguerias Farmanorte es una cadena de droguerías Cucuteña, con los mejores precios, cuenta con una red de más de 25 droguerías y Domicilios para toda Cúcuta."><meta name="keywords" content="">
@@ -13,9 +13,9 @@
     <!--Favicon touch-->  
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="../simages/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="images/manifest.json">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg">
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../images/manifest.json">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg">
     <meta name="theme-color" content="#ffffff"> 
     <link rel="stylesheet" href="../css/foundation.min.css">
     <link rel="stylesheet" href="../css/app.css">      
@@ -62,12 +62,12 @@
                  <!-- Menu normal -->
                 <div class="row align-right">
                   <nav id="menu-container" data-magellan data-animation-duration="800">                 
-                    <ul class="menu dropdown navbar align-spaced show-for-medium" data-dropdown-menu>
-                      <li><a href="../#iniciosection">Inicio</a></li>
-                      <li><a href="../#sucursalancla">Sucursales</a></li>
-                      <li><a href="../#serviciosAncla">Servicio</a></li>
-                      <li><a href="../#institucionalancla">Nosotros</a></li>
-                      <li><a href="../#anclacontactosection">Contactenos</a></li>
+                    <ul class="menu dropdown navbar align-spaced show-for-medium" id="menuppal" data-dropdown-menu>
+                      <li><a href="#iniciosection">Inicio</a></li>
+                      <li><a href="#sucursalancla">Sucursales</a></li>
+                      <li><a href="#serviciosAncla">Servicio</a></li>
+                      <li><a href="#institucionalancla">Nosotros</a></li>
+                      <li><a href="#anclacontactosection">Contactenos</a></li>
                     </ul>
                   </nav>                  
                 </div> <!-- end row-content for nav -->
@@ -75,27 +75,124 @@
             </div>          
           </div> <!-- barMenu -->
         </section>
-        <!-- Seccion Disponible -->
-        <section id="iniciosection" data-magellan-target="secciondisponible">
-          <div class="row small-collapse">
-             <div class="column small-12">
-              
-             </div>
-            </div> <!-- end row -->
-          </div>
-        </section>
         
+           
+        
+       
+        <!-- contactosection -->
+        <div id="anclacontactosection" class="row" data-magellan-target="anclacontactosection" data-equalizer data-equalize-on="medium"></div>
+        <section id="contactosection" >
+          <div class="row text-center">
+            <div class="column sectiontitle ">
+              <h2>Contactenos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Info contacto  column-->
+            <div class="column small-12 medium-6 infosection">
+              <div class="row">
+                <div class="column small-12">
+                  <h3>Contactos</h3>
+                </div>
+                <div class="column small-12 ">
+                  <div class="row align-spaced align-right inforow">
+                    <div class="column small-1"><i class="fi fi-calendar"></i></div>
+                    <div class="column small-11">De Lunes a Domingo de 8 am. a 8 pm. Para mas informaci&oacute;n de horarios consulte la secci&oacute;n de <a href="#sucursales">Sucursales.</a></div>
+                  </div>
+                  <div class="row align-spaced align-middle inforow">
+                    <div class="column small-1"><i class="fi fi-mail"></i></div>
+                    <div class="column small-11">servicioalcliente@farmanorte.com.co</div>
+                  </div>
+                  <div class="row align-spaced align-middle inforow ">
+                    <div class="column small-1"><i class="fi fi-telephone"></i></div>
+                    <div class="column small-11"><a href="tel:+5775892030">+57 7 5892030</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- form contacto column-->
+            <div class="column small-12 medium-6 infosection">
+              <div class="column contentload align-middle" style="display: none" id="spinner">
+                <div class="loader"></div>
+              </div>
+              <form class="formulario"  data-abide novalidate>
+                <div class="column small-12">
+                  <h3>Escribenos</h3>
+                </div>
+                <div class="success callout" style="display: none" id="calloutForm"  data-closable>
+                  <h5>Su mensaje ha sido enviado satisfactoriamente.</h5>
+                  <p>Gracias por colocarse en contacto con nosotros.</p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div data-abide-error class="alert callout" style="display: none;" id="calloutFormAlert" data-closable>
+                  <h5>Tenemos problemas para recibir su informaci&oacute;n.</h5>
+                  <p>Ingrese los datos consistentes en los campos indicados.</p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>   
+                 <div data-abide-error class="warning  callout" style="display: none;" id="calloutFormWarning" data-closable>
+                  <h5>Ups! Hay problemas en nuestro sistema.</h5>
+                  <p>En este momento nuestro servidor presenta una falla, intentalo mas tarde.</p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>                    
+                <div class="column small-12 collapse text-center formin">
+                    <span class="input input--yoshiko" id="span0">
+                      <input class="input__field input__field--yoshiko" type="text" id="nombreCliente" required/>
+                      <label class="input__label input__label--yoshiko" for="input-10">
+                        <span class="input__label-content input__label-content--yoshiko" data-content="Nombre">Nombre</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="column small-12 collapse text-center formin">                    
+                    <span class="input input--yoshiko" id="span1">
+                      <input class="input__field input__field--yoshiko" type="email" id="emailCliente" required/>
+                      <label class="input__label input__label--yoshiko" for="input-10">
+                        <span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="column small-12 collapse text-center formin">
+                    <span class="input input--yoshiko" id="span2">
+                      <input class="input__field input__field--yoshiko" type="text" id="telefonoCliente" />
+                      <label class="input__label input__label--yoshiko" for="input-10">
+                        <span class="input__label-content input__label-content--yoshiko" data-content="Tel&eacute;fono">Tel&eacute;fono</span>
+                      </label>
+                    </span>
+                  </div>                
+                <div class="column small-12 comentarios text-center">
+                  <span class="input input--yoshiko" id="span3">
+                    <textarea class="input__field input__field--yoshiko" name="comentario" id="comentarioCliente" pattern="[a-zA-Z]+" cols="30" rows="5" id="comentario" required></textarea>
+                    <label class="input__label input__label--yoshiko" for="input-10">
+                      <span class="input__label-content input__label-content--yoshiko" data-content="Comentarios">Comentarios</span>
+                    </label>
+                  </span>
+                </div>
+                <div class="column small-12">
+                  <button  id="enviarFormSmall" type="button" value="Submit" class="button expanded show-for-small-only">Enviar</button>
+                  <button  id="enviarForm" type="button" value="Submit" class="button show-for-medium float-right">Enviar</button>
+                  <button id="resetFormSmall" class="button expanded float-right resetButton show-for-small-only" type="reset" value="Reset">Reset</button>
+                  <button id="reset" class="button float-right resetButton show-for-medium" type="reset" value="Reset">Reset</button>
+                </div> 
+              </form>
+            </div>
+          </div> <!-- End row contactosection -->         
+        </section>        
         <!-- footer -->
         <footer id="footerSection">
           <div class="row align-justify">
             <div class="column small-12 medium-3 ">
               <ul class="mapa" data-magellan>Acceso Rapido
-                <li class="mapadetalle"><a href="../#iniciosection">Inicio</a></li>
-                <li class="mapadetalle"><a href="../#sucursalancla">Sucursales</a></li>
-                <li class="mapadetalle"><a href="../#serviciosAncla">Nuestros Servicios</a></li>
-                <li class="mapadetalle"><a href="../#institucionalancla">Acerca de nosotros</a></li>
-                <li class="mapadetalle"><a href="../#institucionalancla">Responsabilidad social</a></li>
-                <li class="mapadetalle"><a href="../#iniciosection">Puntos Farmanorte</a></li>
+                <li class="mapadetalle"><a href="#iniciosection">Inicio</a></li>
+                <li class="mapadetalle"><a href="#sucursalancla">Sucursales</a></li>
+                <li class="mapadetalle"><a href="#serviciosAncla">Nuestros Servicios</a></li>
+                <li class="mapadetalle"><a href="#institucionalancla">Acerca de nosotros</a></li>
+                <li class="mapadetalle"><a href="#institucionalancla">Responsabilidad social</a></li>
+                <li class="mapadetalle"><a href="#iniciosection">Puntos Farmanorte</a></li>
               </ul>
             </div>
             <div class="column small-12 medium-3 redes">
@@ -110,7 +207,9 @@
           <div class="row copyright align-top">
             <div class="column small-12 medium-9">
               <p class="condiciones">
-                Copyright © 2016, Droguer&iacute;as Farmanorte es una marca registrada de Dromedicas del Oriente. Somos una compañía Norte Santanderina de servicios en el área de la salud, dedicada a distribuir productos farmacéuticos, dando cumplimiento a la responsabilidad social en el cuidado de la integridad humana. Contamos con  Sucursales en Ocaña, Pamplona, Chinacota y toda C&uacute;cuta. Para Droguería Farmanorte su Salud es nuestro compromiso. <strong>Te recomendamos usar los navegadores Web Chrome 43 o superior, Firefox 38 o superior, Safari 8 o superior, Internet Explorer 10, 11.</strong>
+                Copyright &copy; <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script>, Droguer&iacute;as Farmanorte es una marca registrada de Dromedicas del Oriente. Somos una compañía Norte Santanderina de servicios en el área de la salud, dedicada a distribuir productos farmacéuticos, dando cumplimiento a la responsabilidad social en el cuidado de la integridad humana. Contamos con  Sucursales en Ocaña, Pamplona, Chinacota y toda C&uacute;cuta. Para Droguería Farmanorte su Salud es nuestro compromiso. <strong>Te recomendamos usar los navegadores Web Chrome 43 o superior, Firefox 38 o superior, Safari 8 o superior, Internet Explorer 10, 11.</strong>
               </p>
             </div>
             <div class="column small-12 medium-3 logodromed text-center align-center">
@@ -123,9 +222,9 @@
       </div> <!-- end off-canvas-content -->
     </div> <!-- end off-canvas-wrapper -->
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/classie.js"></script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/classie.js"></script>
     <script>
     //js generico para formulario de contacto  aplica efectos 
       (function() {
@@ -167,7 +266,21 @@
         }
       })();
     </script>
-      
+      <!--Start of Tawk.to Script-->
+      <!--Start of Tawk.to Script-->
+      <!--Start of Tawk.to Script-->
+      <!-- modulo chat pagina web TAWK -->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/585959ccddb8373fd2b14f8e/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
 
 <!--End of Tawk.to Script--><!--End of Tawk.to Script-->
 <!--End of Tawk.to Script-->
@@ -180,7 +293,7 @@
       ga('create', 'UA-88757058-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
