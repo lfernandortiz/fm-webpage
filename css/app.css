@@ -674,6 +674,37 @@ figure{
 }
 /*end spinner*/
 
+/***Pagina Inyectologia*****/
+#inyectologia-contenedor{
+	padding: 5rem 0;
+	background-color: #FFFFFF;
+}
+
+#inyectologia-contenedor{
+	padding: 5rem 0;
+	background-color: #FFFFFF;
+}
+
+#inyectologia-contenedor h2 {
+	font-family: Lato,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	color: #000a7b;
+}
+#inyectologia-contenedor h5 {
+	font-family: Lato,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+	color: #000a7b;
+}
+
+#inyectologia-contenedor img{
+	box-shadow: 0 1px 3px #888;
+	border:.95rem solid #FFFFFF;
+	height: 28rem;
+}
+
+
+#inyectologia-contenedor p{
+	text-align: justify;
+}
+
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
 	.barMenu{		
@@ -685,8 +716,16 @@ figure{
 	}
 
 	.contentload{
-		width: 90%;
-		
+		width: 90%;		
+	}
+
+	#inyectologia-contenedor{
+		padding: 2rem 0;
+		background-color: #FFFFFF;
+	}
+	
+	#inyectologia-contenedor img{
+		height: 20rem;
 	}
 
 	#footerSection ul{
