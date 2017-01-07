@@ -675,16 +675,19 @@ figure{
 /*end spinner*/
 
 /***Pagina Inyectologia*****/
-#inyectologia-contenedor{
-	padding: 3.5rem 0 5rem 0;
+#inyectologia-contenedor,
+#domicilio-contenedor {
+	padding: 3.5rem 0 4rem 0;
 	background-color: #FFFFFF;
 }
 
-#inyectologia-contenedor h2 {
+#inyectologia-contenedor h2, 
+#domicilio-contenedor h2 {
 	font-family: Lato,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 	color: #000a7b;
 }
-#inyectologia-contenedor h5 {
+#inyectologia-contenedor h5 ,
+#domicilio-contenedor h5 {
 	font-family: Lato,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 	color: #000a7b;
 }
@@ -698,6 +701,18 @@ figure{
 
 #inyectologia-contenedor p{
 	text-align: justify;
+}
+
+.imgdomisection.divdomicilio{
+	height: 20rem;
+	text-align: center;
+	
+}
+
+.imgdomisection h5{
+	color: #087C1B!important;
+	font-weight: bold!important;
+	text-shadow: 0 0 8px #6AB558!important;
 }
 
 /*Footer solo para small breakpoint*/
