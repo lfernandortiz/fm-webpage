@@ -143,7 +143,8 @@ function validarFormulario(){
 		document.getElementById("nombreCliente").setAttribute("class","input__field input__field--yoshiko is-invalid-input");
 	});
 
-	if(document.getElementById("nombreCliente").value == "" || document.getElementById("nombreCliente").value == ""){
+	if(document.getElementById("nombreCliente").value == "" || 
+		document.getElementById("nombreCliente").value == ""){
 		valido = false;
   		document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
 		document.getElementById("nombreCliente").value = "";
@@ -167,7 +168,8 @@ function validarFormulario(){
   		valido = false;
 	});
 
-	if(document.getElementById("comentarioCliente").value == "" || document.getElementById("comentarioCliente").value == ""){
+	if(document.getElementById("comentarioCliente").value == "" || 
+		document.getElementById("comentarioCliente").value == ""){
 		valido = false;
   		document.getElementById("span0").setAttribute("class","input input--yoshiko") ;
 		document.getElementById("comentarioCliente").value = "";
