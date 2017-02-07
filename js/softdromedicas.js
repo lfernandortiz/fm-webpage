@@ -25,7 +25,7 @@ var geoLocateActive;
 //informacion y coordenada de sucursales
 //--esto se debe reemplazar por un servicio...
 var sucursales = [
-	['Dromedicas del Oriente SAS', 7.89825331, -72.50836618, 'Avenida 7a # 0bn - 36 Sevilla', '5781240','5780956', 'CUCUTA','','', '', '', '', 1],
+	['Dromedicas del Oriente SAS', 7.89825331, -72.50836618, 'Avenida 7A # 0BN - 36 Sevilla', '5781240','5780956', 'CUCUTA','','', '', '', '', 1],
 	['Farmanorte 01', 7.840764903473619, -72.5028133392334, 'Calle 33 Con Avenida 4 Esquina Brr La Sabana', '5808800','3167409253', 'LOS PATIOS','','7:30am', '22:30', '7:30am', '22:30', 2],
 	['Farmanorte 02', 7.90035823,-72.50418631, 'Avenida 5 Con Calle 2N Pescadero', '5780727','3166909962', 'CUCUTA','','8am', '23:30', '8am', '2pm', 3],
 	['Farmanorte 03', 7.917091999388589, -72.49572694301605, 'Avenida 4 Con Calle 20An Esquina Brr Prados Del Norte', '5796888','3166909583', 'CUCUTA','true', '', '', '', '', 4],
