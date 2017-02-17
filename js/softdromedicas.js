@@ -228,7 +228,6 @@ function cargarSucursales(){
 function createMarkers(){
 	
 	//iteramos la coleccion de sucursales
-	console.log("Creando marcadores: " + sucursales.length);
 	for (var i = 0; i < sucursales.length; i++) {
 		//se crea un objeto coordenadas para crear nuestro marcador
 		var coordenadas = new google.maps.LatLng(sucursales[i].latitud, sucursales[i].longitud);
@@ -271,10 +270,7 @@ function createMarkers(){
 function addMarkerWithTimeout(position, timeout, 
 							  suc, i, dir, telefono, 
 							  celular, ciudad, _24H, aLS, cLS, aDF,cDF) {
-		console.log(position +"-"+ timeout+"-"+ 
-							  suc+"-"+ i+"-"+ dir+"-"+ telefono+"-"+ 
-							  celular+"-"+ciudad+"-"+ _24H+"-"+ aLS+"-"+ cLS+"-"+ aDF+"-"+cDF);
-		var contents = 
+			var contents = 
 			'<div id="iw-container">' +
                 '<div class="iw-title">'+
 					'<img src="../images/iconoFarmanorte.png" alt="logoFarmanorte">'+
