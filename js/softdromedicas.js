@@ -31,15 +31,16 @@ var sucursales;
 function iniciar() {
 	console.log("1");
 		consumirServicio(function(result){
-			console.log("2");
+			console.log("3");
 				sucursales = result;
-				console.log("3");
-				console.log(sucursales.length);
+				setCurrentCoords();
+				console.log("4");
+				console.log("5-"+sucursales.length);
 		});
     //se cargan las coordenadas actuales y dentro 
     //de este medoto se manda a crear el mapa 
     //invocando la funcion crearMapa
-    setCurrentCoords();
+    
 }
 
 //consume
@@ -48,6 +49,7 @@ function consumirServicio(callback){
             url: servicioSucursalesUrl,
         })
         .done(function(res) {
+        		console.log("2");
             callback(res.data);             
         })
         .fail(function(xhr, status, error) {
@@ -106,7 +108,7 @@ function crearMapa() {
         });
     }
     //creando los marcadores
-    console.log(sucursales+"-----------");
+   
     createMarkers();
 
 
@@ -199,7 +201,7 @@ function resetMapa() {
 }
 
 function ocultarMostrar(ev) {
-    console.log('Ocultar Mostrar funcion ' + ev);
+    
     document.getElementById("menu").classList.toggle("active");
 }
 
@@ -251,11 +253,12 @@ function createMarkers() {
 
     //iteramos la coleccion de sucursales
     for (var i = 0; i < sucursales.length; i++) {
+    	
         //se crea un objeto coordenadas para crear nuestro marcador
         var coordenadas = new google.maps.LatLng(sucursales[i].latitud, sucursales[i].longitud);
         //variables creadas para comparar determinar cual es la ppal
-        var principal = new String(sucursales[i].sucursal);
-        var sucursalt = new String('DROMEDICAS DEL ORIENTE SAS');
+        var sucursalt = new String(sucursales[i].sucursal);
+        var principal = new String('DROMEDICAS DEL ORIENTE SAS');
 
         if (principal.localeCompare(sucursalt) === 0) {
             //crea el marcador para la oficina ppal
@@ -289,7 +292,7 @@ function createMarkers() {
 function addMarkerWithTimeout(position, timeout,
     suc, i, dir, telefono,
     celular, ciudad, _24H, aLS, cLS, aDF, cDF) {
-		console.log(suc);
+		
     var contents =
         '<div id="iw-container">' +
         '<div class="iw-title">' +
@@ -608,7 +611,7 @@ function findMe() {
     var menu = document.getElementById('menu');
     menu.classList.remove('active');
     var coordsMarker = buscarMarcador(currentLat, currentLng);
-    console.log("coordenadas de la mas cercana: " + coordsMarker);
+    
     map.drawRoute({
         origin: [currentLat, currentLng],
         destination: coordsMarker,
