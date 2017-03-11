@@ -34,7 +34,7 @@ function iniciar(){
         })
         .done(function(res) {
             sucursales = res.data;
-            console.log(sucursales);                    
+            console.log(res);                    
         })
         .fail(function(xhr, status, error) {            
             document.getElementById("errorCargaSuc").style.display = 'block';
