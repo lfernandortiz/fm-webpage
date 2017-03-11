@@ -34,11 +34,14 @@ function iniciar(){
 	//por medio de un servicio obtengo las sucursales
 	$.ajax({
 
-    url: 'http://dromedicas.ddns.net:9999/dropos/wsjson/sucursalesweb/',
+    url: '../modules/mapaservicio.php',
     type: "GET",
     crossDomain: true,
     dataType: "json",
-    success: function(data) { sucursales = data.data;},
+    success: function(data) { 
+    			sucursales = data.data;
+    			console.log(sucursales);
+    },
     error: function() { alert('Failed!'); },
   
 	});
