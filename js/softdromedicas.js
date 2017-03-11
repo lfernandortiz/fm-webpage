@@ -27,7 +27,6 @@ var geoLocateActive;
 var servicioSucursalesUrl = "http://dromedicas.ddns.net:9999/dropos/wsjson/sucursalesweb/";
 var sucursales;
 
-
 //funcion llamada al final por el registro de evento load del objeto window
 function iniciar(){
 	$.ajax({
@@ -107,7 +106,7 @@ function crearMapa(){
 	google.maps.event.addListener(map.map, "click", function() {
 		map.hideInfoWindows();
 	});
-	
+	s
 	//registro de manejo de evento del boton de menu 
 	var menuboton = document.getElementById('buttonmenu');	
 	var closemenuboton = document.getElementById('closemenu');	
@@ -223,10 +222,10 @@ function cargarSucursales(){
 	for (var i = 1; i < sucursales.length; i++) {
 	// for (var i = 1; i < 3; i++) {
 		//creacion de la sucursal en el menu de sucursales
-		crearSucursal(  sucursales[i][1],//latitud
-						sucursales[i][2],//longitud
-						sucursales[i][0],//nombre de la sucursal								 
-						sucursales[i][3],//direccion		
+		crearSucursal(  sucursales[i].latitud.trim(),//latitud
+						sucursales[i].longitud.trim(),//longitud
+						sucursales[i].sucursal,//nombre de la sucursal								 
+						sucursales[i].direccion2,//direccion		
 						i,				 //indice usado para el id de la sucursal
 						map.markers[i]	//marcador de la sucursal				 
 					);
@@ -240,31 +239,31 @@ function createMarkers(){
 	//iteramos la coleccion de sucursales
 	for (var i = 0; i < sucursales.length; i++) {
 		//se crea un objeto coordenadas para crear nuestro marcador
-		var coordenadas = new google.maps.LatLng(sucursales[i][1], sucursales[i][2]);
+		var coordenadas = new google.maps.LatLng(sucursales[i].latitud, sucursales[i].longitud);
 		//variables creadas para comparar determinar cual es la ppal
-		var principal = new String(sucursales[i][0]);
+		var principal = new String(sucursales[i].sucursal);
 		var sucursalt = new String('Dromedicas del Oriente SAS');
 		
 		if (principal.localeCompare(sucursalt) === 0) {	
 			//crea el marcador para la oficina ppal
 		 	addMarkerWithTimeoutPpal(coordenadas, i * 100, 
-										sucursales[i][0], i, sucursales[i][3], sucursales[i][4], sucursales[i][5] );			
+										sucursales[i].sucursal, i, sucursales[i].direccion2, sucursales[i].telefono, sucursales[i].celular );			
 		} else {
 						
 			//creando los marcadores del mapa
 			addMarkerWithTimeout(coordenadas,	  //coordenadas del marker
 								 i * 50,		  //temporizador para la caida
-								 sucursales[i][0],//nombre de la sucursal
+								 sucursales[i].sucursal,//nombre de la sucursal
 								 i, 			  //posicion en la coleccion
-								 sucursales[i][3],//direccion
-								 sucursales[i][4],//tel fijo 
-								 sucursales[i][5],//celular
-								 sucursales[i][6],//ciudad
-								 sucursales[i][7],//24horas
-								 sucursales[i][8],//apertura l-v
-								 sucursales[i][9],//cierre l-v
-								 sucursales[i][10],//apertura d-f
-								 sucursales[i][11]//cierre apertura d-f
+								 sucursales[i].direccion2,//direccion
+								 sucursales[i].telefono,//tel fijo 
+								 sucursales[i].celular,//celular
+								 sucursales[i].nombre,//ciudad
+								 sucursales[i].es24horas,//24horas
+								 sucursales[i].an,//apertura l-v
+								 sucursales[i].cn,//cierre l-v
+								 sucursales[i].ae,//apertura d-f
+								 sucursales[i].contador//cierre apertura d-f
 								);			
 		}
 	} //fin del for
