@@ -1,7 +1,9 @@
 <?php
+
 			 $datajson = "";
       
        $dirWS = '';
+
        $ch = curl_init($dirWS);
        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
        curl_setopt($ch, CURLOPT_POSTFIELDS, $datajson);
@@ -15,6 +17,8 @@
 
        //execute post
        $jsonResponse = curl_exec($ch);
+
        echo $jsonResponse;
+
 
 ?>
