@@ -31,9 +31,10 @@ var sucursales;
 function iniciar() {	
 		consumirServicio(function(result){			
 				sucursales = result;
-				setCurrentCoords();				
 				console.log("Sucusales total: "+sucursales.length);
 		});
+		
+		setCurrentCoords();				
     //se cargan las coordenadas actuales y dentro 
     //de este medoto se manda a crear el mapa 
     //invocando la funcion crearMapa
