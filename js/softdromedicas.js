@@ -28,14 +28,11 @@ var servicioSucursalesUrl = "http://dromedicas.ddns.net:9999/dropos/wsjson/sucur
 var sucursales;
 
 //funcion llamada al final por el registro de evento load del objeto window
-function iniciar() {
-	console.log("1");
-		consumirServicio(function(result){
-			console.log("3");
+function iniciar() {	
+		consumirServicio(function(result){			
 				sucursales = result;
-				setCurrentCoords();
-				console.log("4");
-				console.log("5 Sucusales total: "+sucursales.length);
+				setCurrentCoords();				
+				console.log("Sucusales total: "+sucursales.length);
 		});
     //se cargan las coordenadas actuales y dentro 
     //de este medoto se manda a crear el mapa 
@@ -48,8 +45,7 @@ function consumirServicio(callback){
 	$.ajax({
             url: servicioSucursalesUrl,
         })
-        .done(function(res) {
-        		console.log("2");
+        .done(function(res) {        		
             callback(res.data);             
         })
         .fail(function(xhr, status, error) {
@@ -82,8 +78,7 @@ function setCurrentCoords() {
 }
 
 //metodo principal que crea el mapa y registra eventos
-function crearMapa() {
-	console.log("6 CreandoMapa")
+function crearMapa() {	
     //crea el mapa con las coordenada iniciales y el zoom
     map = new GMaps({
         div: '#map',
@@ -245,13 +240,13 @@ function cargarSucursales() {
 
 
 function createMarkers() {
-		console.log("7 Creando Marcadores");
+		
     //iteramos la coleccion de sucursales
     try{
 	    for (var i = 0; i < sucursales.length; i++) {	    	
 	        //se crea un objeto coordenadas para crear nuestro marcador
 	        var coordenadas = new google.maps.LatLng(sucursales[i].latitud.trim(), sucursales[i].longitud.trim() );
-	        console.log("8 cordenadas " +  sucursales[i].latitud);
+	        
 	        //variables creadas para comparar determinar cual es la ppal
 	        var sucursalt = new String(sucursales[i].sucursal);
 	        var principal = new String('DROMEDICAS DEL ORIENTE SAS');
