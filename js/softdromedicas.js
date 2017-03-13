@@ -35,7 +35,7 @@ function iniciar() {
 				sucursales = result;
 				setCurrentCoords();
 				console.log("4");
-				console.log("5-"+sucursales.length);
+				console.log("5 Sucusales total: "+sucursales.length);
 		});
     //se cargan las coordenadas actuales y dentro 
     //de este medoto se manda a crear el mapa 
@@ -83,6 +83,7 @@ function setCurrentCoords() {
 
 //metodo principal que crea el mapa y registra eventos
 function crearMapa() {
+	console.log("6 CreandoMapa")
     //crea el mapa con las coordenada iniciales y el zoom
     map = new GMaps({
         div: '#map',
@@ -107,18 +108,12 @@ function crearMapa() {
             // draggable:true,
         });
     }
-    //creando los marcadores
-   
+    //creando los marcadores   
     createMarkers();
-
-
-
-
     //registrando manejo de evento de cierre de infowindow clic en el mapa	
     google.maps.event.addListener(map.map, "click", function() {
         map.hideInfoWindows();
-    });
-    
+    });    
     //registro de manejo de evento del boton de menu 
     var menuboton = document.getElementById('buttonmenu');
     var closemenuboton = document.getElementById('closemenu');
@@ -250,39 +245,43 @@ function cargarSucursales() {
 
 
 function createMarkers() {
-
+		console.log("7 Creando Marcadores");
     //iteramos la coleccion de sucursales
-    for (var i = 0; i < sucursales.length; i++) {
-    	
-        //se crea un objeto coordenadas para crear nuestro marcador
-        var coordenadas = new google.maps.LatLng(sucursales[i].latitud, sucursales[i].longitud);
-        //variables creadas para comparar determinar cual es la ppal
-        var sucursalt = new String(sucursales[i].sucursal);
-        var principal = new String('DROMEDICAS DEL ORIENTE SAS');
+    try{
+	    for (var i = 0; i < sucursales.length; i++) {	    	
+	        //se crea un objeto coordenadas para crear nuestro marcador
+	        var coordenadas = new google.maps.LatLng(sucursales[i].latitud.trim(), sucursales[i].longitud.trim() );
+	        console.log("8 cordenadas " +  sucursales[i].latitud);
+	        //variables creadas para comparar determinar cual es la ppal
+	        var sucursalt = new String(sucursales[i].sucursal);
+	        var principal = new String('DROMEDICAS DEL ORIENTE SAS');
 
-        if (principal.localeCompare(sucursalt) === 0) {
-            //crea el marcador para la oficina ppal
-            addMarkerWithTimeoutPpal(coordenadas, i * 100,
-                sucursales[i].sucursal, i, sucursales[i].direccion2, sucursales[i].telefono, sucursales[i].celular);
-        } else {
+	        if (principal.localeCompare(sucursalt) === 0) {
+	            //crea el marcador para la oficina ppal
+	            addMarkerWithTimeoutPpal(coordenadas, i * 100,
+	                sucursales[i].sucursal, i, sucursales[i].direccion2, sucursales[i].telefono, sucursales[i].celular);
+	        } else {
 
-            //creando los marcadores del mapa
-            addMarkerWithTimeout(coordenadas, //coordenadas del marker
-                i * 50, //temporizador para la caida
-                sucursales[i].sucursal, //nombre de la sucursal
-                i, //posicion en la coleccion
-                sucursales[i].direccion2, //direccion
-                sucursales[i].telefono, //tel fijo 
-                sucursales[i].celular, //celular
-                sucursales[i].nombre, //ciudad
-                sucursales[i].es24horas, //24horas
-                sucursales[i].an, //apertura l-v
-                sucursales[i].cn, //cierre l-v
-                sucursales[i].ae, //apertura d-f
-                sucursales[i].contador //cierre apertura d-f
-            );
-        }
-    } //fin del for
+	            //creando los marcadores del mapa
+	            addMarkerWithTimeout(coordenadas, //coordenadas del marker
+	                i * 50, //temporizador para la caida
+	                sucursales[i].sucursal, //nombre de la sucursal
+	                i, //posicion en la coleccion
+	                sucursales[i].direccion2, //direccion
+	                sucursales[i].telefono, //tel fijo 
+	                sucursales[i].celular, //celular
+	                sucursales[i].nombre, //ciudad
+	                sucursales[i].es24horas, //24horas
+	                sucursales[i].an, //apertura l-v
+	                sucursales[i].cn, //cierre l-v
+	                sucursales[i].ae, //apertura d-f
+	                sucursales[i].contador //cierre apertura d-f
+	            );
+	        }
+	    } //fin del for    	
+    }catch(ex){
+    	console.log(ex);
+    }
 
 } //fin del metodo createMarkers
 
