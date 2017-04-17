@@ -32,7 +32,7 @@ var sucursales = [
 	['Farmanorte 04', 7.9049350202970805, -72.51519441604614, 'Avenida Kennedy Con 2Da Esquina Brr La Victoria', '5787878','3183353570', 'CUCUTA','','7:30am', '21', '7:30am', '9pm', 5],
 	['Farmanorte 05', 7.898048740341691, -72.52727508544922, 'Calle 2 Con Avenida 6 Esquina Brr Ceci', '5870555','3168309523', 'CUCUTA','true', '', '', '', '', 6],
 	['Farmanorte 06', 7.87261944, -72.52802511, 'Avenida 26 Con Calle 28 Esquina Brr Belen', '5828280','3155888094', 'CUCUTA','true', '', '', '', '', 7],
-	['Farmanorte 07', 7.8904609470678055, -72.49629020690918, 'Calle 8 # 1E-76 Junto Cafesalud La Salle', '5744094','3153437725', 'CUCUTA','true', '', '', '', '', 8],
+	['Farmanorte 07', 7.8904609470678055, -72.49629020690918, 'Calle 8 # 1E-76 Junto Cafesalud La Salle', '5744094','3183437725', 'CUCUTA','true', '', '', '', '', 8],
 	['Farmanorte 08', 7.373990247532279, -72.64909029006958, 'Crr 6 # 7-99 Calle Real', '5682217','3183437726', 'PAMPLONA','','7:30am', '22', '7:30am', '10pm', 9],
 	['Farmanorte 09', 7.929875568608961, -72.50390768051147, 'Avenida 2 Con Calle 4 Esquina Brr Aeropuerto', '5818245','3166910544', 'CUCUTA','true', '', '', '', '', 10],
 	['Farmanorte 10', 7.912830721471756, -72.48752474784851, 'Avenida Libertadores # 18N-181 Brr Santa Elena Bloques Del Zulima', '5776206','3155997099', 'CUCUTA','','7:30am', '22', '7:30am', '9pm', 11],
