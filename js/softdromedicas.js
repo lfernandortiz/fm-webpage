@@ -34,7 +34,7 @@ var sucursales = [
 	['Farmanorte 06', 7.87261944, -72.52802511, 'Avenida 26 Con Calle 28 Esquina Brr Belen', '5828280','3155888094', 'CUCUTA','true', '', '', '', '', 7],
 	['Farmanorte 07', 7.8904609470678055, -72.49629020690918, 'Calle 8 # 1E-76 Junto Cafesalud La Salle', '5744094','3183437725', 'CUCUTA','true', '', '', '', '', 8],
 	['Farmanorte 08', 7.373990247532279, -72.64909029006958, 'Crr 6 # 7-99 Calle Real', '5682217','3183437726', 'PAMPLONA','','7:30am', '22', '7:30am', '10pm', 9],
-	['Farmanorte 09', 7.929875568608961, -72.50390768051147, 'Avenida 2 Con Calle 4 Esquina Brr Aeropuerto', '5818245','3166910544', 'CUCUTA','true', '', '', '', '', 10],
+	['Farmanorte 09', 7.93004383, -72.50486974, 'Avenida 2 Con Calle 4 Esquina Brr Aeropuerto', '5818245','3166910544', 'CUCUTA','true', '', '', '', '', 10],
 	['Farmanorte 10', 7.912830721471756, -72.48752474784851, 'Avenida Libertadores # 18N-181 Brr Santa Elena Bloques Del Zulima', '5776206','3155997099', 'CUCUTA','','7:30am', '22', '7:30am', '9pm', 11],
 	['Farmanorte 11', 7.8871853, -72.49622654, 'Cll 11 Con Av 2E Esquina Diagonal C.C. Ventura Plaza', '5711737','3173643955', 'CUCUTA','true', '', '', '', '', 12],
 	['Farmanorte 12', 7.88983925194856, -72.49102771282196, 'Av. 9E Con Cll 9 Esq Fte Col. Domingo Savio Brr La Riviera', '5751377','3185166993', 'CUCUTA','','7am', '22', '7am', '10pm', 13],
