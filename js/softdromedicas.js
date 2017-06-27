@@ -56,7 +56,7 @@ var sucursales = [
 	['Farmanorte 28', 7.88749215, -72.50609315, 'Av 7 Calle 9 Esquina Centro', '5727091','3155997098', 'CUCUTA','','7am', '20', '8am', '2pm', 29],
 	['Farmanorte 29', 7.90146225, -72.48545421, 'Calle 2N #12E-20 AV Libertadores', '5777135','3125639874','CUCUTA','true','','','','',30],
 	['Farmanorte 30', 7.82706424, -72.51198608, 'Autopista los Patios Calle 16 Barrio Once de Noviembre', '5807646','3125480643','PATIOS','true','','','','',31],
-	['Farmanorte 32', 7.83258351, -72.47115523, 'Calle 5 #6-79 Villa del Rosario', '','','VILLA DEL ROSARIO','true','','','','',32]
+	['Farmanorte 32', 7.83258351, -72.47115523, 'Calle 5 #6-79 Villa del Rosario', '','3108506632','VILLA DEL ROSARIO','true','','','','',32]
 
 ];
 //funcion llamada al final por el registro de evento load del objeto window
