@@ -76,8 +76,6 @@ figure{
 }
 
 
-
-
 #scrollSticky{
 	z-index: 99 ;	
 }
@@ -195,10 +193,21 @@ figure{
   color: #fefefe;
   background-color: rgba(10, 10, 10, 0.5); }
 
-#sucursalancla{ padding-top: 15px; }
+#sucursalancla{ padding-top: 0px; }
 
 #sucursales{
- 	padding: 5px 0px 30px 0px;
+ 	padding: 35px 0px 25px 0px;
+
+ 	color: white;
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF,
+    #FFFFFF 55%,
+    #F0F0F0 45%,
+    #F0F0F0
+  );
+  background-size: 100% 8px;
+
  }
 
  .divSucursales{
@@ -207,7 +216,6 @@ figure{
 
  .imgsuc{
  	border-radius: 4px;
- 	border: 2px solid #C1C1C1
  }
 
 #serviciosAncla{
