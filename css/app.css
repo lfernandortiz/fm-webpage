@@ -56,12 +56,35 @@ figure{
 	padding: 0;
 }
 
+
+#controlvolumen img{
+	max-height: 2.5rem;
+	width: 100%;
+}
+
+#controlvolumen #multimedia{
+	z-index: 99;
+	position: absolute;
+	color: #ffffff;
+	top: .7rem;
+	right: 5rem;
+}
+
+#multimedia i:hover{
+	text-shadow: 2px 2px 15px #f4353b;
+	cursor: pointer;
+}
+
+
+
+
 #scrollSticky{
 	z-index: 99 ;	
 }
 
+
 .vertical.menu{
-	background-color: #000A7B;
+	background-color: #000A7B;	
 }
 
 .vertical.menu li a{
@@ -94,6 +117,7 @@ figure{
 	padding: .15rem .4rem .2rem .4rem ;
 	font-size: .9em;
 	width: 100%;
+	box-shadow: 0px -8px  10px rgba(0, 0, 0, 0.45);
 }
 
 .barMenuSticky{
