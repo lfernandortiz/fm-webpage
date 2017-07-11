@@ -253,8 +253,10 @@ figure{
 
  #serviciosSection{
  	 background-color: #a2ddf8; 
- 	 padding: 0px 0px 50px 0px;	 
+ 	 padding: 0px 0px 0px 0px;	 
  }
+
+
 
  #bandazul{
  	padding: 20px 0px 0px 0px;
@@ -304,7 +306,7 @@ figure{
  	height: 90px!important;
  	background-color: rgba(255, 255, 255, .85);
  	color: #000a7b;
- 	margin: 30px 15px 30px 15px;
+ 	margin: 0px 15px 30px 15px;
  	vertical-align: middle;
 }
 
@@ -315,6 +317,16 @@ figure{
  	margin: 30px 5px 0px 5px;
  	width: 100%; 		 
 }
+
+#inyectologia-div, #domicilios-div, #callcenter-div{
+	padding: 20px 0px 0px 0px;
+	background: #6fc6ee;
+}
+
+#inyectologia-div,  #callcenter-div{
+	background: #50b9e8;	
+}
+
 
 #institucional{
 	padding: 0px 0px 0px 0px;
