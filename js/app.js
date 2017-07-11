@@ -79,6 +79,7 @@ function iniciar() {
 	var sonido = document.getElementById("jigle");
 	sonido.play();
 	//registro de eventos de envio del formulario
+	var bocina = document.getElementById('bocina');	
 	var botonForm = document.getElementById("enviarForm");
 	var botonFormSmall = document.getElementById("enviarFormSmall");
 	var resetBotonFormSmall = document.getElementById("resetFormSmall");
@@ -90,6 +91,25 @@ function iniciar() {
 	resetBotonFormSmall.addEventListener("click",  reestrablecerFormulario, false);
 	emalField.addEventListener("blur", resetCalloutAlert, false);
 }
+
+$(document).ready(function() {
+    var audioElement = document.getElementById('jigle');
+    $('#stop').hide();
+
+    $('#play').click(function() {
+        $('#play').hide();
+        $('#stop').show();
+        audioElement.pause();
+    });
+
+
+    $('#stop').click(function() {
+        $('#play').show();
+        $('#stop').hide();
+        audioElement.play();
+    });
+});
+
 
 
 function enviarFormulario(){	

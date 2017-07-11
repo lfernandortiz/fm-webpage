@@ -70,7 +70,12 @@ figure{
 	right: 5rem;
 }
 
-#multimedia i:hover{
+#multimedia a i{	
+	color: #ffffff;
+	
+}
+
+#multimedia a i:hover{
 	text-shadow: 2px 2px 15px #f4353b;
 	cursor: pointer;
 }
@@ -227,11 +232,11 @@ figure{
     #F0F0F0
   );
   background-size: 100% 8px;
-  padding: 35px 0px 0px 0px;	 
+  padding: 20px 0px 0px 0px;	 
 }
 
 #titleservicios{
-	padding: 10px 0px 0px 0px;	 
+	padding: 23px 0px 0px 0px;	 
 	background: #000a7b;
 }
 
