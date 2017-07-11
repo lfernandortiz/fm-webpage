@@ -68,11 +68,16 @@ figure{
 	color: #ffffff;
 	top: .7rem;
 	right: 5rem;
+	width: 2rem;
+}
+
+#multimedia a {	
+	text-align: left;	
 }
 
 #multimedia a i{	
 	color: #ffffff;
-	
+	text-align: left;	
 }
 
 #multimedia a i:hover{
