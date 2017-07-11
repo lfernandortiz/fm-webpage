@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
-
-/*.row{ border: 2px solid #0FBCF5; }
-.column{ border: 2px solid #F3C200;}*/
+/*
+.row{ border: 1px solid #0F1AF5; }
+.column{ border: 1px solid #F3C200;}*/
 
 @font-face {
   font-family: 'icomoonpage';
@@ -267,6 +267,10 @@ figure{
  	background: #a2ddf8; 	
  }
 
+ #content-izq-solapa, #content-der-solapa{
+ 	background: #50b9e8;
+ }
+
  #solapa{
  	/*padding: 20px 0px 0px 0px;*/
   border-top: 20px solid #000a7b;
@@ -274,6 +278,8 @@ figure{
 	border-right: 50px solid transparent;
 	border-top-left-radius: 5px;
 	height: 10px;
+	background: #6fc6ee!important;
+	border-bottom: #6fc6ee;
 	
  }
 
@@ -287,7 +293,7 @@ figure{
  }
 
 .servicioscontent{
-	padding: 2rem 0;	
+	padding: 2.3rem 0;	
 }
 
  .servicioscontent a{ 	
@@ -295,7 +301,7 @@ figure{
  	color: #000a7b;
  	font-family: 'Lato', sans-serif;
  	font-size: 1rem;
- 	font-weight: bold; 	 
+ 	font-weight: bold;  	 
  }
 
 .servicioscontent i{
@@ -308,6 +314,8 @@ figure{
  	color: #000a7b;
  	margin: 0px 15px 30px 15px;
  	vertical-align: middle;
+ 	text-align: center;
+	
 }
 
 .nombreServicio{
