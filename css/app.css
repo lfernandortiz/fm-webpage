@@ -196,7 +196,7 @@ figure{
 #sucursalancla{ padding-top: 0px; }
 
 #sucursales{
- 	padding: 35px 0px 25px 0px;
+ 	padding: 35px 0px 2px 0px;
 
  	color: white;
   background: linear-gradient(
@@ -207,7 +207,6 @@ figure{
     #F0F0F0
   );
   background-size: 100% 8px;
-
  }
 
  .divSucursales{
@@ -219,17 +218,28 @@ figure{
  }
 
 #serviciosAncla{
-	padding: 40px 0px 0px 0px;
- 	background: #000a7b;
- 	color: #ffffff;
+	color: white;
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF,
+    #FFFFFF 55%,
+    #F0F0F0 45%,
+    #F0F0F0
+  );
+  background-size: 100% 8px;
+  padding: 35px 0px 0px 0px;	 
 }
 
-#serviciosAncla .sectiontitle {
-
- 	color: #ffffff;
+#titleservicios{
+	padding: 10px 0px 0px 0px;	 
+	background: #000a7b;
 }
 
-
+#titleservicios h2{
+	background: #000a7b;
+	font-size: 2rem;
+ 	color: #ffffff;
+}
 
  #serviciosSection{
  	 background-color: #a2ddf8; 
@@ -237,7 +247,7 @@ figure{
  }
 
  #bandazul{
- 	padding: 30px 0px 0px 0px;
+ 	padding: 20px 0px 0px 0px;
  	background: #000a7b;
  }
 
@@ -247,7 +257,7 @@ figure{
 
  #solapa{
  	/*padding: 20px 0px 0px 0px;*/
-  border-top: 30px solid #000a7b;
+  border-top: 20px solid #000a7b;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	border-top-left-radius: 5px;
