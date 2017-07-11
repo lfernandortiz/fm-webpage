@@ -259,8 +259,9 @@ figure{
 	color: #FFFFFF;
 	color: #000a7b;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
-	margin-bottom: 25px;	
+	font-family: 'Lato', sans-serif;	
+	margin: 0;	
+	text-align: center;
  }
 
 .servicioscontent{
