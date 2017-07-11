@@ -219,7 +219,7 @@ figure{
  }
 
 #serviciosAncla{
-	padding: 20px 0px 0px 0px;
+	padding: 40px 0px 0px 0px;
  	background: #000a7b;
  	color: #ffffff;
 }
@@ -247,11 +247,11 @@ figure{
 
  #solapa{
  	/*padding: 20px 0px 0px 0px;*/
-  border-top: 40px solid #000a7b;
+  border-top: 30px solid #000a7b;
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	border-top-left-radius: 5px;
-	height: 15px;
+	height: 10px;
 	
  }
 
