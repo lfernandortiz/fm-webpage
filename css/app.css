@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
-/*
-.row{ border: 1px solid #0F1AF5; }
+
+/*.row{ border: 1px solid #000CE9; }
 .column{ border: 1px solid #F3C200;}*/
 
 @font-face {
@@ -686,10 +686,37 @@ figure{
 
 /****/
 
+
+#accesofooter{
+	background: #6B808C;
+	padding: .5rem 0;
+}
+
+#listafooter ul{
+	vertical-align: center;	
+	margin: 0;
+	text-align: center;
+}
+#listafooter ul li{
+	list-style: none;
+	font-size: 1rem;	
+	display: inline-block;
+	text-align: center;
+}
+#listafooter ul li a{	
+	text-align: center;
+	display: block;
+	text-align: center;
+	vertical-align: center;
+	padding: 3px;
+	text-decoration: none!important;
+}
+
+
 #footerSection{
 	background-color: #636363;
 	color: #d5d5d5;
-	padding: 1rem 0 .3rem 0;
+	padding: 0 0 .3rem 0;
 }
 
 #footerSection ul{
@@ -705,6 +732,8 @@ figure{
 	line-height: 1.1rem;
 
 }
+
+
 
 #footerSection li a{
 	text-decoration: none;
@@ -879,7 +908,7 @@ figure{
 		
 	}
 	.servicioscontent{
-		margin-left: 10px;
+		/*margin-left: 10px;*/
 	}
 
 	.contentload{
