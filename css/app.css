@@ -688,7 +688,7 @@ figure{
 
 
 #accesofooter{
-	background: #6B808C;
+	background: #596D79;
 	padding: .5rem 0;
 }
 
@@ -714,9 +714,9 @@ figure{
 
 
 #footerSection{
-	background-color: #636363;
+	background-color: #798F9A;
 	color: #d5d5d5;
-	padding: 0 0 .3rem 0;
+	padding: 0 0 0 0;
 }
 
 #footerSection ul{
@@ -743,16 +743,28 @@ figure{
 #footerSection li a:hover{
 	text-decoration: none;
 	color: #00BAFF;
-	text-decoration: underline;
+	text-decoration: underline;	
 }
+
+#footerfinal{
+	padding-top: .9rem;
+}
+
+
+
 
 
 .redes{
 	color: #D5D5D5;
 	font-family: 'Lato', sans-serif;
 	font-size: .8rem;
+	background: #6b808c;
+	padding: .7rem;
 }
 
+.titleRedes{
+	padding-top: 10px; 
+}
 
 .redes a{
 	color: #D5D5D5;
@@ -794,6 +806,7 @@ figure{
 
 .condiciones{
 	text-align: justify;
+	font-size: .7rem;
 }
 
 /**********spinner****************/
