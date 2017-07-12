@@ -111,6 +111,10 @@ figure{
 .redesMenu{
 	padding-top: 3rem;
 }
+
+.redesOff{
+	background: #000a7b;
+}
 /*edita el background del menu offcanvas*/
 .off-canvas{
 	background-color: #09137E!important;	
