@@ -415,8 +415,11 @@ figure{
 }
 
 #contactosection{
-	/*margin-top: 5px;*/
+	padding-top: 2.7rem;
 	background: #365294;
+  background-image: -webkit-linear-gradient( 90deg, rgb(53,71,112) 0%, rgb(54,82,148) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(53,71,112) 0%, rgb(54,82,148) 100%);
+
 }
 
 #contactosection h2{
@@ -512,6 +515,9 @@ figure{
 	font-size: 1.5rem;
 }
 
+#enviarForm {
+	background: #2b71da!important;
+}
 
 /******** Yoshiko ********/
 
@@ -534,7 +540,7 @@ figure{
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #101010;
+	color: #FFFFFF;
 	font-weight: 400;
 	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
@@ -638,7 +644,7 @@ figure{
 	left: 0;
 	height: 100%;
 	width: 100%;
-	color: #000a7b;
+	color: #FFFFFF;
 	padding: 0.25em 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -660,7 +666,7 @@ figure{
 .input__field--yoshiko:focus + .input__field--yoshiko,
 .input--filled .input__field--yoshiko {
 	background-color: transparent;
-	border-color: #000a7b;
+	border-color: #E7E7E7;
 }
 
 .button.resetButton{
