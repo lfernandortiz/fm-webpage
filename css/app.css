@@ -352,7 +352,7 @@ figure{
 
 #institucional{
 	padding: 0px 0px 0px 0px;	
-	background-image: url('../images/fondoInstitucional+.png');
+	background-image: url('../images/fondoInstitucional+.png') ;
 	background-size: cover;
 	/*background-size: 100%;*/
 }
@@ -368,7 +368,7 @@ figure{
 
  .divinstitu{
  	border-radius: 4px;
- 	border: 2px solid #000a7b; 	
+ 	/*border: 2px solid #000a7b; 	*/
  }
 
 .content-video{
@@ -381,11 +381,19 @@ figure{
 
  .divdomicilio{
 	border-radius: 4px;
- 	border: 2px solid #000a7b;
-	background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(235,235,235) 0%, rgb(225,225,225) 64%, rgb(194,192,192) 100%);
-  	background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(235,235,235) 0%, rgb(225,225,225) 64%, rgb(194,192,192) 100%);
-  	background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(235,235,235) 0%, rgb(225,225,225) 64%, rgb(194,192,192) 100%);
-  
+ 	/*border: 2px solid #000a7b;*/	
+ }
+
+ .parrafoinstituciona p{
+ 	text-align: justify;
+ 	font-size: 1.1rem;
+ 	color: #5F5F5F;
+ 	font-family: "Open Sans", Arial, sans-serif;
+ 	/*font-weight: bold;*/
+ }
+
+ .tituloquienes{
+ 	margin-bottom: 1.7rem;
  }
 
  .condicionesDomi p{
@@ -398,6 +406,10 @@ figure{
 
 #anclacontactosection{
 	/*padding-bottom: 45px;*/
+}
+
+.titulo-nosotros{
+	text-align: center;
 }
 
 #contactosection{
