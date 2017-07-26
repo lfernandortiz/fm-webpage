@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
 
-/*.row{ border: 1px solid #FF0042; }
-.column{ border: 1px solid #F3C200;}*/
+.row{ border: 1px solid #FF0042; }
+.column{ border: 1px solid #00f34b;}
 
 @font-face {
   font-family: 'icomoonpage';
@@ -892,7 +892,7 @@ figure{
 }
 
 .texto-contenedor{
-	padding:0 5rem 0 10rem;
+	padding:0 5rem 0 4rem;
 	margin-bottom: 6rem;
 }
 
@@ -904,6 +904,7 @@ figure{
 .boton-titulo{
 	width: 5rem;
 }
+
 
 #inyectologia-contenedor{
 	background-image: url('../images/fondoInstitucionalIny.png') ;
@@ -946,15 +947,13 @@ figure{
 	height: 9rem;
 }
 
-
 #inyectologia-contenedor p{
 	text-align: justify;
 }
 
 .imgdomisection.divdomicilio{
 	height: 20rem;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .imgdomisection h5{
@@ -975,15 +974,6 @@ figure{
 
 	.contentload{
 		width: 90%;		
-	}
-
-	#inyectologia-contenedor{
-		padding: 2rem 0;
-		background-color: #FFFFFF;
-	}
-	
-	#inyectologia-contenedor img{
-		height: 20rem;
 	}
 
 	#footerSection ul{
