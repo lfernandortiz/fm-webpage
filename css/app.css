@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
 
-/*.row{ border: 1px solid #000CE9; }
+/*.row{ border: 1px solid #FF0042; }
 .column{ border: 1px solid #F3C200;}*/
 
 @font-face {
@@ -305,7 +305,8 @@ figure{
  	color: #000a7b;
  	font-family: 'Lato', sans-serif;
  	font-size: 1rem;
- 	font-weight: bold;  	 
+ 	font-weight: bold;  
+ 	outline: 0;	 
  }
 
 .servicioscontent i{
@@ -878,10 +879,32 @@ figure{
 /*end spinner*/
 
 /***Pagina Inyectologia*****/
+.titulo-seccion-img{
+	margin-bottom: 2rem;
+}
+
+.texto-seccion{
+	height: 100%;
+}
+
+.texto-contenedor{
+	padding:0 5rem 0 9rem;
+	margin-bottom: 6rem;
+}
+
+.boton-titulo{
+	width: 5rem;
+}
+
+#inyectologia-contenedor{
+	background-image: url('../images/fondoInstitucional+.png') ;
+	background-size: cover;
+}
+
 #inyectologia-contenedor,
 #callcenter-section,
 #domicilio-contenedor {
-	padding: 3.5rem 0 4rem 0;
+	//padding: 3.5rem 0 4rem 0;
 	background-color: #FFFFFF;
 }
 
@@ -898,10 +921,8 @@ figure{
 	color: #000a7b;
 }
 
-#inyectologia-contenedor img{
-	box-shadow: 0 1px 3px #888;
-	border:.95rem solid #FFFFFF;
-	height: 28rem;
+#inyectologia-contenedor #tituloImagenInyectologia{
+	width: 12rem;
 }
 
 .callcenteroper{

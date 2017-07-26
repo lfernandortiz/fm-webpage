@@ -76,6 +76,7 @@ var asyncRequest;
 
 
 function iniciar() {
+	console.log("Cargando pagina...");
 	var sonido = document.getElementById("jigle");
 	sonido.play();
 	//registro de eventos de envio del formulario
