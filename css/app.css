@@ -887,9 +887,18 @@ figure{
 	height: 100%;
 }
 
+.imgseccion{
+	float: right;
+}
+
 .texto-contenedor{
-	padding:0 5rem 0 9rem;
+	padding:0 5rem 0 10rem;
 	margin-bottom: 6rem;
+}
+
+.texto-contenedor p{
+	border-left: 3px solid #093A9E;
+	padding-left: 1rem;
 }
 
 .boton-titulo{
@@ -897,7 +906,7 @@ figure{
 }
 
 #inyectologia-contenedor{
-	background-image: url('../images/fondoInstitucional+.png') ;
+	background-image: url('../images/fondoInstitucionalIny.png') ;
 	background-size: cover;
 }
 
@@ -922,7 +931,7 @@ figure{
 }
 
 #inyectologia-contenedor #tituloImagenInyectologia{
-	width: 12rem;
+	width: 18rem;
 }
 
 .callcenteroper{
