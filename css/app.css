@@ -909,17 +909,43 @@ figure{
 #inyectologia-contenedor{
 	/*background-image: url('../images/fondoInstitucionalIny.png');*/
 	background: url('../images/fondoInstitucionalIny.png');
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /*height:  23.69rem;*/
+		/* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+#callcenter-section{
+	/*background-image: url('../images/fondoInstitucionalIny.png');*/
+	background: url('../images/fondoCallCenter.png');
+		/* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#domicilio-contenedor{
+	/*background-image: url('../images/fondoInstitucionalIny.png');*/
+	background: url('../images/fondoDomiclios.png');
+	/* Full height */
+    height: 100%;     
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 #inyectologia-contenedor,
 #callcenter-section,
 #domicilio-contenedor {
-	padding: 4.5rem 0 6rem 0;
+	padding: 4rem 0 3rem 0;
 	background-color: #FFFFFF;
 }
 
