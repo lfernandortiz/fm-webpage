@@ -121,8 +121,9 @@ figure{
 }
 
 .barMenu{
+	backdrop-filter: blur(10px);
 	background: #389B48;
-	background: #000A7B;
+	background: rgba(0, 10, 123, .6);
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
@@ -995,8 +996,11 @@ figure{
 
 /*Footer solo para small breakpoint*/
 @media screen and (max-width: 39.9375em) {
+
 	.barMenu{		
 		padding: .1rem .2rem .3rem .1rem ;
+		-webkit-backdrop-filter: blur(10px);
+		background: rgba(0, 10, 123, .9);
 		
 	}
 	.servicioscontent{
@@ -1024,4 +1028,6 @@ figure{
 	.titleRedes{
 		font-size: 1rem;
 	}
+
+
 }
