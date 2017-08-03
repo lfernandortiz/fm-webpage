@@ -120,10 +120,9 @@ figure{
 	background-color: #09137E!important;	
 }
 
-.barMenu{
-	backdrop-filter: blur(10px);
+.barMenu{	
 	background: #389B48;
-	background: rgba(0, 10, 123, .6);
+	background: #000A7B;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	/*padding: 10px 5px 10px 5px;*/
