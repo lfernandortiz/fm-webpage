@@ -123,9 +123,6 @@ function crearMapa(){
 	//creando los marcadores
 	createMarkers();
 
-	
-
-	
 	//registrando manejo de evento de cierre de infowindow clic en el mapa	
 	google.maps.event.addListener(map.map, "click", function() {
 		map.hideInfoWindows();
@@ -138,7 +135,7 @@ function crearMapa(){
 	//consulta de medio
 	var consulta = window.matchMedia('(max-width: 768px)');    
 
-    //si es un dispositivo movil registra eventos touch como tap y press
+    //si es un dispositivo mobil registra eventos touch como tap y press
     if(consulta.matches){
     	var menuH = new Hammer(menuboton);
 		menuH.on('tap press', function(ev) {
