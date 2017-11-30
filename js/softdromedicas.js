@@ -96,93 +96,240 @@ function setCurrentCoords(){
 }
 
 //metodo principal que crea el mapa y registra eventos
-function crearMapa(){	
-	//crea el mapa con las coordenada iniciales y el zoom
-	map = new GMaps({
-		div: '#map',
-		lat:  currentLat,
-		lng:  currentLng,
-		zoom: 14,
-		zoomControl : true,
-		// scrollwheel:false,		
-		// panControl: false,
-		// streetViewControl: true,
-		mapTypeControl: false,
-		overviewMapControl: false,
-		gestureHandling: "greedy",
-		// clickable: false
-	});	
-	//si el gps esta activo añade un marker con la ubicacion actual
-	if(geoLocateActive){
-		map.addMarker({
-				title: 'Mi ubicación',
-				lat: currentLat,
-				lng: currentLng,
-				// draggable:true,
-				});
-	}	
-	//creando los marcadores
-	createMarkers();
+function crearMapa() {
+    //crea el mapa con las coordenada iniciales y el zoom
+    map = new GMaps({
+        div: '#map',
+        lat: currentLat,
+        lng: currentLng,
+        zoom: 15,
+        zoomControl: true,
+        // scrollwheel:false,		
+        // panControl: false,
+        // streetViewControl: true,
+        mapTypeControl: false,
+        overviewMapControl: false,
+        gestureHandling: "greedy",
+        // clickable: false
+        styles: [{//styling for google maps 
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#ebe3cd"
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#523735"
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "color": "#f5f1e6"
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#c9b2a6"
+            }]
+        }, {
+            "featureType": "administrative.land_parcel",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#dcd2be"
+            }]
+        }, {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#ae9e90"
+            }]
+        }, {
+            "featureType": "landscape.natural",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#dfd2ae"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#dfd2ae"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#93817c"
+            }]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#a5b076"
+            }]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#447530"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#f5f1e6"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#fdfcf8"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#f8c967"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#e9bc62"
+            }]
+        }, {
+            "featureType": "road.highway.controlled_access",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#e98d58"
+            }]
+        }, {
+            "featureType": "road.highway.controlled_access",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#db8555"
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#806b63"
+            }]
+        }, {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#dfd2ae"
+            }]
+        }, {
+            "featureType": "transit.line",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#8f7d77"
+            }]
+        }, {
+            "featureType": "transit.line",
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "color": "#ebe3cd"
+            }]
+        }, {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#dfd2ae"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#b9d3c2"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#92998d"
+            }]
+        }]
 
-	//registrando manejo de evento de cierre de infowindow clic en el mapa	
-	google.maps.event.addListener(map.map, "click", function() {
-		map.hideInfoWindows();
-	});
-	
-	//registro de manejo de evento del boton de menu 
-	var menuboton = document.getElementById('buttonmenu');	
-	var closemenuboton = document.getElementById('closemenu');	
-	var menu = document.getElementById('menu');
-	//consulta de medio
-	var consulta = window.matchMedia('(max-width: 768px)');    
+    });
+
+    //si el gps esta activo añade un marker con la ubicacion actual
+    if (geoLocateActive) {
+        map.addMarker({
+            title: 'Mi ubicación',
+            lat: currentLat,
+            lng: currentLng,
+            // draggable:true,
+        });
+    }
+    //creando los marcadores
+    createMarkers();
+
+    //registrando manejo de evento de cierre de infowindow clic en el mapa	
+    google.maps.event.addListener(map.map, "click", function() {
+        map.hideInfoWindows();
+    });
+
+    //registro de manejo de evento del boton de menu 
+    var menuboton = document.getElementById('buttonmenu');
+    var closemenuboton = document.getElementById('closemenu');
+    var menu = document.getElementById('menu');
+    //consulta de medio
+    var consulta = window.matchMedia('(max-width: 768px)');
 
     //si es un dispositivo mobil registra eventos touch como tap y press
-    if(consulta.matches){
-    	var menuH = new Hammer(menuboton);
-		menuH.on('tap press', function(ev) {
-			console.log(ev.type);
-			menu.classList.toggle('active');
-		});
-    	var closemenuH = new Hammer(closemenuboton);
-		  	closemenuH.on("tap press", function(ev) {
-			console.log(ev.type +" gesto detectado.");
-    		menu.classList.remove('active');
-		});
-    }else{
-    	menuboton.addEventListener('click', function(ev){
-    		menu.classList.toggle('active');
-    	}, false );
-    	closemenuboton.addEventListener('click', function(ev){
-    		menu.classList.remove('active');
-    	}, false );
+    if (consulta.matches) {
+        var menuH = new Hammer(menuboton);
+        menuH.on('tap press', function(ev) {
+            console.log(ev.type);
+            menu.classList.toggle('active');
+        });
+        var closemenuH = new Hammer(closemenuboton);
+        closemenuH.on("tap press", function(ev) {
+            console.log(ev.type + " gesto detectado.");
+            menu.classList.remove('active');
+        });
+    } else {
+        menuboton.addEventListener('click', function(ev) {
+            menu.classList.toggle('active');
+        }, false);
+        closemenuboton.addEventListener('click', function(ev) {
+            menu.classList.remove('active');
+        }, false);
     }
-	
-	
-	var opcionSuc = document.getElementById('sucursales');
-	opcionSuc.addEventListener('click', mostrarSucursales, false );
 
-	var opcionSuc = document.getElementById('close');
-	opcionSuc.addEventListener('click', mostrarSucursales, false );
 
-	var marCerca = document.getElementById('mascercana');
-	marCerca.addEventListener('click', findMe, false);
-	
-	var marCerca = document.getElementById('resetmapa');
-	marCerca.addEventListener('click', resetMapa, false);
-	
-	// var marCerca = document.getElementById('resetButton');
-	// marCerca.addEventListener('click', resetMapa, false);
+    var opcionSuc = document.getElementById('sucursales');
+    opcionSuc.addEventListener('click', mostrarSucursales, false);
 
-	var marCerca = document.getElementById('cercabutton');
-	marCerca.addEventListener('click', function(){ mostrarSucursales(); findMe();}, false);
+    var opcionSuc = document.getElementById('close');
+    opcionSuc.addEventListener('click', mostrarSucursales, false);
 
-	google.maps.event.addDomListener(window, "resize", function() {
-		var center = map.map.getCenter();
-		google.maps.event.trigger(map.map, "resize");
-		map.map.setCenter(center);
-	});
-	
-}//fin del metodo iniciar
+    var marCerca = document.getElementById('mascercana');
+    marCerca.addEventListener('click', findMe, false);
+
+    var marCerca = document.getElementById('resetmapa');
+    marCerca.addEventListener('click', resetMapa, false);
+
+    // var marCerca = document.getElementById('resetButton');
+    // marCerca.addEventListener('click', resetMapa, false);
+
+    var marCerca = document.getElementById('cercabutton');
+    marCerca.addEventListener('click', function() {
+        mostrarSucursales();
+        findMe();
+    }, false);
+
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.map.getCenter();
+        google.maps.event.trigger(map.map, "resize");
+        map.map.setCenter(center);
+    });
+
+} //fin del metodo iniciar
 
 //los suguientes dos metdos de jquery implementan el scrroll para infosucursales
 $('.contentsuc').impulse();
@@ -918,7 +1065,7 @@ function crearSucursal(lat, lng, suc,  dir, i, marker){
 /***************************
  Metodos de Geolocalizacion
 ****************************/
-
+//Ortodrómica 
 // tomado de http://stackoverflow.com/a/4060721
 function rad(x) {return x*Math.PI/180;}
 function buscarMarcador( lat, lng ) {	
