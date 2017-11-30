@@ -15,6 +15,7 @@ var urlMarker ;
 //este campo usado por el metodo buscarMarcador para asignar el marcador mas cercano
 var markerNear;
 
+//Array con todas la informacion de las sucursales
 var sucursales;
 
 //coordenadas usadas para establecer la ubicacion actual
@@ -27,11 +28,9 @@ var geoLocateActive;
 
 //funcion llamada al final por el registro de evento load del objeto window
 function iniciar(){
-	loadJSON(function(response) {
+	 cargarInfoSucursales(function(response) {
   // Parse JSON string into object
     sucursales = JSON.parse(response);
-    console.log(sucursales);
-
  	});
 	//se cargan las coordenadas actuales y dentro 
 	//de este medoto se manda a crear el mapa 
@@ -64,7 +63,7 @@ function setCurrentCoords(){
 	});	
 }
 
-function loadJSON(callback) {
+function cargarInfoSucursales(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open('GET', '../js/sucursales.json', true); // Replace 'my_data' with the path to your file
