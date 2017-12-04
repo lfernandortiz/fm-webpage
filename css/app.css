@@ -751,8 +751,6 @@ figure{
 
 }
 
-
-
 #footerSection li a{
 	text-decoration: none;
 	color: #d5d5d5;
@@ -767,10 +765,6 @@ figure{
 #footerfinal{
 	padding-top: .9rem;
 }
-
-
-
-
 
 .redes{
 	color: #D5D5D5;
@@ -795,8 +789,10 @@ figure{
 .row.redes { margin: 0 0 0 0 ;} 
 
 .iconoredes{
-	font-size: 2.35rem;
+	font-size: 2.35rem!important;
+	margin-top: 0.7rem;
 }
+
 .iconoredes:hover{
 	color: #00BAFF;
 }
