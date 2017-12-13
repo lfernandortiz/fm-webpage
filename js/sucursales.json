@@ -12,7 +12,7 @@
 	["Farmanorte 10", 7.912830721471756, -72.48752474784851, "Avenida Libertadores # 18N-181 Brr Santa Elena Bloques Del Zulima", "5776206","3155997099", "CUCUTA","","7:30am", "22", "7:30am", "9pm", 11],
 	["Farmanorte 11", 7.8871853, -72.49622654, "Cll 11 Con Av 2E Esquina Diagonal C.C. Ventura Plaza", "5711737","3173643955", "CUCUTA","true", "", "", "", "", 12],
 	["Farmanorte 12", 7.88983925194856, -72.49102771282196, "Av. 9E Con Cll 9 Esq Fte Col. Domingo Savio Brr La Riviera", "5751377","3185166993", "CUCUTA","","7am", "22", "7am", "10pm", 13],
-	["Farmanorte 13", 7.89477527, -72.496896932, "Av 3E # 1-108 Local 1 Frente Al Parque La Ceiba", "5777770","3185166990", "CUCUTA","","7:30am", "21", "7:30am", "9pm", 14],
+	["Farmanorte 13", 7.89477527, -72.496896932, "Avenida 3E  # 4-12 Local 104 La Ceiba", "5777770","3185166990", "CUCUTA","","7:30am", "21", "7:30am", "9pm", 14],
 	["Farmanorte 14", 7.88912722, -72.51350731, "Cll 6 # 13-61 Fte Ese Loma Bolivar", "5739782","3155120028", "CUCUTA","true", "", "", "", "", 15],
 	["Farmanorte 15", 7.91121118, -72.51772667, "Avenida 0 # 4-68 Esquina Barrio Comuneros", "5796173","3154372258", "CUCUTA","true", "", "", "", "", 16],
 	["Farmanorte 16", 7.607999367664449, -72.59926557540894, "Cll 3 # 3-34  Parq Prpal Chinacota", "5864324","3173660022", "CHINACOTA","true", "", "", "", "", 17],
@@ -33,6 +33,7 @@
 	["Farmanorte 31", 7.89229945, -72.48921045, "Avenida 11e # 7-49 A 100mts De La Clinica Santa Ana Barrio  Colsag", "5773233","3108584088","CUCUTA","true","","","","",32],
 	["Farmanorte 32", 7.83258351, -72.47115523, "Calle 5 #6-79 Villa del Rosario", "","3108506632","VILLA DEL ROSARIO","","8am", "22:00", "8am", "2pm",33],
 	["Farmanorte 33", 7.88242446, -72.4987313, "Avenida 1 #15-03  Junto A La Clinica Jerico Barrio La Playa", "5710314","3105721715","Cucuta","true","", "", "", "",34],
-	["Farmanorte 34", 7.88512079, -72.49645917, "Calle 13 # 1E-97 Caobos frente a las urgencias de la clínica San José", "5712728","3142581605","Cucuta","true","", "", "", "",35]
+	["Farmanorte 34", 7.88512079, -72.49645917, "Calle 13 # 1E-97 Caobos frente a las urgencias de la clínica San José", "5712728","3142581605","Cucuta","true","", "", "", "",35],
+	["Farmanorte 35", 7.90548297, -72.49162719, "Calle 6N # 11E-18 LC. 4 centro comercial Los Acacios", "5712599","3124176463 ","Cucuta","true","", "", "", "",36]
 
 ]
