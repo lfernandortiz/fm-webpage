@@ -99,8 +99,7 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
           //enviado a:
           $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
           $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
-          
-          $mail->addAddress('servicioalcliente@dromedicas.com.co', "Direccion Cliente");
+          $mail->addAddress('mercadeo@dromedicas.com.co', "Direccion Cliente");//direccion de destio2          
           $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
           $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
                     
