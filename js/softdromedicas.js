@@ -1,4 +1,5 @@
 console.log("SoftDromedicas");
+// @lfernandortiz  ;-)
 
 //objeto Mapa usado en toda la aplicacion
 var map;
@@ -63,6 +64,7 @@ function setCurrentCoords(){
 	});	
 }
 
+
 function cargarInfoSucursales(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -93,6 +95,7 @@ function crearMapa() {
         gestureHandling: "greedy",
         // clickable: false
         styles: [{//styling for google maps https://mapstyle.withgoogle.com/
+        	//This is a new color theme style map of Drogueria Farmanorte :-)
             "elementType": "geometry",
             "stylers": [{
                 "color": "#ebe3cd"
