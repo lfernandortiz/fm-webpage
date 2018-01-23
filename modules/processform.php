@@ -98,7 +98,6 @@ function enviarEmailAdministrativo($nombre, $email, $telefono, $comentario){
           $mail->addReplyTo('servicioalcliente@farmanorte.com.co', 'Droguerias Farmanorte');//direccion que recibe respuestas 
           //enviado a:
           $mail->addAddress('sistemas@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
-          $mail->addAddress('saidrodriguez@gmail.com', "Direccion Cliente");//direccion de destio2
           $mail->addAddress('mercadeo@dromedicas.com.co', "Direccion Cliente");//direccion de destio2          
           $mail->addAddress('servicioalcliente@farmanorte.com.co', "Direccion Cliente");
           $mail->addAddress('sistemas2@dromedicas.com.co', "Direccion Cliente");//direccion de destio2
