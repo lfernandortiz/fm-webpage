@@ -29,8 +29,8 @@ var geoLocateActive;
 
 //funcion llamada al final por el registro de evento load del objeto window
 function iniciar(){
-	 cargarInfoSucursales(function(response) {
-  // Parse JSON string into object
+	cargarInfoSucursales(function(response) {
+    //Parse JSON string into object
     sucursales = JSON.parse(response);
  	});
 	//se cargan las coordenadas actuales y dentro 
