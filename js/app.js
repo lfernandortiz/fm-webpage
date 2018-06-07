@@ -68,12 +68,8 @@ $(window).scroll(function(){
    }                   
 });
 
-
-
-
 //eventos para la multimedia y procesamiento del formulario
 var asyncRequest;
-
 
 function iniciar() {
 	console.log("Cargando pagina...");
