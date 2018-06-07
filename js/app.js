@@ -2,6 +2,13 @@ $(document).foundation();
 
 var currentElement = null;
 
+//burger menu movil
+$(".btn-nav").on("click tap", function(){
+	$(".bar").toggleClass("animated");
+ })
+
+
+
 //close off-canvas
 $('.off-canvas a').on('click', function() {
   $('.off-canvas').foundation('close');
