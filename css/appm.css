@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
 
-/* .row{ border: 1px solid rgb(255, 208, 0); }
+/* .row{ border: 1px solid rgb(255, 136, 0); }
 .column{ border: 1px solid #2258ec;} */
 
 svg { max-height: 100%; }
@@ -67,17 +67,33 @@ body{
 #llamar-div{
     /* border: #5B8EE5 solid 1px; */
     border-radius: 20px;
-
+    
     height: 7rem;
-
+    
     background: #C04848;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #bdc5e4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1F64DB, #bdc5e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
 }
 
 .phone-icon{
     width: 15%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.content-button{
+    text-align: center;
+    width: 100%;
+
 }
 
 .texto-boton{
