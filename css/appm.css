@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
 
-/* .row{ border: 1px solid rgb(255, 136, 0); }
+/* .row{ border: 1px solid rgb(255, 251, 0); }
 .column{ border: 1px solid #2258ec;} */
 
 svg { max-height: 100%; }
@@ -64,30 +64,69 @@ body{
     margin-bottom: 1.6rem;
 }
 
-#llamar-div{
-    /* border: #5B8EE5 solid 1px; */
-    border-radius: 20px;
-    
-    height: 7rem;
-    
-    background: #C04848;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #bdc5e4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1F64DB, #bdc5e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
+.button-app{
+    /* border: tomato solid 1px; */
+    border-radius: 25px;
+    height: 7.5rem;
+    margin-bottom: 1rem;
 }
 
-.phone-icon{
-    width: 15%;
-    margin-right: 10px;
-    margin-bottom: 15px;
+.content-button{
+    height: 100%;
+}
+
+.row #llamar-div .row,
+.row #consulta-div .row
+ {
+    margin: 0!important;
+}
+
+#llamar-div{    
+    background: #1F64DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bdc5e4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F64DB, #bdc5e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+#consulta-div{
+    background: #1F64DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #adc9e4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1497D4, #adc9e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+#ubique-div{
+    background: #1F64DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #003399);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #003399, #8eafce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+#puntos-div{
+    background: #1F64DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F64DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F64DB, #b7caeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.button-icon{
+    width: 50%;
+    margin-left: 1.5rem;
+    margin-top: 10px;
+}
+
+
+#consulta-div img.button-icon{
+    width: 70%;
+    margin-left: 0.9rem;
+    margin-top: 0px;
+}
+
+
+#ubique-div img.button-icon{
+    width: 38%;
+    margin-left: 1.7rem;
+    margin-top: 0px;
+}
+#puntos-div img.button-icon{
+    width: 55%;
+    margin-left: 1.7rem;
+    margin-top: 0px;
 }
 
 .content-button{
@@ -100,4 +139,13 @@ body{
     font-size: 3rem;
     font-weight: bold;
     color: #FFF;
+    line-height: 3.1rem;  
+   
+}
+
+.texto-add{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;    
 }
