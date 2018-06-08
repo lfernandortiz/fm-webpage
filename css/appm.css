@@ -10,7 +10,11 @@ body{
     background-image: url("/imagesapp/backgroundimgl.png");
     background-repeat: no-repeat;
     background-size: cover;
-/* background: tomato; */
+    /* background: tomato; */
+}
+a{
+    /* esto elimina la sombra negra del evento touch en iOs */
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #content-burgermenu{
@@ -20,8 +24,8 @@ body{
 .btn-nav{
     /* esto elimina la sombra negra del evento touch en iOs */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-   
  }
+
  .bar{
     display: block;
     width: 40px;
@@ -61,7 +65,7 @@ body{
 }
 
 .logo-f{
-    width: 80%;
+    width: 85%;
     margin-left: 1rem;
     margin-bottom: 1.6rem;
 }
@@ -105,6 +109,27 @@ body{
     background: -webkit-linear-gradient(to right, #1F64DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1F64DB, #b7caeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
+
+
+#llamar-div a:active,
+#consulta-div:active,
+#ubique-div:active,
+#puntos-div:active
+{
+    background-color: rgb(219, 41, 41);
+}
+  
+  .btn:focus {
+    background-color: #0F52C1;
+  
+    /* The outline parameter surpresses the border
+    color / outline when focused */
+    outline: 0;
+  }
+  
+  .btn:active {
+    background-color: #0039A8;
+  }
 
 .button-icon{
     width: 50%;
