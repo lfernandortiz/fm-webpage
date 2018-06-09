@@ -79,7 +79,7 @@ a {
 }
 
 .botonapp{
-    border: tomato solid 1px;
+    /* border: tomato solid 1px; */
     border-radius: 25px;
     height: 6.5rem;
     margin-bottom: 1rem;
@@ -131,8 +131,9 @@ a {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.botonapp:hover{
-    background-color: #db2991;
+.botonapp:active{
+    background: #0039A8!important;
+   
 }
 
 
