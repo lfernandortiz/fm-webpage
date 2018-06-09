@@ -201,24 +201,55 @@ a {
   }
 
 
-@media screen and (max-width: 320px) and (max-height:568){
-    #puntos-div{
-        background-image: none;
-        background: tomato!important;
+/* Nexus, Huawei, Samsung */
+@media screen and (max-width : 412px) and (max-height : 615px) {
+    .logo-f {    
+        width: 78%;   
+        margin-bottom: 1.2rem;
     }
 
+    .botonapp{
+        /* border: tomato solid 1px; */
+        border-radius: 25px;
+        height: 5.8rem;
+        margin-bottom: 0.7rem;
+        -webkit-tap-highlight-color: transparent;
+    }   
+}
+
+/* Samsung seri J7 */
+@media screen and (max-width : 412px) and (max-height : 732px) {
+    .logo-f {    
+        width: 80%;   
+        margin-bottom: 1.2rem;
+    }
+
+    .botonapp{
+        /* border: tomato solid 1px; */
+        border-radius: 25px;
+        height: 6.2rem;
+        margin-bottom: 0.7rem;
+        -webkit-tap-highlight-color: transparent;
+    }   
 }
 
 /* Media Query par iPhone 6/7/8 */
-@media screen and (max-width : 375px) and (max-height : 667px) {
-    
+@media screen and (max-width : 375px) and (max-height : 667px) {    
     .logo-f {
-        margin-bottom: 0.6rem;
+        margin-bottom: 1rem;
     }
 
     .texto-boton {
         font-size: 2.5rem;        
     }
+
+    .botonapp{
+        /* border: tomato solid 1px; */
+        border-radius: 25px;
+        height: 6.5rem;
+        margin-bottom: 0.9rem;
+        -webkit-tap-highlight-color: transparent;
+    }   
 
     .texto-add {
         font-size: 0.8rem;
