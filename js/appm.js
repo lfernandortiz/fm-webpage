@@ -1,3 +1,4 @@
+/**| @lfernandortiz - @SoftDromedicas*/
 $(document).foundation();
 
 var currentElement = null;
@@ -8,6 +9,6 @@ $(".btn-nav").on("click tap", function(){
  })
 
  $('#consulta-div').on('click', function() {
-    window.open('https://tawk.to/chat/585959ccddb8373fd2b14f8e/default/?$_tawk_popout=true', 
+    window.open('https://tawk.to/chat/585959ccddb8373fd2b14f8e/default/?$_tawk_popout=false', 
                             '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
   });
