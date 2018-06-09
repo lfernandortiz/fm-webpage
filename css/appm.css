@@ -1,32 +1,34 @@
 @import url(normalize.css);
 
-
 /* .row{ border: 1px solid rgb(255, 30, 0); }
 .column{ border: 1px solid #51ec22;} */
 
-svg { max-height: 100%; }
+svg {
+    max-height: 100%;
+}
 
-body{
+body {
     background-image: url("/imagesapp/backgroundimgl.png");
     background-repeat: no-repeat;
     background-size: cover;
     /* background: tomato; */
 }
-a{
-    /* esto elimina la sombra negra del evento touch en iOs */
-     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
-#content-burgermenu{
-    margin: 17px 0;
-    
-}
-.btn-nav{
+a {
     /* esto elimina la sombra negra del evento touch en iOs */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- }
+}
 
- .bar{
+#content-burgermenu {
+    margin: 17px 0;
+}
+
+.btn-nav {
+    /* esto elimina la sombra negra del evento touch en iOs */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bar {
     display: block;
     width: 40px;
     border: #5B8EE5 solid 2px;
@@ -40,142 +42,145 @@ a{
     z-index: 999;
 }
 
-.bar.bar-mid{
+.bar.bar-mid {
     width: 35px;
-    margin: 6px 8px 6px 9px!important ;
-    
+    margin: 6px 8px 6px 9px !important;
 }
-.animated{
+
+.animated {
     z-index: 100;
 }
-.bar-top.animated{
-    -ms-transform: translate(0px,13px) rotate(-45deg); /* IE 9 */
-    -webkit-transform: translate(0px,13px) rotate(-45deg); /* Safari */
-    transform: translate(0px,8px) rotate(-45deg);
-    
+
+.bar-top.animated {
+    -ms-transform: translate(0px, 13px) rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: translate(0px, 13px) rotate(-45deg);
+    /* Safari */
+    transform: translate(0px, 8px) rotate(-45deg);
 }
-.bar-mid.animated{
+
+.bar-mid.animated {
     width: 0px;
     transform: translate(17px, -2px);
 }
-.bar-bot.animated{
-    -ms-transform: translate(0px,-13px) rotate(45deg); /* IE 9 */
-    -webkit-transform: translate(0px,-13px) rotate(45deg); /* Safari */
-    transform: translate(0px,-12px) rotate(45deg);
+
+.bar-bot.animated {
+    -ms-transform: translate(0px, -13px) rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: translate(0px, -13px) rotate(45deg);
+    /* Safari */
+    transform: translate(0px, -12px) rotate(45deg);
 }
 
-.logo-f{
+.logo-f {
     width: 85%;
     margin-left: 1rem;
     margin-bottom: 1.6rem;
 }
 
-.button-app{
-    /* border: tomato solid 1px; */
+.botonapp{
+    border: tomato solid 1px;
     border-radius: 25px;
     height: 6.5rem;
     margin-bottom: 1rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.content-button{
+.content-button {
     height: 100%;
 }
 
 .row #llamar-div .row,
-.row #consulta-div .row
- {
-    margin: 0!important;
+.row #consulta-div .row {
+    margin: 0 !important;
 }
 
-#llamar-div{    
-    background: #1F64DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #bdc5e4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1F64DB, #bdc5e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+#llamar-div {
+    background: #1F64DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bdc5e4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F64DB, #bdc5e4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#consulta-div{
-    background: #1F64DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #adc9e4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1497D4, #adc9e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+#consulta-div {
+    background: #1F64DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #adc9e4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1497D4, #adc9e4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#ubique-div{
-    background: #1F64DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #003399);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #003399, #8eafce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+#ubique-div {
+    background: #1F64DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #003399);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #003399, #8eafce);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#puntos-div{
-    background: #1F64DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1F64DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1F64DB, #b7caeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+#puntos-div {
+    background: #1F64DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F64DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F64DB, #b7caeb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.botonapp:hover{
+    background-color: #db2991;
 }
 
 
-#llamar-div a:active,
-#consulta-div:active,
-#ubique-div:active,
-#puntos-div:active
-{
-    background-color: rgb(219, 41, 41);
-}
-  
-  .btn:focus {
-    background-color: #0F52C1;
-  
-    /* The outline parameter surpresses the border
-    color / outline when focused */
-    outline: 0;
-  }
-  
-  .btn:active {
-    background-color: #0039A8;
-  }
 
-.button-icon{
+
+.button-icon {
     width: 50%;
     margin-left: 1.5rem;
     margin-top: 10px;
 }
 
-
-#consulta-div img.button-icon{
+#consulta-div img.button-icon {
     width: 70%;
     margin-left: 0.9rem;
     margin-top: 0px;
 }
 
-
-#ubique-div img.button-icon{
+#ubique-div img.button-icon {
     width: 38%;
     margin-left: 1.7rem;
     margin-top: 0px;
 }
-#puntos-div img.button-icon{
+
+#puntos-div img.button-icon {
     width: 55%;
     margin-left: 1.7rem;
     margin-top: 0px;
 }
 
-.content-button{
+.content-button {
     text-align: center;
     width: 100%;
 }
 
-.texto-boton{
+.texto-boton {
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
     font-weight: bold;
     color: #FFF;
-    line-height: 3.1rem;  
+    line-height: 3.1rem;
     width: 100%;
     text-align: left;
-   
 }
 
-.texto-add{
+.texto-add {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #FFF; 
-    display: inline-block;   
+    color: #FFF;
+    display: inline-block;
 }
