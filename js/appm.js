@@ -7,6 +7,7 @@ console.log("%cDesarrollado  ️ por @Softdromedicas ( @lfernandortiz - @SaidRod
 $(".btn-nav").on("click tap", function(){
     $(".bar").toggleClass("animated");
     $(".burger__menu li").toggleClass("view");
+    $("#logo-offcanvas").toggleClass("view");
     document.body.classList.toggle("open");
  })
 
