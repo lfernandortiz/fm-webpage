@@ -5,7 +5,9 @@ console.log("%cDesarrollado  ️ por @Softdromedicas ( @lfernandortiz - @SaidRod
 
 //burger menu movil
 $(".btn-nav").on("click tap", function(){
-	$(".bar").toggleClass("animated");
+    $(".bar").toggleClass("animated");
+    $(".burger__menu li").toggleClass("view");
+    document.body.classList.toggle("open");
  })
 
 
@@ -14,3 +16,4 @@ $(".btn-nav").on("click tap", function(){
     window.open('https://tawk.to/chat/585959ccddb8373fd2b14f8e/default/?$_tawk_popout=false', 
                             '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
   });
+
