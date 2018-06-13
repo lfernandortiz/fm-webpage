@@ -30,6 +30,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Sucursales Farmanorte">
     <meta name="format-detection" content="telephone=no">
+
+    <script>
+        var mediaquery = window.matchMedia("(min-width: 40em)");
+        if (mediaquery.matches) {
+          //se redirecciona a la pagina de perfil
+          window.location.href = "index.html";
+        } else {
+        // mediaquery no es 600
+        }
+    </script>
  
 </head>
 <body>
