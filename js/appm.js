@@ -1,6 +1,6 @@
 /**| @lfernandortiz - @SoftDromedicas*/
 $(document).foundation();
-console.log("%cDesarrollado  ️ por @Softdromedicas ( @lfernandortiz - @SaidRodriguezC )", "background: #000a7b; color: white; font-size: normal");
+console.log("%cDesarrollado con el ♥️ por @Softdromedicas ( @lfernandortiz - @SaidRodriguezC )", "background: #000a7b; color: white; font-size: normal");
 
 
 //burger menu movil
