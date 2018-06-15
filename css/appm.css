@@ -265,7 +265,7 @@ body:before {
 
 .texto-boton {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 7.3vh;
+    font-size: 6.5vh;
     font-weight: bold;
     color: #FFF;
     line-height: 3.3rem;
@@ -285,7 +285,7 @@ body:before {
 
 .whatsapp{
     color: rgb(255, 255, 255);
-    font-size: 7.5vh!important;
+    font-size: 7vh!important;
 }
 
 .tituloPuntos h4{
