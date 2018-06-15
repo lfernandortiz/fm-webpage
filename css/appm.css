@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
-.row{ border: 1px solid rgb(255, 1, 1); }
-.column{ border: 1px solid #0efc69;}
+/* .row{ border: 1px solid rgb(255, 1, 1); }
+.column{ border: 1px solid #0efc69;} */
 
 svg {
     max-height: 100%;
@@ -20,7 +20,6 @@ a {
 }
 #content-menu{
     height: 9vh;
-
 }
 
 #content-burgermenu {
@@ -165,6 +164,7 @@ body:before {
     width: 85%;
     margin-left: 1rem;
     margin-bottom: 1.6rem;
+    margin-bottom: 0.75rem;
 }
 
 .botonapp{
@@ -226,6 +226,9 @@ body:before {
 .botonapp:active{
     background: #0039A8!important;
 }
+.botonapp.last{
+    margin-bottom: 1.3vh;
+}
 
 .button-icon {
     width: 43%;
@@ -241,14 +244,18 @@ body:before {
 
 #ubique-div img.button-icon {
     width: 37%;
-    margin-left: 1.5rem;
+    margin-left: 0.9rem;
     margin-top: 0px;
 }
 
-#puntos-div img.button-icon {
+/* #puntos-div img.button-icon {
     width: 55%;
     margin-left: 1.5rem;
     margin-top: 0px;
+} */
+
+#puntos-div i{
+    margin-left: 0.7rem;
 }
 
 .content-button {
@@ -276,6 +283,30 @@ body:before {
     float: left;
 }
 
+.whatsapp{
+    color: rgb(255, 255, 255);
+    font-size: 7.5vh!important;
+}
+
+.tituloPuntos h4{
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: rgb(23, 13, 156);
+    margin: 0;
+}
 
 /*media queries for common device breakpoints | @lfernandortiz - @SoftDromedicas*/
-
+/* block landscape html - only portrait */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
