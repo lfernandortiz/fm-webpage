@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">    
+    
+    <title>Document</title>
+
+
+     <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     <meta name="apple-mobile-web-app-title" content="Sucursales Farmanorte">
+     <meta name="format-detection" content="telephone=no">
+
+     <!--Favicon touch-->  
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff"> 
+</head>
+<body>
+
+    <div class="row">
+        <div class="column small-12" id="menu">
+           
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column small-12" id="btn">
+           
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column small-12" id="resto">
+           
+        </div>
+    </div>
+
+<script>
+    var h =  document.querySelector('body').clientHeight;
+    var h2 = document.querySelector('body').offsetHeight;
+    var h3 = document.querySelector('body').scrollHeight;
+    console.log(h);
+    console.log(h2);
+    console.log(h3);
+
+ var fixed = document.querySelector('body'); 
+ fixed.addEventListener('touchmove', function(e) { 
+        // e.preventDefault(); 
+}, false);
+
+document.body.addEventListener('touchmove', function(e){ 
+   document.getElementsByTagName('body')[0]. style .height = "100vh";
+   document.getElementsByTagName('body')[0]. style. overflow = "hidden";
+ });
+
+</script>
+
+    
+</body>
+</html>

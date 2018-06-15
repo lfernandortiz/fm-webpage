@@ -1,0 +1,25 @@
+@import url(normalize.css);
+
+/* .row{ border: 1px solid rgb(255, 30, 0); }
+.column{ border: 1px solid #51ec22;} */
+body {
+    overflow: scroll;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    }
+
+#menu{
+    height: 10vh;
+    background: #6200EE;
+}
+
+#btn{
+    height: 60vh;
+    background: #03DAC5;
+}
+
+#resto{
+    height: 30vh;
+    background: #018786;
+}
+
