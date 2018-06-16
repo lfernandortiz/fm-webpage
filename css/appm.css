@@ -22,14 +22,11 @@ a {
     -webkit-height: 9vh;
     height: 9vh;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: #35ce8e;
 }
 
 #content-burgermenu {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 100%!important;
-    border: 1px solid tomato;
-    z-index: 1000;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -38,6 +35,8 @@ a {
     justify-content: center;
     align-content: stretch;
     align-items: center;
+
+    /* border: 1px solid tomato; */
 }
 
 .btn-nav {
@@ -66,7 +65,7 @@ a {
 }
 
 .animated {
-    /* z-index: 100; */
+    z-index: 100;
 }
 
 .bar-top.animated {
@@ -128,6 +127,14 @@ body:before {
     opacity: 0;
     transition: all 0.4s ease;
 }
+
+body.open #content-burgermenu{    
+    position: relative;
+    height: inherit!important;   
+    height: 9vh!important;
+    width: inherit!important;
+
+} 
 
 .burger__menu {
     list-style-type: none;
@@ -246,7 +253,7 @@ body:before {
     background: #0039A8!important;
 }
 .botonapp.last{
-    margin-bottom: 1.3vh;
+    margin-bottom: 0.3vh;
 }
 
 .button-icon {
