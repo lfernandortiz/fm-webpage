@@ -1,14 +1,34 @@
 /**| @lfernandortiz - @SoftDromedicas*/
 $(document).foundation();
-console.log("%cDesarrollado con el ♥️ por @Softdromedicas ( @lfernandortiz - @SaidRodriguezC )", "background: #000a7b; color: white; font-size: normal");
+console.log("%cDesarrollado por @Softdromedicas ( @lfernandortiz - @SaidRodriguezC )", "background: #000a7b; color: white; font-size: normal");
 
 
 //burger menu movil
-$(".btn-nav").on("click tap", function(){
+var burger = document.querySelector('#content-burgermenu');
+
+// create a simple instance
+// by default, it only adds horizontal recognizers
+var mc = new Hammer(burger);
+
+// listen to events...
+mc.on("panleft panright tap press", function(ev) {
     $(".bar").toggleClass("animated");
+    $(".offcanvas").toggleClass("view");
     $(".burger__menu li").toggleClass("view");
     $("#logo-offcanvas").toggleClass("view");
     document.body.classList.toggle("open");
+  console.log( ev.type +" gesture detected.");
+});
+
+
+
+$("#content-burgermenu").on("click tap", function(){
+  
+    // $(".bar").toggleClass("animated");
+    // $(".offcanvas").toggleClass("view");
+    // $(".burger__menu li").toggleClass("view");
+    // $("#logo-offcanvas").toggleClass("view");
+    // document.body.classList.toggle("open");
  })
 
 

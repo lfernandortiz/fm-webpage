@@ -19,11 +19,25 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #content-menu{
+    -webkit-height: 9vh;
     height: 9vh;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #35ce8e;
 }
 
 #content-burgermenu {
-    margin: 2vh 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%!important;
+    border: 1px solid tomato;
+    z-index: 1000;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
 }
 
 .btn-nav {
@@ -38,11 +52,11 @@ a {
     border: #223887 solid 2px;
     border-radius: 2px;
     margin-left: 7px;
-    -webkit-transition: all .4s 0s;
-    -moz-transition: all .4s 0s;
-    -ms-transition: all .4s 0s;
-    -o-transition: all .4s 0s;
-    transition: all .4s 0s;
+    -webkit-transition: all .3s 0s;
+    -moz-transition: all .3s 0s;
+    -ms-transition: all .3s 0s;
+    -o-transition: all .3s 0s;
+    transition: all .3s 0s;
     z-index: 999;
 }
 
@@ -52,7 +66,7 @@ a {
 }
 
 .animated {
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .bar-top.animated {
@@ -78,13 +92,18 @@ a {
     border: rgb(255, 255, 255) solid 2px;
 }
 
-.burger {
-    /* border: 1px solid #0039A8; */
+.offcanvas {
+    /* border: 1px solid rgb(234, 234, 236); */
     position: fixed;
     width: 90%;
+    height: 90%;
     top: 60px;
     left: 20px;
+    visibility: hidden;
+    transform: translateX(-400px);
+    transition: all 0.4s ease;
 }
+
 
 body.open {
     overflow: hidden;
@@ -107,7 +126,7 @@ body:before {
     bottom: 0;
     visibility: hidden;
     opacity: 0;
-    /* transition: all 0.3s ease; */
+    transition: all 0.4s ease;
 }
 
 .burger__menu {
@@ -120,9 +139,8 @@ body:before {
     /* border: 1px solid tomato; */
     position: relative;
     margin: 15px 0;
-    visibility: hidden;
+   
     transition: all 0.4s ease;
-    transform: translateX(-400px);
     line-height: 2.1rem;
 }
 
@@ -151,7 +169,7 @@ body:before {
 .logo-menu{
     visibility: hidden;
     transform: translateX(-400px);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -269,7 +287,7 @@ body:before {
     font-size: 6.5vh;
     font-weight: bold;
     color: #FFF;
-    line-height: 3.3rem;
+    line-height: 3rem;
     width: 100%;
     text-align: left;
 }
@@ -280,8 +298,7 @@ body:before {
     font-weight: bold;
     color: #FFF;
     display: inline-block;
-    text-align: left;
-    float: left;
+    text-align: left;   
 }
 
 .whatsapp{
