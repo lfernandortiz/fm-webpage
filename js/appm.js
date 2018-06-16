@@ -2,7 +2,6 @@
 $(document).foundation();
 console.log("%cDesarrollado por @Softdromedicas ( @lfernandortiz - @SaidRodriguezC )", "background: #000a7b; color: white; font-size: normal");
 
-
 //burger menu movil
 var burger = document.querySelector('#content-burgermenu');
 
@@ -20,17 +19,9 @@ mc.on("panleft panright tap press", function(ev) {
   console.log( ev.type +" gesture detected.");
 });
 
-
-
 $("#content-burgermenu").on("click tap", function(){
   
-    // $(".bar").toggleClass("animated");
-    // $(".offcanvas").toggleClass("view");
-    // $(".burger__menu li").toggleClass("view");
-    // $("#logo-offcanvas").toggleClass("view");
-    // document.body.classList.toggle("open");
  })
-
 
  //mantiene la ventana del chat en la aplicacion
  $('#consulta-div').on('click', function() {

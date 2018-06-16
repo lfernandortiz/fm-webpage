@@ -334,4 +334,39 @@ body.open #content-burgermenu{
       top: 100%;
       left: 0;
     }
+
+    #content-menu{
+        -webkit-height: 9vw;
+        height: 9vw;
+    }
+
+    body.open #content-burgermenu{            
+        height: 9vw!important;    
+    } 
+
+    .botonapp{
+        height: 15vw;
+        margin-bottom: 2vw;
+    }
+    .botonapp.last{
+        margin-bottom: 0.3vw;
+    }
+    
+    .texto-boton {
+        font-size: 6.5vw;        
+    }
+
+    .texto-add {
+        font-size: 2.3vw;           
+    }
+
+    .whatsapp{
+       
+        font-size: 7vW!important;
+    }
+
+    .tituloPuntos h4{        
+        font-size: 2.5vW;
+    }
+
   }
