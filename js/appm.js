@@ -29,3 +29,10 @@ $("#content-burgermenu").on("click tap", function(){
                             '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
   });
 
+
+window.addEventListener('load', init, false);
+
+function init(){
+  $('#splash-content').fadeOut();
+}
+
