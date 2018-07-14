@@ -214,8 +214,8 @@ body.open #content-burgermenu{
 .logo-f {
     width: 85%;
     margin-left: 1rem;
-    margin-bottom: 1.6rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.7rem;
 }
 
 .botonapp{
@@ -339,14 +339,34 @@ body.open #content-burgermenu{
     font-size: 7vh!important;
 }
 
+.tituloPuntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5px;
+}
+
 .tituloPuntos h4{
     text-align:center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-weight: bold;
     color: rgb(23, 13, 156);
     margin: 0;
+    margin-top: .5rem;
+    display: inline;
 }
+
+.tituloPuntos a{
+    text-align: center;
+
+}
+
+.tituloPuntos img{
+    width: 20%;
+}
+
 
 /*media queries for common device breakpoints | @lfernandortiz - @SoftDromedicas*/
 /* block landscape html - only portrait */
