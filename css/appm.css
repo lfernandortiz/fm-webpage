@@ -421,8 +421,6 @@ body.open #content-burgermenu{
     font-size: 10px;
     margin: 50px auto;
     text-indent: -9999em;
-    width: 11em;
-    height: 11em;
     border-radius: 50%;
     background: #ffffff;
     background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
@@ -436,6 +434,10 @@ body.open #content-burgermenu{
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
+
+    /*Estos dos atributos dan el tamanio del spinner, tamanio original 11em */
+    width: 5em;
+    height: 5em;
   }
   .loader:before {
     width: 50%;
