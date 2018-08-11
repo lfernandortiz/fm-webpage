@@ -36,6 +36,12 @@
 	["Farmanorte 34", 7.88512079, -72.49645917, "Calle 13 # 1E-97 Caobos frente a las urgencias de la clínica San José", "5712728","3142581605","CUCUTA","true","", "", "", "",35],
 	["Farmanorte 35", 7.90548297, -72.49162719, "Calle 6N # 11E-18 LC. 4 centro comercial Los Acacios", "5712599","3124176463 ","CUCUTA","true","", "", "", "",36],
 	["Farmanorte 36", 7.37555031, -72.64804898, "Carrera 6 # 6-11 Calle Real Pamplona" , "","3228864160 ","PAMPLONA","","7am", "10pm", "7am", "10pm",37],
-	["Farmanorte 37", 8.23756077, -73.35552582, "Carrera 14  # 8-02 Manzana 7  Ocaña" , "5626317","3229121802 ","OCAÑA","","7am", "10pm", "7am", "10pm",38]
+	["Farmanorte 37", 8.23756077, -73.35552582, "Carrera 14  # 8-02 Manzana 7  Ocaña" , "5626317","3229121802 ","OCAÑA","","7am", "10pm", "7am", "10pm",38],
+	["Farmanorte 38", 11.01807338, -74.81392544, "Carrera 65 # 88-06 Local 1 Barranquilla" , "Proximamente","Proximamente ","BARRANQUILLA","","7am", "10pm", "7am", "10pm",39],
+	
+	["Farmanorte 39", 11.00152315, -74.81221706, "Carrera 50 # 79-231 Barranquilla" , "Proximamente","Proximamente ","BARRANQUILLA","","7am", "10pm", "7am", "10pm",40],
+	["Farmanorte 40", 11.01698841, -74.82423694, "Calle 98 # 58-20 Barranquilla" , "Proximamente","Proximamente ","BARRANQUILLA","","7am", "10pm", "7am", "10pm",41],
+	["Farmanorte 41", 7.37569453, -72.64919233, "Carrera 5 # 6-63 Centro Pamplona" , "Proximamente","Proximamente ","PAMPLONA","","7am", "10pm", "7am", "10pm",42],
+	["Farmanorte 42", 11.00180275, -74.81611012, "Calle 82 # 47-58 Barranquilla" , "Proximamente","Proximamente ","BARRANQUILLA","","7am", "10pm", "7am", "10pm",43]
 
 ]
